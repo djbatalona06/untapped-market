@@ -363,6 +363,186 @@ A tight package, in this order:
 
 ---
 
+## 7. Investor Outreach Kit — drop-in templates
+
+The following four sections are templates you can lift directly into a deck,
+data room, or outreach email. They map one-to-one to the deliverables listed
+in Section 5.
+
+### 7.1 Teaser deck outline (10 slides)
+
+Recommended order. Keep each slide to one idea. Total deck under 4 minutes
+read-through.
+
+1. **Cover** — "Untapped Market: Letterboxd for cannabis, built on genetics."
+   Logo, founder name, contact, raise amount + stage.
+2. **The problem** — Leafly and Weedmaps are dispensary marketing platforms.
+   No one has built a consumer product around what's *actually in the jar* —
+   genetics, terpenes, lab COAs.
+3. **The wedge** — PNW-first. The densest cultivar density in the US;
+   ~1,200 dispensaries across WA + OR; cultivators who care about pheno
+   hunting and lab transparency.
+4. **Product** — 3 screenshots: strain detail w/ COA + lineage, dispensary
+   finder, personal library. One-line caption per shot.
+5. **Why now** — DEA rescheduling to Schedule III (April 2026); pending
+   further reschedule (June 2026); cannabis-tech valuations bottomed out;
+   incumbents (Leafly distressed, Weedmaps margin-compressed).
+6. **Traction** — MAU, D7/D30, save rate, Premium conversion %, top-saved
+   strains. Use real numbers; if pre-launch, use waitlist + LOI count.
+7. **Business model** — the 4-stream chart from §3.1. Lead with consumer
+   sub, but anchor the long-term margin in B2B SaaS + data licensing.
+8. **Market size** — PNW ~1,200 dispensaries × $400 avg = $5.7M ARR
+   ceiling on B2B alone; national TAM $50M+ B2B + $200M+ consumer sub at
+   maturity; cite Headset and BDSA as proof of category data spend.
+9. **Team** — founder bio, key advisors, named PNW cultivator and
+   dispensary partners (this is a *trust* slide; lean into provenance).
+10. **The ask** — round size, use of funds (top 3 line items), milestones
+    to next round, contact.
+
+Backup slides to keep in your back pocket: competitive matrix, unit
+economics, COA ingestion architecture, App Store risk mitigation, App
+Store / banking / payment processor stack, cap table summary.
+
+### 7.2 Metrics one-pager template
+
+Send this as a PDF *attachment*, not embedded in the deck. Investors who
+read it are the ones doing real diligence — make it easy.
+
+```
+UNTAPPED MARKET — Metrics one-pager  (as of [DATE])
+
+ENGAGEMENT
+- MAU:                  [number]      (vs prior month: ±X%)
+- WAU/MAU:              [ratio]       (target >0.40)
+- D1 / D7 / D30:        [%]/[%]/[%]   (target 55/30/18)
+- Sessions / user / wk: [number]
+
+LIBRARY DEPTH
+- Avg saves / active user:     [number]
+- Strains with COA attached:   [count] / [catalog total]
+- Trip reports submitted / wk: [number]
+
+MONETIZATION
+- Free → Premium conversion:   [%]    (target 3–5%)
+- Premium → Pro conversion:    [%]    (target 10–15%)
+- Premium MRR:                 $[amt]
+- Pro MRR (since [launch]):    $[amt]
+- Annual mix:                  [%]
+- Net revenue retention:       [%]
+
+PNW SUPPLY-SIDE
+- Dispensaries indexed:        [count] / ~1,200 PNW total
+- Live menu integrations:      [count]
+- Dispensary B2B pilots:       [count] signed LOIs
+- Dispensary B2B paid:         [count] @ avg $[amt]/mo
+
+TOP-SAVED STRAINS BY ZIP (last 30 days)
+98103 Seattle:    1) [strain]  2) [strain]  3) [strain]
+97214 Portland:   1) [strain]  2) [strain]  3) [strain]
+[etc.]
+
+UNIT ECONOMICS
+- CAC (organic):  $[amt]      Premium LTV: $[amt]      Payback: [months]
+```
+
+Refresh monthly. Date-stamp every send. Keep a `metrics-one-pager.pdf` in
+the data room and version it.
+
+### 7.3 Dispensary LOI template
+
+Use this for the 10 PNW dispensary letters of intent referenced in §5.4 and
+§6 (weeks 3–6). Keep it short — dispensary owners don't read three-page
+contracts. Get on the phone, walk through it, ask for a signature.
+
+```
+LETTER OF INTENT
+Pilot: Untapped Market for Dispensaries
+
+Between:  [Dispensary legal name], a Washington/Oregon retail cannabis
+          licensee operating at [address]   ("Dispensary")
+And:      Untapped Market, Inc., a Delaware corporation              ("UM")
+Date:     [date]
+
+1. PURPOSE.  Dispensary intends to participate in a no-cost pilot of UM's
+   dispensary-facing demand dashboard ("Dashboard") for a period of ninety
+   (90) days beginning on the launch date.
+
+2. WHAT UM PROVIDES.
+   (a) Read-only access to the Dashboard, including the demand heatmap,
+       saved-strain trend lines, and stockout alert feed for Dispensary's
+       trade area.
+   (b) An embeddable strain-card widget for use on Dispensary's own website.
+   (c) One 30-minute onboarding call and email support during the pilot.
+
+3. WHAT DISPENSARY PROVIDES.
+   (a) A current menu feed (Dutchie, Jane, Flowhub, or CSV — UM will accept
+       whatever Dispensary already publishes).
+   (b) Permission for UM to surface Dispensary in app-side stockout alerts
+       and "in stock at" handoffs to consumer users.
+   (c) A 15-minute feedback call at day 30 and day 90.
+
+4. NO COST, NO COMMITMENT.  The pilot is provided at no charge. Dispensary
+   is under no obligation to enter a paid agreement at the end of the pilot.
+
+5. PUBLICITY.  Subject to Dispensary's prior written approval (not to be
+   unreasonably withheld), UM may identify Dispensary as a pilot partner
+   and quote feedback in investor and press materials.
+
+6. DATA.  UM will not share Dispensary's menu, sales, or customer data
+   with any third party. Aggregated, anonymized consumer demand data
+   collected through the UM consumer app remains UM's property.
+
+7. NON-BINDING.  Sections 5 and 6 are binding. All other terms are a
+   non-binding statement of intent.
+
+Signed:
+___________________________            ___________________________
+[Dispensary owner name]                 [Founder name]
+[Title]                                 Founder, Untapped Market
+```
+
+Keep the binding scope deliberately narrow (publicity + data handling). The
+rest stays a handshake — it's a pilot, not a procurement contract.
+
+### 7.4 Competitive matrix (extended)
+
+Send this alongside the deck. Investors will check it for honesty as much
+as for differentiation; do not understate the incumbents.
+
+| Axis | Untapped Market | Leafly | Weedmaps | Dutchie | Jane | Headset | BDSA |
+|---|---|---|---|---|---|---|---|
+| Primary user | Consumer | Consumer | Dispensary | Dispensary | Dispensary | Cultivator/brand | Cultivator/brand |
+| Core hook | Genetics + COA + library | Strain encyclopedia | Map + menus | POS + e-com | Online ordering | POS-derived analytics | Survey + retail panel |
+| Geography | PNW-first | National | National | National | National | National | National |
+| COA-level data | ✓ ingested + searchable | Listed only | None | None | None | Aggregate only | Aggregate only |
+| Genetic lineage | ✓ structured | Partial | None | None | None | None | None |
+| Personal library / log | ✓ | Limited | None | None | None | n/a | n/a |
+| Live inventory | Map + alerts (Premium) | Menus | Menus | Native (POS) | Native | n/a | n/a |
+| Consumer subscription | $7 / $19 tiers | Free + ads | Free + ads | n/a | n/a | n/a | n/a |
+| Dispensary B2B | Demand panel ($199–$799) | Ad slots | Ad slots ($1K+/mo typical) | POS SaaS ($500–2K) | POS SaaS | Data sub ($30K+/yr) | Data sub ($50K+/yr) |
+| Public/private | Private | Public (NASDAQ: LFLY) | Public (NASDAQ: MAPS) | Private | Private (PE) | Private | Private |
+| Approx. revenue | Pre-revenue → ramp | ~$26M | ~$200M | $100M+ | undisclosed | undisclosed | undisclosed |
+| Defensible moat | Genetic + COA depth, PNW density, consumer LTV | Brand, SEO | Marketplace network | POS lock-in | POS lock-in | Retailer panel | Survey panel |
+
+The honest read: we are not displacing Weedmaps or Dutchie. We are the
+*consumer demand layer* that sits on top of their dispensary supply layer
+and that nobody has built. That distinction is the strategic-acquirer story
+in §2.4.
+
+---
+
+## 8. Investor Contact Directory
+
+> **Sourcing rules.** Public sources only — no inferred or guessed emails.
+> Where no public contact exists, the table lists a specific *intro path*
+> (named portfolio founders, accelerator alumni, shared LP networks) rather
+> than a guess. Verify each contact at send-time; cannabis VC has had a lot
+> of consolidation since 2023 and partner moves are common.
+
+*[Pending — research in progress; will be appended in this section.]*
+
+---
+
 *This document is a working strategy plan, not financial or legal advice.
 Always validate with cannabis-licensed counsel and a cannabis-experienced CFO
 before formal fundraising.*
