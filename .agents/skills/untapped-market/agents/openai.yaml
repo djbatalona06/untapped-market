@@ -1,0 +1,6 @@
+interface:
+  display_name: "Untapped Market"
+  short_description: "Repo-specific patterns and workflows for untapped-market"
+  default_prompt: "Use the untapped-market repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
