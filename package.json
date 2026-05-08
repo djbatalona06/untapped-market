@@ -1,0 +1,12 @@
+{
+  "name": "untapped-market",
+  "version": "0.0.0",
+  "private": true,
+  "description": "PNW-first cannabis strain discovery, dispensary finder, and personal library app.",
+  "scripts": {
+    "lint": "htmlhint untapped-market.html"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4"
+  }
+}
