@@ -538,8 +538,128 @@ in §2.4.
 > (named portfolio founders, accelerator alumni, shared LP networks) rather
 > than a guess. Verify each contact at send-time; cannabis VC has had a lot
 > of consolidation since 2023 and partner moves are common.
+>
+> **Flags carried forward.** Several firms are flagged below as potentially
+> inactive, in litigation, or merged. Do not pitch flagged firms without
+> first verifying current activity.
 
-*[Pending — research in progress; will be appended in this section.]*
+### 8.1 Cannabis-dedicated VC funds
+
+| Firm | HQ | Website | Public contact | Notable partners | Intro path / notes |
+|---|---|---|---|---|---|
+| Casa Verde Capital | Los Angeles, CA | casaverdecapital.com | Contact form on /team page; no public email | Karan Wadhera (MP), Tony Ghanem (VP) | Warm intro via Dutchie, LeafLink, or Metrc founders — all Casa Verde portfolio |
+| Poseidon Investment Mgmt | San Francisco, CA | poseidonassetmanagement.com | Contact form on /about-us; no public email | Emily Paxhia, Morgan Paxhia (Co-founders/MPs) | Emily speaks at Benzinga Cannabis Capital Conference and Cannabis Europa — meet on circuit; warm intro via Confident Cannabis founders |
+| Gotham Green Partners | New York, NY | gothamgreenpartners.com | info@gothamgreenpartners.com | Jason Adler (MP/Founder) | Public-co board overlap (Cronos, iAnthus); intro via portfolio CEO is the channel |
+| Tuatara Capital | New York, NY | tuataracapital.com | Site contact form; phone listed publicly | Al Foreman (CIO), Marc Riiska (COO), Mark Zittman | Intro via portfolio (Willie's Reserve, Slang); MJBizCon circuit |
+| Merida Capital Partners | New York, NY | meridacap.com | Contact form on site | Mitch Baruchowitz (MP) | Active per March 2026 Petalfast exit. **Flag:** Skymint loan litigation overhang — verify status before pitching |
+| Phyto Partners | Boca Raton, FL | phytopartners.com | larry@phytopartners.com (publicly listed by GP) | Larry Schnurmacher (MP) | Direct email is fine; he publicly invites inbound |
+| Salveo Capital | Northbrook, IL | salveocapital.com | Contact form /get-in-touch; phone 312-260-1125 | Michael Gruber, Jeffrey Howard, Tom Mazarakis (MPs) | Intro via NCIA member network |
+| Navy Capital | New York, NY | navycapital.com | No public email; site contact form | Sean Stiefel (Founder/CEO) | Sean sits/sat on GrowGeneration board — warm intro via GRWG execs |
+| Altitude Investment Mgmt | New York, NY | altitudein.com | Contact form on site; IR: Melanie Reese | Jon Trauben (Partner) | Jon active on Investor Connect podcast; intro via cannabis CRE network (ex-Barclays/CS) |
+| AFI Capital Partners | Santa Monica, CA / Austin, TX | aficapitalpartners.com | Site contact form | Nico Richardson (now Texas Original CEO) | Warm intro via Texas Original or Biopharmaceutical Research Co. (BRC) — both portfolio |
+| Bengal Capital | Los Angeles, CA (distributed) | bengalcap.com | jerry@bengalcap.com (publicly invited inbound) | Jerry Derevyanny (Partner) | Direct email; team also publishes on Substack — comment/engage there |
+| Halley Venture Partners | Lafayette, CA | halleyvp.com | No public email; address only | Steven J. Schuman (MD/Founder) | Small fund — intro via cannabis-tech founder network or MJBizCon |
+| Green Acre Capital | Toronto, ON | greenacrecapital.ca | Site contact form | Matt Shalhoub, Tyler Stuart (MDs) | Canadian focus; intro via Aphria/Tilray alumni or W. Brett Wilson |
+| Treehouse Global Ventures | Chicago, IL | treehouseglobalventures.com | Use site contact form (no verified public email) | Lori Ferrara, Gaynell Rogers, Lindy Snider | Advisors include Emily Paxhia & Tahira Rehmatullah — warm intro via either |
+| Measure 8 Venture Partners | New York, NY | m8vp.com | Phone (646) 755-7400; no public email | Boris Jordan (Founding Partner), Justin Ort | Boris = Curaleaf Exec Chairman — intro via Curaleaf network or SALT conference |
+| Arcview Group / Collective Fund | Las Vegas / NY | arcviewgroup.com, arcviewventures.com | Contact form on arcviewventures.com | Jeffrey Finkle (CEO), Jeanne Sullivan (CIO) | Member-managed fund — fastest path is becoming an Arcview member or pitching at Arcview member events |
+
+### 8.2 Generalist VCs (ancillary cannabis exposure)
+
+| Firm | HQ | Website | Public contact | Notable partners | Intro path / notes |
+|---|---|---|---|---|---|
+| Y Combinator | Mountain View, CA | ycombinator.com | ycombinator.com/apply | n/a | Standard YC app is the channel |
+| Lerer Hippeau | New York, NY | lererhippeau.com | Site contact form; 646-237-4837 | Ken Lerer, Ben Lerer, Eric Hippeau | Warm intro via LeafLink (their first cannabis check) |
+| Lightspeed Venture Partners | Menlo Park, CA | lsvp.com | Site contact form | Cannabis exposure limited/ancillary | No cannabis-dedicated partner — intro via consumer/SaaS partner from portfolio overlap |
+| Founders Fund | San Francisco, CA | foundersfund.com | Site contact form | Peter Thiel, Brian Singerman | No public submission email — warm intro required; FF backed Privateer Holdings historically |
+| Khosla Ventures | Menlo Park, CA | khoslaventures.com | kv@khoslaventures.com | Vinod Khosla | Direct email accepted |
+| Tribe Capital | San Francisco, CA | tribecap.co | Site contact form | Arjun Sethi, Jonathan Hsu | No public deck email — warm intro via Social Capital alumni |
+| Initialized Capital | San Francisco, CA | initialized.com | Site form; no public email | Garry Tan (now YC President), Alexis Ohanian (departed) | Warm intro via portfolio founders; YC adjacency |
+| Bessemer Venture Partners | Redwood City, CA | bvp.com | Site form via /portfolio/contact | Byron Deeter, Talia Goldberg | No public submission email — warm intro standard |
+
+### 8.3 PNW regional funds & angel groups
+
+| Firm | HQ | Website | Public contact | Notable partners | Intro path / notes |
+|---|---|---|---|---|---|
+| Madrona Venture Group | Seattle, WA | madrona.com | madrona.com/contact form | Matt McIlwain, Tim Porter, S. Soonsiri Currens | Form is the channel; PSL alumni intros effective |
+| Voyager Capital | Seattle, WA / Portland, OR | voyagercapital.com | guyette@voyagercapital.com (Seattle); fraiman@voyagercapital.com (Portland) | Erik Benson, Diane Fraiman | Direct email — both publicly listed |
+| Maveron | Seattle, WA / SF | maveron.com | Site contact form | Dan Levitan, Anarghya Vardhana, David Wu | Consumer-only; warm intro strongly preferred |
+| Founders' Co-op | Seattle, WA | founderscoop.com | Site contact via Foundations hub | Chris DeVore, Aviel Ginzburg | Foundations co-working — show up in person; Techstars Seattle alumni intros |
+| Pioneer Square Labs | Seattle, WA | psl.com | hello@psl.com | Greg Gottesman, Geoff Entress, Mike Galgon | Direct email |
+| Trilogy Equity Partners | Bellevue, WA | trilogyequity.com | (425) 458-5900; site form | Yaz Iida, John Stanton (anchor) | No public email — warm intro via T-Mobile/wireless network alumni |
+| Oregon Venture Fund | Portland, OR | oregonventurefund.com | Apply via Gust profile | Jon Maroney, Eric Rosenfeld | Gust submission is the channel; OR/SW WA founders only |
+| Rogue Venture Partners | Lake Oswego, OR | roguevp.com | No public email; LinkedIn/site form | Tom Sperry, Rick Dillon | Warm intro via OEN (Oregon Entrepreneurs Network) |
+| Cascade Seed Fund | Bend, OR | cascadeseedfund.com | hello@cascadeseedfund.com | Brian Vierra, partners | Direct email |
+| Elevate Capital | Portland, OR | elevate.vc | Site contact form | Nitin Rai (MP) | Intro via TiE Oregon — Nitin is past TiE Oregon president |
+| Seven Peaks Ventures | Bend, OR | sevenpeaksventures.com | contactus@sevenpeaksventures.com | Dino Vendetti | Direct email |
+| Alliance of Angels | Seattle, WA | allianceofangels.com | Apply form on site /joinaoa & entrepreneur form | Yi-Jian Ngo (MD) | Online application is the channel |
+| Keiretsu Forum NW | Seattle, WA | k4northwest.com | simran@k4northwest.com; kahaan@k4northwest.com | Nathan McDonald (Pres) | Direct email to Simran or Kahaan — publicly listed |
+| TiE Seattle | Edmonds, WA | seattle.tie.org | seattle.tie.org/contact form | Charter members rotate | Apply to GoVertical or Pitch Clinic via site |
+
+### 8.4 Strategic / corporate-dev contacts
+
+These are the eventual-acquirer list. Right channel is corporate development
+or investor relations — never cold-email a CEO of a public co.
+
+| Firm | HQ | Website | Public contact | Notable | Intro path / notes |
+|---|---|---|---|---|---|
+| Leafly (LFLY) | Seattle, WA | leafly.com | IR form at investor.leafly.com/resources/investor-contacts | Yoko Miyashita (CEO) | IR form is right channel for partnerships |
+| WM Technology / Weedmaps (MAPS) | Irvine, CA | weedmaps.com | "Contact IR" form at ir.weedmaps.com; press@weedmaps.com | Doug Francis (Exec Chair) | IR form for corp dev; press email for partnership announcements |
+| Dutchie | Bend, OR | dutchie.com | business.dutchie.com/get-started partnership form | Tim Barash (CEO) | Partnership form is the channel |
+| Jane Technologies | Santa Cruz, CA | iheartjane.com | Site contact form | Socrates Rosenfeld (CEO), Alexandra Rodriguez (SVP Partner Success) | Form; LinkedIn to Alexandra Rodriguez for BD |
+| LeafLink | New York, NY | leaflink.com | partnerships@leaflink.com; press@leaflink.com | Ryan Smith (Founder), Ryan Himmel (VP Strategic Partnerships) | Direct partnerships email |
+| Flowhub | Denver, CO | flowhub.com | hello@flowhub.com; help@flowhub.com | Kyle Sherman (Founder) | Direct email |
+| Tilray Brands (TLRY) | Leamington, ON / NY | tilray.com | investors@tilray.com | Irwin Simon (CEO) | Direct IR email |
+| Curaleaf (CURLF) | Wakefield, MA | curaleaf.com | IR@curaleaf.com (Camilo Lyon, CIO) | Boris Jordan (Exec Chair) | Direct IR email |
+| Trulieve (TCNNF) | Tallahassee, FL | trulieve.com | ir@trulieve.com; christine.hersey@trulieve.com | Kim Rivers (CEO) | Direct IR email |
+| Green Thumb Industries (GTBIF) | Chicago, IL | gtigrows.com | InvestorRelations@gtigrows.com | Ben Kovler (CEO) | Direct IR email |
+| Cresco Labs (CRLBF) | Chicago, IL | crescolabs.com | investors@crescolabs.com; info@crescolabs.com | Charles Bachtell (CEO), TJ Cole (SVP Corp Dev/IR) | TJ Cole runs corp dev — IR email routes there |
+| Verano (VRNOF) | Chicago, IL | verano.com | Investors@verano.com | George Archos (CEO), Aaron Miles (CIO) | Direct IR email |
+| Canopy Growth (CGC) | Smiths Falls, ON | canopygrowth.com | invest@canopygrowth.com; tyler.burns@canopygrowth.com | Luc Mongeau (CEO) | Direct IR email |
+| Metrc | Lakeland, FL | metrc.com | Partnerships form on site; support@metrc.com | Jeff Wells (CEO) | Use validated-integrators / partnerships form |
+| Headset | Seattle, WA | headset.io | Site contact form | Cy Scott (CEO/Co-founder, ex-Leafly) | Warm intro via Leafly alumni network — Cy was Leafly co-founder |
+| BDSA | Boulder, CO | bdsa.com | info@bdsanalytics.com; contact form | Roy Bingham, Liz Stahura (Co-founders) | Direct email |
+| High Tide (HITI) | Calgary, AB | hightideinc.com | IR form on /invest page; investor email listed | Raj Grover (CEO) | IR page is the channel |
+
+### 8.5 Accelerators & equity crowdfunding platforms
+
+For these, the application URL *is* the contact channel — no warm intros
+required. Do not waste a partner email asking how to apply.
+
+| Platform | HQ | Website | Application URL | Notes |
+|---|---|---|---|---|
+| CanopyBoulder | Boulder, CO | canopyboulder.com | canopyboulder.com (apply page) | Active; ancillary/CBD focus, not plant-touching |
+| Gener8tor Cannabis Accelerator | Wisconsin (parent) | gener8tor.com | gener8tor.com/apply | **Flag:** cannabis-specific cohort appears inactive — no 2025/26 cannabis cohort confirmed; pitch a regional gener8tor program instead |
+| High Times Accelerator | n/a | hightimes.com | No active accelerator | **Flag inactive:** parent went through 2024 Ch. 11; revived 2025 — accelerator program not relaunched |
+| Y Combinator | Mountain View, CA | ycombinator.com | ycombinator.com/apply | Standard app |
+| Techstars | Boulder, CO (global) | techstars.com | apply.techstars.com | Spring/Fall cohorts; Seattle program closed but Anywhere + others open |
+| 500 Global | San Francisco, CA | 500.co | flagship.aplica.500.co | Rolling apps year-round |
+| Founder Institute (Seattle) | Palo Alto (HQ) | fi.co | fi.co/apply/seattle | Seattle Spring & Fall 2026 confirmed; Portland chapter status unverified |
+| Wefunder | San Francisco, CA | wefunder.com | wefunder.com/raise | Reg CF leader; cannabis-friendly |
+| Republic | New York, NY | republic.com | republic.com/apply/new | <2% acceptance |
+| StartEngine | Los Angeles, CA | startengine.com | startengine.com/raise-capital | Acquired SeedInvest |
+| SeedInvest | n/a | startengine.com | Folded into StartEngine | **Flag:** no longer independent — apply via StartEngine |
+| Mainvest | n/a | mainvest.com | n/a | **Flag defunct:** shut down June 14, 2024 — do not include in outreach |
+
+### 8.6 Outreach hygiene
+
+A few rules to keep this list useful instead of burned:
+
+- **Verify partner moves.** Cannabis VC has had heavy partner churn since
+  2023. Re-confirm names against firm websites and LinkedIn the day you
+  send.
+- **Never paste the same email body to multiple firms in the same week.**
+  Cannabis is a small world and partners forward decks. Tailor each.
+- **Lead with traction, not vision.** Almost every firm above has been
+  pitched the "Letterboxd for cannabis" angle by someone before. The
+  hook that breaks through is real PNW MAU, real save-rate, real
+  dispensary LOIs.
+- **Don't pitch flagged firms** (Merida litigation overhang, Mainvest
+  defunct, High Times Accelerator inactive, SeedInvest merged) without
+  first verifying current status.
+- **Treat IR contacts at public MSOs as partnership channels, not
+  fundraising channels.** They can route you to corp dev when the data
+  product is mature — not to write a Series A check.
 
 ---
 
