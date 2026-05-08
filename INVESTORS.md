@@ -363,6 +363,306 @@ A tight package, in this order:
 
 ---
 
+## 7. Investor Outreach Kit — drop-in templates
+
+The following four sections are templates you can lift directly into a deck,
+data room, or outreach email. They map one-to-one to the deliverables listed
+in Section 5.
+
+### 7.1 Teaser deck outline (10 slides)
+
+Recommended order. Keep each slide to one idea. Total deck under 4 minutes
+read-through.
+
+1. **Cover** — "Untapped Market: Letterboxd for cannabis, built on genetics."
+   Logo, founder name, contact, raise amount + stage.
+2. **The problem** — Leafly and Weedmaps are dispensary marketing platforms.
+   No one has built a consumer product around what's *actually in the jar* —
+   genetics, terpenes, lab COAs.
+3. **The wedge** — PNW-first. The densest cultivar density in the US;
+   ~1,200 dispensaries across WA + OR; cultivators who care about pheno
+   hunting and lab transparency.
+4. **Product** — 3 screenshots: strain detail w/ COA + lineage, dispensary
+   finder, personal library. One-line caption per shot.
+5. **Why now** — DEA rescheduling to Schedule III (April 2026); pending
+   further reschedule (June 2026); cannabis-tech valuations bottomed out;
+   incumbents (Leafly distressed, Weedmaps margin-compressed).
+6. **Traction** — MAU, D7/D30, save rate, Premium conversion %, top-saved
+   strains. Use real numbers; if pre-launch, use waitlist + LOI count.
+7. **Business model** — the 4-stream chart from §3.1. Lead with consumer
+   sub, but anchor the long-term margin in B2B SaaS + data licensing.
+8. **Market size** — PNW ~1,200 dispensaries × $400 avg = $5.7M ARR
+   ceiling on B2B alone; national TAM $50M+ B2B + $200M+ consumer sub at
+   maturity; cite Headset and BDSA as proof of category data spend.
+9. **Team** — founder bio, key advisors, named PNW cultivator and
+   dispensary partners (this is a *trust* slide; lean into provenance).
+10. **The ask** — round size, use of funds (top 3 line items), milestones
+    to next round, contact.
+
+Backup slides to keep in your back pocket: competitive matrix, unit
+economics, COA ingestion architecture, App Store risk mitigation, App
+Store / banking / payment processor stack, cap table summary.
+
+### 7.2 Metrics one-pager template
+
+Send this as a PDF *attachment*, not embedded in the deck. Investors who
+read it are the ones doing real diligence — make it easy.
+
+```
+UNTAPPED MARKET — Metrics one-pager  (as of [DATE])
+
+ENGAGEMENT
+- MAU:                  [number]      (vs prior month: ±X%)
+- WAU/MAU:              [ratio]       (target >0.40)
+- D1 / D7 / D30:        [%]/[%]/[%]   (target 55/30/18)
+- Sessions / user / wk: [number]
+
+LIBRARY DEPTH
+- Avg saves / active user:     [number]
+- Strains with COA attached:   [count] / [catalog total]
+- Trip reports submitted / wk: [number]
+
+MONETIZATION
+- Free → Premium conversion:   [%]    (target 3–5%)
+- Premium → Pro conversion:    [%]    (target 10–15%)
+- Premium MRR:                 $[amt]
+- Pro MRR (since [launch]):    $[amt]
+- Annual mix:                  [%]
+- Net revenue retention:       [%]
+
+PNW SUPPLY-SIDE
+- Dispensaries indexed:        [count] / ~1,200 PNW total
+- Live menu integrations:      [count]
+- Dispensary B2B pilots:       [count] signed LOIs
+- Dispensary B2B paid:         [count] @ avg $[amt]/mo
+
+TOP-SAVED STRAINS BY ZIP (last 30 days)
+98103 Seattle:    1) [strain]  2) [strain]  3) [strain]
+97214 Portland:   1) [strain]  2) [strain]  3) [strain]
+[etc.]
+
+UNIT ECONOMICS
+- CAC (organic):  $[amt]      Premium LTV: $[amt]      Payback: [months]
+```
+
+Refresh monthly. Date-stamp every send. Keep a `metrics-one-pager.pdf` in
+the data room and version it.
+
+### 7.3 Dispensary LOI template
+
+Use this for the 10 PNW dispensary letters of intent referenced in §5.4 and
+§6 (weeks 3–6). Keep it short — dispensary owners don't read three-page
+contracts. Get on the phone, walk through it, ask for a signature.
+
+```
+LETTER OF INTENT
+Pilot: Untapped Market for Dispensaries
+
+Between:  [Dispensary legal name], a Washington/Oregon retail cannabis
+          licensee operating at [address]   ("Dispensary")
+And:      Untapped Market, Inc., a Delaware corporation              ("UM")
+Date:     [date]
+
+1. PURPOSE.  Dispensary intends to participate in a no-cost pilot of UM's
+   dispensary-facing demand dashboard ("Dashboard") for a period of ninety
+   (90) days beginning on the launch date.
+
+2. WHAT UM PROVIDES.
+   (a) Read-only access to the Dashboard, including the demand heatmap,
+       saved-strain trend lines, and stockout alert feed for Dispensary's
+       trade area.
+   (b) An embeddable strain-card widget for use on Dispensary's own website.
+   (c) One 30-minute onboarding call and email support during the pilot.
+
+3. WHAT DISPENSARY PROVIDES.
+   (a) A current menu feed (Dutchie, Jane, Flowhub, or CSV — UM will accept
+       whatever Dispensary already publishes).
+   (b) Permission for UM to surface Dispensary in app-side stockout alerts
+       and "in stock at" handoffs to consumer users.
+   (c) A 15-minute feedback call at day 30 and day 90.
+
+4. NO COST, NO COMMITMENT.  The pilot is provided at no charge. Dispensary
+   is under no obligation to enter a paid agreement at the end of the pilot.
+
+5. PUBLICITY.  Subject to Dispensary's prior written approval (not to be
+   unreasonably withheld), UM may identify Dispensary as a pilot partner
+   and quote feedback in investor and press materials.
+
+6. DATA.  UM will not share Dispensary's menu, sales, or customer data
+   with any third party. Aggregated, anonymized consumer demand data
+   collected through the UM consumer app remains UM's property.
+
+7. NON-BINDING.  Sections 5 and 6 are binding. All other terms are a
+   non-binding statement of intent.
+
+Signed:
+___________________________            ___________________________
+[Dispensary owner name]                 [Founder name]
+[Title]                                 Founder, Untapped Market
+```
+
+Keep the binding scope deliberately narrow (publicity + data handling). The
+rest stays a handshake — it's a pilot, not a procurement contract.
+
+### 7.4 Competitive matrix (extended)
+
+Send this alongside the deck. Investors will check it for honesty as much
+as for differentiation; do not understate the incumbents.
+
+| Axis | Untapped Market | Leafly | Weedmaps | Dutchie | Jane | Headset | BDSA |
+|---|---|---|---|---|---|---|---|
+| Primary user | Consumer | Consumer | Dispensary | Dispensary | Dispensary | Cultivator/brand | Cultivator/brand |
+| Core hook | Genetics + COA + library | Strain encyclopedia | Map + menus | POS + e-com | Online ordering | POS-derived analytics | Survey + retail panel |
+| Geography | PNW-first | National | National | National | National | National | National |
+| COA-level data | ✓ ingested + searchable | Listed only | None | None | None | Aggregate only | Aggregate only |
+| Genetic lineage | ✓ structured | Partial | None | None | None | None | None |
+| Personal library / log | ✓ | Limited | None | None | None | n/a | n/a |
+| Live inventory | Map + alerts (Premium) | Menus | Menus | Native (POS) | Native | n/a | n/a |
+| Consumer subscription | $7 / $19 tiers | Free + ads | Free + ads | n/a | n/a | n/a | n/a |
+| Dispensary B2B | Demand panel ($199–$799) | Ad slots | Ad slots ($1K+/mo typical) | POS SaaS ($500–2K) | POS SaaS | Data sub ($30K+/yr) | Data sub ($50K+/yr) |
+| Public/private | Private | Public (NASDAQ: LFLY) | Public (NASDAQ: MAPS) | Private | Private (PE) | Private | Private |
+| Approx. revenue | Pre-revenue → ramp | ~$26M | ~$200M | $100M+ | undisclosed | undisclosed | undisclosed |
+| Defensible moat | Genetic + COA depth, PNW density, consumer LTV | Brand, SEO | Marketplace network | POS lock-in | POS lock-in | Retailer panel | Survey panel |
+
+The honest read: we are not displacing Weedmaps or Dutchie. We are the
+*consumer demand layer* that sits on top of their dispensary supply layer
+and that nobody has built. That distinction is the strategic-acquirer story
+in §2.4.
+
+---
+
+## 8. Investor Contact Directory
+
+> **Sourcing rules.** Public sources only — no inferred or guessed emails.
+> Where no public contact exists, the table lists a specific *intro path*
+> (named portfolio founders, accelerator alumni, shared LP networks) rather
+> than a guess. Verify each contact at send-time; cannabis VC has had a lot
+> of consolidation since 2023 and partner moves are common.
+>
+> **Flags carried forward.** Several firms are flagged below as potentially
+> inactive, in litigation, or merged. Do not pitch flagged firms without
+> first verifying current activity.
+
+### 8.1 Cannabis-dedicated VC funds
+
+| Firm | HQ | Website | Public contact | Notable partners | Intro path / notes |
+|---|---|---|---|---|---|
+| Casa Verde Capital | Los Angeles, CA | casaverdecapital.com | Contact form on /team page; no public email | Karan Wadhera (MP), Tony Ghanem (VP) | Warm intro via Dutchie, LeafLink, or Metrc founders — all Casa Verde portfolio |
+| Poseidon Investment Mgmt | San Francisco, CA | poseidonassetmanagement.com | Contact form on /about-us; no public email | Emily Paxhia, Morgan Paxhia (Co-founders/MPs) | Emily speaks at Benzinga Cannabis Capital Conference and Cannabis Europa — meet on circuit; warm intro via Confident Cannabis founders |
+| Gotham Green Partners | New York, NY | gothamgreenpartners.com | info@gothamgreenpartners.com | Jason Adler (MP/Founder) | Public-co board overlap (Cronos, iAnthus); intro via portfolio CEO is the channel |
+| Tuatara Capital | New York, NY | tuataracapital.com | Site contact form; phone listed publicly | Al Foreman (CIO), Marc Riiska (COO), Mark Zittman | Intro via portfolio (Willie's Reserve, Slang); MJBizCon circuit |
+| Merida Capital Partners | New York, NY | meridacap.com | Contact form on site | Mitch Baruchowitz (MP) | Active per March 2026 Petalfast exit. **Flag:** Skymint loan litigation overhang — verify status before pitching |
+| Phyto Partners | Boca Raton, FL | phytopartners.com | larry@phytopartners.com (publicly listed by GP) | Larry Schnurmacher (MP) | Direct email is fine; he publicly invites inbound |
+| Salveo Capital | Northbrook, IL | salveocapital.com | Contact form /get-in-touch; phone 312-260-1125 | Michael Gruber, Jeffrey Howard, Tom Mazarakis (MPs) | Intro via NCIA member network |
+| Navy Capital | New York, NY | navycapital.com | No public email; site contact form | Sean Stiefel (Founder/CEO) | Sean sits/sat on GrowGeneration board — warm intro via GRWG execs |
+| Altitude Investment Mgmt | New York, NY | altitudein.com | Contact form on site; IR: Melanie Reese | Jon Trauben (Partner) | Jon active on Investor Connect podcast; intro via cannabis CRE network (ex-Barclays/CS) |
+| AFI Capital Partners | Santa Monica, CA / Austin, TX | aficapitalpartners.com | Site contact form | Nico Richardson (now Texas Original CEO) | Warm intro via Texas Original or Biopharmaceutical Research Co. (BRC) — both portfolio |
+| Bengal Capital | Los Angeles, CA (distributed) | bengalcap.com | jerry@bengalcap.com (publicly invited inbound) | Jerry Derevyanny (Partner) | Direct email; team also publishes on Substack — comment/engage there |
+| Halley Venture Partners | Lafayette, CA | halleyvp.com | No public email; address only | Steven J. Schuman (MD/Founder) | Small fund — intro via cannabis-tech founder network or MJBizCon |
+| Green Acre Capital | Toronto, ON | greenacrecapital.ca | Site contact form | Matt Shalhoub, Tyler Stuart (MDs) | Canadian focus; intro via Aphria/Tilray alumni or W. Brett Wilson |
+| Treehouse Global Ventures | Chicago, IL | treehouseglobalventures.com | Use site contact form (no verified public email) | Lori Ferrara, Gaynell Rogers, Lindy Snider | Advisors include Emily Paxhia & Tahira Rehmatullah — warm intro via either |
+| Measure 8 Venture Partners | New York, NY | m8vp.com | Phone (646) 755-7400; no public email | Boris Jordan (Founding Partner), Justin Ort | Boris = Curaleaf Exec Chairman — intro via Curaleaf network or SALT conference |
+| Arcview Group / Collective Fund | Las Vegas / NY | arcviewgroup.com, arcviewventures.com | Contact form on arcviewventures.com | Jeffrey Finkle (CEO), Jeanne Sullivan (CIO) | Member-managed fund — fastest path is becoming an Arcview member or pitching at Arcview member events |
+
+### 8.2 Generalist VCs (ancillary cannabis exposure)
+
+| Firm | HQ | Website | Public contact | Notable partners | Intro path / notes |
+|---|---|---|---|---|---|
+| Y Combinator | Mountain View, CA | ycombinator.com | ycombinator.com/apply | n/a | Standard YC app is the channel |
+| Lerer Hippeau | New York, NY | lererhippeau.com | Site contact form; 646-237-4837 | Ken Lerer, Ben Lerer, Eric Hippeau | Warm intro via LeafLink (their first cannabis check) |
+| Lightspeed Venture Partners | Menlo Park, CA | lsvp.com | Site contact form | Cannabis exposure limited/ancillary | No cannabis-dedicated partner — intro via consumer/SaaS partner from portfolio overlap |
+| Founders Fund | San Francisco, CA | foundersfund.com | Site contact form | Peter Thiel, Brian Singerman | No public submission email — warm intro required; FF backed Privateer Holdings historically |
+| Khosla Ventures | Menlo Park, CA | khoslaventures.com | kv@khoslaventures.com | Vinod Khosla | Direct email accepted |
+| Tribe Capital | San Francisco, CA | tribecap.co | Site contact form | Arjun Sethi, Jonathan Hsu | No public deck email — warm intro via Social Capital alumni |
+| Initialized Capital | San Francisco, CA | initialized.com | Site form; no public email | Garry Tan (now YC President), Alexis Ohanian (departed) | Warm intro via portfolio founders; YC adjacency |
+| Bessemer Venture Partners | Redwood City, CA | bvp.com | Site form via /portfolio/contact | Byron Deeter, Talia Goldberg | No public submission email — warm intro standard |
+
+### 8.3 PNW regional funds & angel groups
+
+| Firm | HQ | Website | Public contact | Notable partners | Intro path / notes |
+|---|---|---|---|---|---|
+| Madrona Venture Group | Seattle, WA | madrona.com | madrona.com/contact form | Matt McIlwain, Tim Porter, S. Soonsiri Currens | Form is the channel; PSL alumni intros effective |
+| Voyager Capital | Seattle, WA / Portland, OR | voyagercapital.com | guyette@voyagercapital.com (Seattle); fraiman@voyagercapital.com (Portland) | Erik Benson, Diane Fraiman | Direct email — both publicly listed |
+| Maveron | Seattle, WA / SF | maveron.com | Site contact form | Dan Levitan, Anarghya Vardhana, David Wu | Consumer-only; warm intro strongly preferred |
+| Founders' Co-op | Seattle, WA | founderscoop.com | Site contact via Foundations hub | Chris DeVore, Aviel Ginzburg | Foundations co-working — show up in person; Techstars Seattle alumni intros |
+| Pioneer Square Labs | Seattle, WA | psl.com | hello@psl.com | Greg Gottesman, Geoff Entress, Mike Galgon | Direct email |
+| Trilogy Equity Partners | Bellevue, WA | trilogyequity.com | (425) 458-5900; site form | Yaz Iida, John Stanton (anchor) | No public email — warm intro via T-Mobile/wireless network alumni |
+| Oregon Venture Fund | Portland, OR | oregonventurefund.com | Apply via Gust profile | Jon Maroney, Eric Rosenfeld | Gust submission is the channel; OR/SW WA founders only |
+| Rogue Venture Partners | Lake Oswego, OR | roguevp.com | No public email; LinkedIn/site form | Tom Sperry, Rick Dillon | Warm intro via OEN (Oregon Entrepreneurs Network) |
+| Cascade Seed Fund | Bend, OR | cascadeseedfund.com | hello@cascadeseedfund.com | Brian Vierra, partners | Direct email |
+| Elevate Capital | Portland, OR | elevate.vc | Site contact form | Nitin Rai (MP) | Intro via TiE Oregon — Nitin is past TiE Oregon president |
+| Seven Peaks Ventures | Bend, OR | sevenpeaksventures.com | contactus@sevenpeaksventures.com | Dino Vendetti | Direct email |
+| Alliance of Angels | Seattle, WA | allianceofangels.com | Apply form on site /joinaoa & entrepreneur form | Yi-Jian Ngo (MD) | Online application is the channel |
+| Keiretsu Forum NW | Seattle, WA | k4northwest.com | simran@k4northwest.com; kahaan@k4northwest.com | Nathan McDonald (Pres) | Direct email to Simran or Kahaan — publicly listed |
+| TiE Seattle | Edmonds, WA | seattle.tie.org | seattle.tie.org/contact form | Charter members rotate | Apply to GoVertical or Pitch Clinic via site |
+
+### 8.4 Strategic / corporate-dev contacts
+
+These are the eventual-acquirer list. Right channel is corporate development
+or investor relations — never cold-email a CEO of a public co.
+
+| Firm | HQ | Website | Public contact | Notable | Intro path / notes |
+|---|---|---|---|---|---|
+| Leafly (LFLY) | Seattle, WA | leafly.com | IR form at investor.leafly.com/resources/investor-contacts | Yoko Miyashita (CEO) | IR form is right channel for partnerships |
+| WM Technology / Weedmaps (MAPS) | Irvine, CA | weedmaps.com | "Contact IR" form at ir.weedmaps.com; press@weedmaps.com | Doug Francis (Exec Chair) | IR form for corp dev; press email for partnership announcements |
+| Dutchie | Bend, OR | dutchie.com | business.dutchie.com/get-started partnership form | Tim Barash (CEO) | Partnership form is the channel |
+| Jane Technologies | Santa Cruz, CA | iheartjane.com | Site contact form | Socrates Rosenfeld (CEO), Alexandra Rodriguez (SVP Partner Success) | Form; LinkedIn to Alexandra Rodriguez for BD |
+| LeafLink | New York, NY | leaflink.com | partnerships@leaflink.com; press@leaflink.com | Ryan Smith (Founder), Ryan Himmel (VP Strategic Partnerships) | Direct partnerships email |
+| Flowhub | Denver, CO | flowhub.com | hello@flowhub.com; help@flowhub.com | Kyle Sherman (Founder) | Direct email |
+| Tilray Brands (TLRY) | Leamington, ON / NY | tilray.com | investors@tilray.com | Irwin Simon (CEO) | Direct IR email |
+| Curaleaf (CURLF) | Wakefield, MA | curaleaf.com | IR@curaleaf.com (Camilo Lyon, CIO) | Boris Jordan (Exec Chair) | Direct IR email |
+| Trulieve (TCNNF) | Tallahassee, FL | trulieve.com | ir@trulieve.com; christine.hersey@trulieve.com | Kim Rivers (CEO) | Direct IR email |
+| Green Thumb Industries (GTBIF) | Chicago, IL | gtigrows.com | InvestorRelations@gtigrows.com | Ben Kovler (CEO) | Direct IR email |
+| Cresco Labs (CRLBF) | Chicago, IL | crescolabs.com | investors@crescolabs.com; info@crescolabs.com | Charles Bachtell (CEO), TJ Cole (SVP Corp Dev/IR) | TJ Cole runs corp dev — IR email routes there |
+| Verano (VRNOF) | Chicago, IL | verano.com | Investors@verano.com | George Archos (CEO), Aaron Miles (CIO) | Direct IR email |
+| Canopy Growth (CGC) | Smiths Falls, ON | canopygrowth.com | invest@canopygrowth.com; tyler.burns@canopygrowth.com | Luc Mongeau (CEO) | Direct IR email |
+| Metrc | Lakeland, FL | metrc.com | Partnerships form on site; support@metrc.com | Jeff Wells (CEO) | Use validated-integrators / partnerships form |
+| Headset | Seattle, WA | headset.io | Site contact form | Cy Scott (CEO/Co-founder, ex-Leafly) | Warm intro via Leafly alumni network — Cy was Leafly co-founder |
+| BDSA | Boulder, CO | bdsa.com | info@bdsanalytics.com; contact form | Roy Bingham, Liz Stahura (Co-founders) | Direct email |
+| High Tide (HITI) | Calgary, AB | hightideinc.com | IR form on /invest page; investor email listed | Raj Grover (CEO) | IR page is the channel |
+
+### 8.5 Accelerators & equity crowdfunding platforms
+
+For these, the application URL *is* the contact channel — no warm intros
+required. Do not waste a partner email asking how to apply.
+
+| Platform | HQ | Website | Application URL | Notes |
+|---|---|---|---|---|
+| CanopyBoulder | Boulder, CO | canopyboulder.com | canopyboulder.com (apply page) | Active; ancillary/CBD focus, not plant-touching |
+| Gener8tor Cannabis Accelerator | Wisconsin (parent) | gener8tor.com | gener8tor.com/apply | **Flag:** cannabis-specific cohort appears inactive — no 2025/26 cannabis cohort confirmed; pitch a regional gener8tor program instead |
+| High Times Accelerator | n/a | hightimes.com | No active accelerator | **Flag inactive:** parent went through 2024 Ch. 11; revived 2025 — accelerator program not relaunched |
+| Y Combinator | Mountain View, CA | ycombinator.com | ycombinator.com/apply | Standard app |
+| Techstars | Boulder, CO (global) | techstars.com | apply.techstars.com | Spring/Fall cohorts; Seattle program closed but Anywhere + others open |
+| 500 Global | San Francisco, CA | 500.co | flagship.aplica.500.co | Rolling apps year-round |
+| Founder Institute (Seattle) | Palo Alto (HQ) | fi.co | fi.co/apply/seattle | Seattle Spring & Fall 2026 confirmed; Portland chapter status unverified |
+| Wefunder | San Francisco, CA | wefunder.com | wefunder.com/raise | Reg CF leader; cannabis-friendly |
+| Republic | New York, NY | republic.com | republic.com/apply/new | <2% acceptance |
+| StartEngine | Los Angeles, CA | startengine.com | startengine.com/raise-capital | Acquired SeedInvest |
+| SeedInvest | n/a | startengine.com | Folded into StartEngine | **Flag:** no longer independent — apply via StartEngine |
+| Mainvest | n/a | mainvest.com | n/a | **Flag defunct:** shut down June 14, 2024 — do not include in outreach |
+
+### 8.6 Outreach hygiene
+
+A few rules to keep this list useful instead of burned:
+
+- **Verify partner moves.** Cannabis VC has had heavy partner churn since
+  2023. Re-confirm names against firm websites and LinkedIn the day you
+  send.
+- **Never paste the same email body to multiple firms in the same week.**
+  Cannabis is a small world and partners forward decks. Tailor each.
+- **Lead with traction, not vision.** Almost every firm above has been
+  pitched the "Letterboxd for cannabis" angle by someone before. The
+  hook that breaks through is real PNW MAU, real save-rate, real
+  dispensary LOIs.
+- **Don't pitch flagged firms** (Merida litigation overhang, Mainvest
+  defunct, High Times Accelerator inactive, SeedInvest merged) without
+  first verifying current status.
+- **Treat IR contacts at public MSOs as partnership channels, not
+  fundraising channels.** They can route you to corp dev when the data
+  product is mature — not to write a Series A check.
+
+---
+
 *This document is a working strategy plan, not financial or legal advice.
 Always validate with cannabis-licensed counsel and a cannabis-experienced CFO
 before formal fundraising.*
