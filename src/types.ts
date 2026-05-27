@@ -44,6 +44,7 @@ export interface Strain {
   vibe?: Array<'sleep' | 'focus' | 'uplift' | 'relief'>;
   flavorProfile?: Array<'sweet-citrus' | 'earthen-musky' | 'pine-herbal' | 'skunk-diesel'>;
   tolerance?: 'low' | 'moderate' | 'expert';
+  imageUrl?: string;
 }
 
 export interface Coordinates {

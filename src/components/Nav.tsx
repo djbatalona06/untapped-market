@@ -28,6 +28,8 @@ export function Nav() {
   const user = useStore((s) => s.user);
   const setNotificationCenterOpen = useStore((s) => s.setNotificationCenterOpen);
   const notificationCenterOpen = useStore((s) => s.notificationCenterOpen);
+  const tweaksOpen = useStore((s) => s.tweaksOpen);
+  const setTweaksOpen = useStore((s) => s.setTweaksOpen);
 
   const unread = unreadCount(notifications);
   const avatarInitial = (user.signedIn ? user.username : 'g')[0].toUpperCase();
@@ -56,6 +58,14 @@ export function Nav() {
             Upgrade
           </button>
         </div>
+        <button
+          className={`nav-tweaks${tweaksOpen ? ' active' : ''}`}
+          onClick={() => setTweaksOpen(!tweaksOpen)}
+          aria-label="Open tweaks"
+          title="Tweaks"
+        >
+          ✦
+        </button>
         <button
           className="nav-bell"
           onClick={() => setNotificationCenterOpen(!notificationCenterOpen)}

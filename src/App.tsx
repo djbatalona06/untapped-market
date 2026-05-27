@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import { useStore } from './store/useStore';
 import { Nav } from './components/Nav';
 import { ToastContainer } from './components/Toast';
 import { NotificationCenter } from './components/NotificationCenter';
+import { TweaksPanel } from './components/tweaks/TweaksPanel';
+import { useTweaks } from './components/tweaks/useTweaks';
+import { init as initScrollEngine, scan as scanScrollEngine } from './lib/scrollEngine';
 import { HomePage } from './pages/HomePage';
 import { CatalogPage } from './pages/CatalogPage';
 import { StrainDetailPage } from './pages/StrainDetailPage';
@@ -14,6 +18,17 @@ import { AccountPage } from './pages/AccountPage';
 
 export function App() {
   const route = useStore((s) => s.route);
+  // Mount the tweaks state once at the App root so saved CSS vars apply globally.
+  useTweaks();
+
+  useEffect(() => {
+    initScrollEngine();
+  }, []);
+
+  useEffect(() => {
+    const id = setTimeout(() => scanScrollEngine(), 60);
+    return () => clearTimeout(id);
+  }, [route]);
 
   let page;
   switch (route.page) {
@@ -51,9 +66,11 @@ export function App() {
   return (
     <>
       <Nav />
+      <div className="scroll-progress" aria-hidden="true" />
       <NotificationCenter />
       {page}
       <ToastContainer />
+      <TweaksPanel />
     </>
   );
 }
