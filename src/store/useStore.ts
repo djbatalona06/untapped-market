@@ -62,6 +62,9 @@ interface AppState {
 
   notificationCenterOpen: boolean;
   setNotificationCenterOpen: (open: boolean) => void;
+
+  tweaksOpen: boolean;
+  setTweaksOpen: (open: boolean) => void;
 }
 
 let toastCounter = 1;
@@ -248,6 +251,9 @@ export const useStore = create<AppState>((set, get) => ({
 
   notificationCenterOpen: false,
   setNotificationCenterOpen: (open) => set({ notificationCenterOpen: open }),
+
+  tweaksOpen: false,
+  setTweaksOpen: (open) => set({ tweaksOpen: open }),
 }));
 
 export function unreadCount(notifs: NotificationItem[]): number {

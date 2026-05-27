@@ -92,9 +92,9 @@ export function QuizPage() {
     return (
       <div className="page">
         <div className="quiz-shell">
-          <div className="hero-eyebrow" style={{ marginBottom: 8 }}>Your matches</div>
-          <h1 style={{ fontFamily: 'DM Serif Display, serif', fontSize: '2.2rem', marginBottom: 8 }}>
-            Built for the way <em style={{ color: 'var(--accent)' }}>you</em> want to feel
+          <div className="eyebrow-mono" style={{ marginBottom: 8 }}>Your matches</div>
+          <h1 style={{ fontSize: '2.2rem', marginBottom: 8 }}>
+            Built for the way <em style={{ color: 'var(--ember)' }}>you</em> want to feel
           </h1>
           <p className="muted" style={{ marginBottom: 24 }}>
             Five recommendations, scored against the terpene chemistry, chemotype, and
