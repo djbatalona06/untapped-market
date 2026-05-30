@@ -1,0 +1,59 @@
+name: Collect strain data (daily)
+
+# Deterministic, $0-token daily refresh of strain/dispensary JSON.
+# Runs the collector, validates, and (if anything changed) opens a DRAFT PR for review.
+# Nothing reaches `main` — and therefore production — without a human merge.
+#
+# Optional source configuration (repo Settings → Secrets and variables → Actions, as
+# repository VARIABLES). Unset = safe no-op that preserves existing data:
+#   WA_LCB_DATA_URL    OR_OLCC_DATA_URL    STRAINS_DATA_URL
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # daily, 09:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Collect data
+        env:
+          WA_LCB_DATA_URL: ${{ vars.WA_LCB_DATA_URL }}
+          OR_OLCC_DATA_URL: ${{ vars.OR_OLCC_DATA_URL }}
+          STRAINS_DATA_URL: ${{ vars.STRAINS_DATA_URL }}
+        run: npm run collect
+
+      - name: Validate data
+        run: npm run validate:data
+
+      - name: Open draft PR with any data changes
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: data/auto-update
+          base: main
+          draft: true
+          commit-message: "data: daily strain/dispensary refresh"
+          title: "Daily data refresh"
+          body: |
+            Automated daily refresh of `src/data/strains.json` and
+            `src/data/dispensaries.json` via `scripts/collect.mjs`.
+
+            Deterministic, no LLM tokens used. Review the diff and merge to deploy.
+          add-paths: |
+            src/data/strains.json
+            src/data/dispensaries.json
