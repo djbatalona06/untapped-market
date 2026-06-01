@@ -1,0 +1,2724 @@
+[
+  {
+    "id": "disp-1",
+    "name": "Capitol Cannabis Co",
+    "address": "5815 E Pine St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98143",
+    "coordinates": {
+      "lat": 47.61596,
+      "lng": -122.33068
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-8678",
+    "strainIds": [
+      "green-lake-glass",
+      "olympic-fog",
+      "orcas-orange"
+    ],
+    "rating": 4.4,
+    "reviewCount": 328,
+    "tags": [
+      "Curbside",
+      "Veteran Discount"
+    ]
+  },
+  {
+    "id": "disp-2",
+    "name": "Pike-Pine Apothecary",
+    "address": "9505 E Madison St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98190",
+    "coordinates": {
+      "lat": 47.61208,
+      "lng": -122.32943
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-5202",
+    "strainIds": [
+      "willamette-valley-og",
+      "durban-pacific",
+      "ballard-blueberry",
+      "glacial-glue",
+      "pearl-purple",
+      "puget-sound-cbd"
+    ],
+    "rating": 3.9,
+    "reviewCount": 30,
+    "tags": [
+      "Veteran Discount",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-3",
+    "name": "Hilltop Holistic",
+    "address": "3869 E Olive Way",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98172",
+    "coordinates": {
+      "lat": 47.63019,
+      "lng": -122.31646
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-6343",
+    "strainIds": [
+      "mt-baker-mist",
+      "thcv-frost",
+      "bainbridge-bliss",
+      "hood-river-haze",
+      "willamette-valley-og",
+      "green-lake-glass",
+      "olympic-fog"
+    ],
+    "rating": 4.8,
+    "reviewCount": 206,
+    "tags": [
+      "Medical",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-4",
+    "name": "Broadway Bud Bar",
+    "address": "3406 E Madison St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98196",
+    "coordinates": {
+      "lat": 47.61036,
+      "lng": -122.32613
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-9819",
+    "strainIds": [
+      "orcas-orange",
+      "afghan-pnw",
+      "fremont-fire"
+    ],
+    "rating": 3.9,
+    "reviewCount": 462,
+    "tags": [
+      "Curbside",
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-5",
+    "name": "Volunteer Park Cannabis",
+    "address": "1274 E Olive Way",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98120",
+    "coordinates": {
+      "lat": 47.62694,
+      "lng": -122.32544
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-7248",
+    "strainIds": [
+      "acdc-pnw",
+      "mt-baker-mist",
+      "snoqualmie-snow",
+      "emerald-city-diesel"
+    ],
+    "rating": 4.9,
+    "reviewCount": 412,
+    "tags": [
+      "Daily Deals",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-6",
+    "name": "Cal Anderson Collective",
+    "address": "1350 E Olive Way",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98168",
+    "coordinates": {
+      "lat": 47.61954,
+      "lng": -122.32912
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-4479",
+    "strainIds": [
+      "green-lake-glass",
+      "wonderland-mints",
+      "rainier-kush",
+      "hood-river-haze",
+      "pearl-purple",
+      "thcv-frost"
+    ],
+    "rating": 4.1,
+    "reviewCount": 255,
+    "tags": [
+      "Curbside",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-7",
+    "name": "Olive Way Organics",
+    "address": "5347 E Pine St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98146",
+    "coordinates": {
+      "lat": 47.61464,
+      "lng": -122.32522
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-6341",
+    "strainIds": [
+      "tacoma-tangerine",
+      "pike-place-pineapple",
+      "bainbridge-bliss"
+    ],
+    "rating": 4.6,
+    "reviewCount": 285,
+    "tags": [
+      "Veteran Discount",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-8",
+    "name": "Madison Park Mary",
+    "address": "9366 E Pine St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98192",
+    "coordinates": {
+      "lat": 47.61902,
+      "lng": -122.32276
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-8344",
+    "strainIds": [
+      "afghan-pnw",
+      "lavender-larch",
+      "cascadia-haze",
+      "ballard-blueberry",
+      "durban-pacific",
+      "snoqualmie-snow",
+      "glacial-glue",
+      "thcv-frost"
+    ],
+    "rating": 4.2,
+    "reviewCount": 290,
+    "tags": [
+      "Daily Deals",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-9",
+    "name": "SODO Smoke Shop",
+    "address": "7686 4th Ave S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98113",
+    "coordinates": {
+      "lat": 47.57673,
+      "lng": -122.32925
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-1308",
+    "strainIds": [
+      "capitol-hill-lemon",
+      "tacoma-tangerine",
+      "gas-works-gas",
+      "bainbridge-bliss",
+      "ballard-blueberry",
+      "mt-baker-mist"
+    ],
+    "rating": 4.8,
+    "reviewCount": 371,
+    "tags": [
+      "Loyalty Program",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-10",
+    "name": "Industrial Indica",
+    "address": "9829 Utah Ave S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98180",
+    "coordinates": {
+      "lat": 47.57989,
+      "lng": -122.32066
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-1216",
+    "strainIds": [
+      "durban-pacific",
+      "acdc-pnw",
+      "ballard-blueberry"
+    ],
+    "rating": 4.9,
+    "reviewCount": 235,
+    "tags": [
+      "Delivery",
+      "Veteran Discount"
+    ]
+  },
+  {
+    "id": "disp-11",
+    "name": "Warehouse Wellness",
+    "address": "4134 Utah Ave S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98116",
+    "coordinates": {
+      "lat": 47.58043,
+      "lng": -122.33611
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-4871",
+    "strainIds": [
+      "olympic-fog",
+      "ballard-blueberry",
+      "capitol-hill-lemon"
+    ],
+    "rating": 5,
+    "reviewCount": 340,
+    "tags": [
+      "Veteran Discount",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-12",
+    "name": "Stadium District Cannabis",
+    "address": "9163 4th Ave S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98159",
+    "coordinates": {
+      "lat": 47.58251,
+      "lng": -122.33212
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-4971",
+    "strainIds": [
+      "wonderland-mints",
+      "acdc-pnw",
+      "capitol-hill-lemon",
+      "puget-sound-cbd",
+      "emerald-city-diesel",
+      "hood-river-haze"
+    ],
+    "rating": 4.7,
+    "reviewCount": 329,
+    "tags": [
+      "Curbside",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-13",
+    "name": "Sounder Selects",
+    "address": "3606 Utah Ave S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98157",
+    "coordinates": {
+      "lat": 47.58238,
+      "lng": -122.32978
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-5647",
+    "strainIds": [
+      "gas-works-gas",
+      "ballard-blueberry",
+      "pearl-purple",
+      "glacial-glue",
+      "orcas-orange",
+      "puget-sound-cbd"
+    ],
+    "rating": 4.6,
+    "reviewCount": 24,
+    "tags": [
+      "ATM",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-14",
+    "name": "Ballard Botanica",
+    "address": "3926 15th Ave NW",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98170",
+    "coordinates": {
+      "lat": 47.67506,
+      "lng": -122.38935
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-9709",
+    "strainIds": [
+      "olympic-fog",
+      "snoqualmie-snow",
+      "afghan-pnw",
+      "lavender-larch",
+      "puget-sound-cbd"
+    ],
+    "rating": 4.7,
+    "reviewCount": 77,
+    "tags": [
+      "Medical",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-15",
+    "name": "Salmon Bay Cannabis",
+    "address": "8589 NW Market St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98171",
+    "coordinates": {
+      "lat": 47.67589,
+      "lng": -122.37643
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-6360",
+    "strainIds": [
+      "tacoma-tangerine",
+      "afghan-pnw",
+      "orcas-orange",
+      "cherry-eastlake",
+      "wonderland-mints",
+      "green-lake-glass",
+      "emerald-city-diesel"
+    ],
+    "rating": 4.1,
+    "reviewCount": 94,
+    "tags": [
+      "ATM",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-16",
+    "name": "Market Street Greens",
+    "address": "2345 NW Market St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98118",
+    "coordinates": {
+      "lat": 47.67437,
+      "lng": -122.3802
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-6334",
+    "strainIds": [
+      "thcv-frost",
+      "sodo-skunk",
+      "green-lake-glass",
+      "olympic-fog",
+      "forest-park-pine",
+      "ballard-blueberry"
+    ],
+    "rating": 4.2,
+    "reviewCount": 365,
+    "tags": [
+      "Delivery",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-17",
+    "name": "Locks & Leaves",
+    "address": "593 15th Ave NW",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98126",
+    "coordinates": {
+      "lat": 47.67772,
+      "lng": -122.37864
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-8059",
+    "strainIds": [
+      "fremont-fire",
+      "lavender-larch",
+      "pearl-purple",
+      "bainbridge-bliss"
+    ],
+    "rating": 4.3,
+    "reviewCount": 448,
+    "tags": [
+      "Recreational",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-18",
+    "name": "Nordic Cannabis Co",
+    "address": "2842 Ballard Ave NW",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98187",
+    "coordinates": {
+      "lat": 47.66033,
+      "lng": -122.37918
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-7836",
+    "strainIds": [
+      "rainier-kush",
+      "pearl-purple",
+      "willamette-valley-og",
+      "emerald-city-diesel",
+      "wonderland-mints",
+      "sodo-skunk"
+    ],
+    "rating": 4.3,
+    "reviewCount": 266,
+    "tags": [
+      "Daily Deals",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-19",
+    "name": "Shilshole Selects",
+    "address": "6644 15th Ave NW",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98131",
+    "coordinates": {
+      "lat": 47.65974,
+      "lng": -122.38371
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-6831",
+    "strainIds": [
+      "orcas-orange",
+      "afghan-pnw",
+      "ballard-blueberry",
+      "lavender-larch",
+      "glacial-glue"
+    ],
+    "rating": 5,
+    "reviewCount": 185,
+    "tags": [
+      "Medical",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-20",
+    "name": "Fremont Cannabis Collective",
+    "address": "867 N 34th St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98188",
+    "coordinates": {
+      "lat": 47.65247,
+      "lng": -122.35598
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-3453",
+    "strainIds": [
+      "cherry-eastlake",
+      "bainbridge-bliss",
+      "wonderland-mints",
+      "olympic-fog",
+      "puget-sound-cbd",
+      "pike-place-pineapple"
+    ],
+    "rating": 4.1,
+    "reviewCount": 39,
+    "tags": [
+      "Recreational",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-21",
+    "name": "Troll Bridge Botanicals",
+    "address": "4481 Stone Way N",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98145",
+    "coordinates": {
+      "lat": 47.649,
+      "lng": -122.34911
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-3396",
+    "strainIds": [
+      "orcas-orange",
+      "ballard-blueberry",
+      "acdc-pnw",
+      "puget-sound-cbd",
+      "durban-pacific",
+      "willamette-valley-og"
+    ],
+    "rating": 5,
+    "reviewCount": 219,
+    "tags": [
+      "Curbside",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-22",
+    "name": "Lenin Lane Leaf",
+    "address": "2883 Fremont Ave N",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98190",
+    "coordinates": {
+      "lat": 47.65271,
+      "lng": -122.34275
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-8174",
+    "strainIds": [
+      "emerald-city-diesel",
+      "durban-pacific",
+      "capitol-hill-lemon",
+      "thcv-frost",
+      "fremont-fire",
+      "olympic-fog"
+    ],
+    "rating": 5,
+    "reviewCount": 286,
+    "tags": [
+      "Daily Deals",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-23",
+    "name": "Gas Works Greens",
+    "address": "3650 Stone Way N",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98186",
+    "coordinates": {
+      "lat": 47.65717,
+      "lng": -122.35036
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-5297",
+    "strainIds": [
+      "capitol-hill-lemon",
+      "acdc-pnw",
+      "puget-sound-cbd",
+      "rainier-kush",
+      "wonderland-mints",
+      "willamette-valley-og"
+    ],
+    "rating": 4.6,
+    "reviewCount": 359,
+    "tags": [
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-24",
+    "name": "Adobe District Apothecary",
+    "address": "8573 Fremont Ave N",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98144",
+    "coordinates": {
+      "lat": 47.65261,
+      "lng": -122.34448
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-3674",
+    "strainIds": [
+      "capitol-hill-lemon",
+      "cherry-eastlake",
+      "emerald-city-diesel",
+      "lavender-larch",
+      "fremont-fire",
+      "orcas-orange"
+    ],
+    "rating": 4.6,
+    "reviewCount": 197,
+    "tags": [
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-25",
+    "name": "U District Dispensary",
+    "address": "4622 15th Ave NE",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98145",
+    "coordinates": {
+      "lat": 47.66706,
+      "lng": -122.31328
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-1923",
+    "strainIds": [
+      "olympic-fog",
+      "green-lake-glass",
+      "snoqualmie-snow",
+      "willamette-valley-og",
+      "lavender-larch",
+      "capitol-hill-lemon",
+      "thcv-frost",
+      "fremont-fire"
+    ],
+    "rating": 3.9,
+    "reviewCount": 402,
+    "tags": [
+      "Medical",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-26",
+    "name": "Husky Cannabis Co",
+    "address": "4165 University Way NE",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98114",
+    "coordinates": {
+      "lat": 47.66363,
+      "lng": -122.31057
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-6133",
+    "strainIds": [
+      "cherry-eastlake",
+      "green-lake-glass",
+      "puget-sound-cbd",
+      "hood-river-haze"
+    ],
+    "rating": 4.2,
+    "reviewCount": 49,
+    "tags": [
+      "Curbside",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-27",
+    "name": "Ave Apothecary",
+    "address": "8873 15th Ave NE",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98132",
+    "coordinates": {
+      "lat": 47.66917,
+      "lng": -122.30905
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-6261",
+    "strainIds": [
+      "olympic-fog",
+      "afghan-pnw",
+      "tacoma-tangerine",
+      "gas-works-gas",
+      "bainbridge-bliss",
+      "willamette-valley-og"
+    ],
+    "rating": 4.9,
+    "reviewCount": 461,
+    "tags": [
+      "Delivery",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-28",
+    "name": "Ravenna Reserve",
+    "address": "8831 NE 50th St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98163",
+    "coordinates": {
+      "lat": 47.65826,
+      "lng": -122.30591
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-7287",
+    "strainIds": [
+      "cherry-eastlake",
+      "pearl-purple",
+      "wonderland-mints",
+      "fremont-fire"
+    ],
+    "rating": 4.3,
+    "reviewCount": 188,
+    "tags": [
+      "Medical",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-29",
+    "name": "Burke-Gilman Buds",
+    "address": "4057 NE 45th St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98159",
+    "coordinates": {
+      "lat": 47.65864,
+      "lng": -122.31725
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-9951",
+    "strainIds": [
+      "pike-place-pineapple",
+      "snoqualmie-snow",
+      "capitol-hill-lemon",
+      "tacoma-tangerine",
+      "sodo-skunk",
+      "puget-sound-cbd",
+      "emerald-city-diesel"
+    ],
+    "rating": 4,
+    "reviewCount": 350,
+    "tags": [
+      "Loyalty Program",
+      "Veteran Discount"
+    ]
+  },
+  {
+    "id": "disp-30",
+    "name": "Greenwood Greens",
+    "address": "4080 N 65th St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98158",
+    "coordinates": {
+      "lat": 47.68629,
+      "lng": -122.34971
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-7553",
+    "strainIds": [
+      "afghan-pnw",
+      "lavender-larch",
+      "cascadia-haze",
+      "tacoma-tangerine"
+    ],
+    "rating": 4,
+    "reviewCount": 352,
+    "tags": [
+      "Loyalty Program",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-31",
+    "name": "Phinney Ridge Reserve",
+    "address": "9091 Greenwood Ave N",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98121",
+    "coordinates": {
+      "lat": 47.69335,
+      "lng": -122.35563
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-9966",
+    "strainIds": [
+      "bainbridge-bliss",
+      "puget-sound-cbd",
+      "thcv-frost",
+      "olympic-fog",
+      "fremont-fire",
+      "wonderland-mints"
+    ],
+    "rating": 4.2,
+    "reviewCount": 437,
+    "tags": [
+      "Veteran Discount"
+    ]
+  },
+  {
+    "id": "disp-32",
+    "name": "North Cannabis Co",
+    "address": "4244 N 85th St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98119",
+    "coordinates": {
+      "lat": 47.69401,
+      "lng": -122.34388
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-6784",
+    "strainIds": [
+      "ballard-blueberry",
+      "forest-park-pine",
+      "rainier-kush",
+      "cherry-eastlake",
+      "wonderland-mints"
+    ],
+    "rating": 4.8,
+    "reviewCount": 251,
+    "tags": [
+      "Curbside",
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-33",
+    "name": "White Center Wellness",
+    "address": "2345 Delridge Way SW",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98184",
+    "coordinates": {
+      "lat": 47.51719,
+      "lng": -122.34931
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-4263",
+    "strainIds": [
+      "orcas-orange",
+      "wonderland-mints",
+      "snoqualmie-snow"
+    ],
+    "rating": 4.7,
+    "reviewCount": 146,
+    "tags": [
+      "Medical",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-34",
+    "name": "Top Hat Cannabis",
+    "address": "6240 16th Ave SW",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98158",
+    "coordinates": {
+      "lat": 47.50824,
+      "lng": -122.35604
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-5040",
+    "strainIds": [
+      "olympic-fog",
+      "fremont-fire",
+      "puget-sound-cbd",
+      "bainbridge-bliss",
+      "afghan-pnw",
+      "snoqualmie-snow",
+      "wonderland-mints"
+    ],
+    "rating": 4.3,
+    "reviewCount": 374,
+    "tags": [
+      "Delivery",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-35",
+    "name": "Westwood Botanicals",
+    "address": "5997 16th Ave SW",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98190",
+    "coordinates": {
+      "lat": 47.51518,
+      "lng": -122.35418
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-1530",
+    "strainIds": [
+      "tacoma-tangerine",
+      "durban-pacific",
+      "cascadia-haze",
+      "puget-sound-cbd",
+      "wonderland-mints",
+      "ballard-blueberry",
+      "capitol-hill-lemon",
+      "willamette-valley-og"
+    ],
+    "rating": 4.3,
+    "reviewCount": 178,
+    "tags": [
+      "Medical",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-36",
+    "name": "Georgetown Greenhouse",
+    "address": "7090 S Bailey St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98163",
+    "coordinates": {
+      "lat": 47.54771,
+      "lng": -122.31988
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-5652",
+    "strainIds": [
+      "bainbridge-bliss",
+      "forest-park-pine",
+      "mt-baker-mist",
+      "thcv-frost",
+      "tacoma-tangerine",
+      "fremont-fire",
+      "durban-pacific"
+    ],
+    "rating": 4.3,
+    "reviewCount": 264,
+    "tags": [
+      "Medical",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-37",
+    "name": "Boeing Field Botanicals",
+    "address": "4614 S Bailey St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98132",
+    "coordinates": {
+      "lat": 47.55201,
+      "lng": -122.31965
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-7326",
+    "strainIds": [
+      "acdc-pnw",
+      "fremont-fire",
+      "emerald-city-diesel",
+      "afghan-pnw",
+      "lavender-larch",
+      "mt-baker-mist"
+    ],
+    "rating": 4.1,
+    "reviewCount": 293,
+    "tags": [
+      "Medical",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-38",
+    "name": "Airport Way Apothecary",
+    "address": "6687 E Marginal Way S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98192",
+    "coordinates": {
+      "lat": 47.55241,
+      "lng": -122.30858
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-5365",
+    "strainIds": [
+      "pearl-purple",
+      "rainier-kush",
+      "forest-park-pine",
+      "capitol-hill-lemon"
+    ],
+    "rating": 4.7,
+    "reviewCount": 207,
+    "tags": [
+      "Recreational",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-39",
+    "name": "Lake City Leaf",
+    "address": "9709 NE 125th St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98198",
+    "coordinates": {
+      "lat": 47.7111,
+      "lng": -122.29429
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-9300",
+    "strainIds": [
+      "puget-sound-cbd",
+      "cherry-eastlake",
+      "rainier-kush",
+      "forest-park-pine",
+      "mt-baker-mist"
+    ],
+    "rating": 4.5,
+    "reviewCount": 276,
+    "tags": [
+      "ATM",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-40",
+    "name": "Cedar Park Cannabis",
+    "address": "2947 Lake City Way NE",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98190",
+    "coordinates": {
+      "lat": 47.71633,
+      "lng": -122.28267
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-6417",
+    "strainIds": [
+      "wonderland-mints",
+      "cascadia-haze",
+      "forest-park-pine"
+    ],
+    "rating": 3.9,
+    "reviewCount": 365,
+    "tags": [
+      "Recreational",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-41",
+    "name": "Northgate Holistic",
+    "address": "4252 35th Ave NE",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98119",
+    "coordinates": {
+      "lat": 47.72077,
+      "lng": -122.28645
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-8577",
+    "strainIds": [
+      "ballard-blueberry",
+      "green-lake-glass",
+      "puget-sound-cbd",
+      "olympic-fog",
+      "lavender-larch",
+      "emerald-city-diesel"
+    ],
+    "rating": 4.6,
+    "reviewCount": 387,
+    "tags": [
+      "Daily Deals",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-42",
+    "name": "West Seattle Wellness",
+    "address": "9737 SW Alaska St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98120",
+    "coordinates": {
+      "lat": 47.57755,
+      "lng": -122.39414
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-9940",
+    "strainIds": [
+      "orcas-orange",
+      "glacial-glue",
+      "fremont-fire",
+      "sodo-skunk"
+    ],
+    "rating": 4.9,
+    "reviewCount": 490,
+    "tags": [
+      "ATM",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-43",
+    "name": "Alki Apothecary",
+    "address": "2994 SW Alaska St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98120",
+    "coordinates": {
+      "lat": 47.56784,
+      "lng": -122.39203
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-6263",
+    "strainIds": [
+      "puget-sound-cbd",
+      "snoqualmie-snow",
+      "acdc-pnw",
+      "gas-works-gas",
+      "fremont-fire",
+      "afghan-pnw"
+    ],
+    "rating": 4.8,
+    "reviewCount": 351,
+    "tags": [
+      "Medical",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-44",
+    "name": "California Avenue Cannabis",
+    "address": "3531 Fauntleroy Way SW",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98136",
+    "coordinates": {
+      "lat": 47.56001,
+      "lng": -122.38202
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-9516",
+    "strainIds": [
+      "thcv-frost",
+      "emerald-city-diesel",
+      "snoqualmie-snow"
+    ],
+    "rating": 3.9,
+    "reviewCount": 24,
+    "tags": [
+      "Medical",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-45",
+    "name": "Admiral District Buds",
+    "address": "9972 SW Alaska St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98188",
+    "coordinates": {
+      "lat": 47.57346,
+      "lng": -122.39895
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-5421",
+    "strainIds": [
+      "olympic-fog",
+      "capitol-hill-lemon",
+      "hood-river-haze",
+      "glacial-glue",
+      "puget-sound-cbd"
+    ],
+    "rating": 4.6,
+    "reviewCount": 68,
+    "tags": [
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-46",
+    "name": "Junction Botanicals",
+    "address": "7493 SW Admiral Way",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98196",
+    "coordinates": {
+      "lat": 47.56495,
+      "lng": -122.39724
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-3279",
+    "strainIds": [
+      "cascadia-haze",
+      "wonderland-mints",
+      "capitol-hill-lemon"
+    ],
+    "rating": 4,
+    "reviewCount": 210,
+    "tags": [
+      "Medical",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-47",
+    "name": "Lincoln Park Leaf",
+    "address": "5148 SW Admiral Way",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98119",
+    "coordinates": {
+      "lat": 47.57222,
+      "lng": -122.39386
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-6036",
+    "strainIds": [
+      "pearl-purple",
+      "puget-sound-cbd",
+      "thcv-frost",
+      "glacial-glue",
+      "lavender-larch"
+    ],
+    "rating": 4.5,
+    "reviewCount": 223,
+    "tags": [
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-48",
+    "name": "Belltown Botanicals",
+    "address": "4164 1st Ave",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98136",
+    "coordinates": {
+      "lat": 47.61607,
+      "lng": -122.35007
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-7764",
+    "strainIds": [
+      "glacial-glue",
+      "durban-pacific",
+      "willamette-valley-og",
+      "olympic-fog",
+      "forest-park-pine",
+      "mt-baker-mist",
+      "cascadia-haze"
+    ],
+    "rating": 4.2,
+    "reviewCount": 251,
+    "tags": [
+      "Veteran Discount",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-49",
+    "name": "Pike Place Provisions",
+    "address": "2102 1st Ave",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98120",
+    "coordinates": {
+      "lat": 47.61274,
+      "lng": -122.34087
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-1636",
+    "strainIds": [
+      "ballard-blueberry",
+      "snoqualmie-snow",
+      "green-lake-glass",
+      "glacial-glue",
+      "orcas-orange"
+    ],
+    "rating": 4.5,
+    "reviewCount": 441,
+    "tags": [
+      "Delivery",
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-50",
+    "name": "Seattle Center Cannabis",
+    "address": "9111 5th Ave",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98134",
+    "coordinates": {
+      "lat": 47.61437,
+      "lng": -122.3462
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-5093",
+    "strainIds": [
+      "puget-sound-cbd",
+      "rainier-kush",
+      "glacial-glue",
+      "durban-pacific",
+      "acdc-pnw",
+      "fremont-fire"
+    ],
+    "rating": 4.3,
+    "reviewCount": 358,
+    "tags": [
+      "ATM",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-51",
+    "name": "SLU Cannabis Co",
+    "address": "431 Mercer St",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98188",
+    "coordinates": {
+      "lat": 47.62778,
+      "lng": -122.33446
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-5801",
+    "strainIds": [
+      "green-lake-glass",
+      "capitol-hill-lemon",
+      "acdc-pnw",
+      "olympic-fog",
+      "sodo-skunk",
+      "afghan-pnw"
+    ],
+    "rating": 4.4,
+    "reviewCount": 293,
+    "tags": [
+      "Loyalty Program",
+      "Veteran Discount"
+    ]
+  },
+  {
+    "id": "disp-52",
+    "name": "Amazon-District Apothecary",
+    "address": "180 Westlake Ave N",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98170",
+    "coordinates": {
+      "lat": 47.62401,
+      "lng": -122.3333
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-6500",
+    "strainIds": [
+      "acdc-pnw",
+      "durban-pacific",
+      "green-lake-glass",
+      "tacoma-tangerine"
+    ],
+    "rating": 3.9,
+    "reviewCount": 100,
+    "tags": [
+      "Delivery",
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-53",
+    "name": "Rainier Valley Reserve",
+    "address": "6877 MLK Jr Way S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98134",
+    "coordinates": {
+      "lat": 47.55287,
+      "lng": -122.28289
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-1528",
+    "strainIds": [
+      "acdc-pnw",
+      "glacial-glue",
+      "orcas-orange",
+      "cascadia-haze",
+      "sodo-skunk",
+      "lavender-larch",
+      "rainier-kush"
+    ],
+    "rating": 4.8,
+    "reviewCount": 119,
+    "tags": [
+      "Medical",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-54",
+    "name": "Columbia City Cannabis",
+    "address": "173 MLK Jr Way S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98142",
+    "coordinates": {
+      "lat": 47.54033,
+      "lng": -122.27649
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-6674",
+    "strainIds": [
+      "mt-baker-mist",
+      "pike-place-pineapple",
+      "ballard-blueberry",
+      "glacial-glue",
+      "afghan-pnw"
+    ],
+    "rating": 4.3,
+    "reviewCount": 246,
+    "tags": [
+      "Recreational",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-55",
+    "name": "Hillman City Holistic",
+    "address": "9715 MLK Jr Way S",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98154",
+    "coordinates": {
+      "lat": 47.53072,
+      "lng": -122.25581
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-6563",
+    "strainIds": [
+      "capitol-hill-lemon",
+      "emerald-city-diesel",
+      "durban-pacific"
+    ],
+    "rating": 4.6,
+    "reviewCount": 326,
+    "tags": [
+      "Loyalty Program",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-56",
+    "name": "Bellevue Botanicals",
+    "address": "9015 116th Ave NE",
+    "city": "Bellevue",
+    "state": "WA",
+    "zip": "98099",
+    "coordinates": {
+      "lat": 47.60643,
+      "lng": -122.20036
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-8572",
+    "strainIds": [
+      "snoqualmie-snow",
+      "wonderland-mints",
+      "thcv-frost"
+    ],
+    "rating": 3.9,
+    "reviewCount": 323,
+    "tags": [
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-57",
+    "name": "Downtown Bellevue Cannabis",
+    "address": "9002 116th Ave NE",
+    "city": "Bellevue",
+    "state": "WA",
+    "zip": "98060",
+    "coordinates": {
+      "lat": 47.60919,
+      "lng": -122.19328
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(425) 555-3915",
+    "strainIds": [
+      "forest-park-pine",
+      "olympic-fog",
+      "durban-pacific",
+      "orcas-orange",
+      "mt-baker-mist",
+      "pearl-purple",
+      "thcv-frost"
+    ],
+    "rating": 4.4,
+    "reviewCount": 96,
+    "tags": [
+      "Delivery",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-58",
+    "name": "Crossroads Cannabis Co",
+    "address": "1215 148th Ave SE",
+    "city": "Bellevue",
+    "state": "WA",
+    "zip": "98056",
+    "coordinates": {
+      "lat": 47.60603,
+      "lng": -122.19727
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(425) 555-8177",
+    "strainIds": [
+      "snoqualmie-snow",
+      "capitol-hill-lemon",
+      "sodo-skunk",
+      "willamette-valley-og",
+      "hood-river-haze"
+    ],
+    "rating": 5,
+    "reviewCount": 233,
+    "tags": [
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-59",
+    "name": "Factoria Flower",
+    "address": "2000 NE 8th St",
+    "city": "Bellevue",
+    "state": "WA",
+    "zip": "98068",
+    "coordinates": {
+      "lat": 47.62442,
+      "lng": -122.19415
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(425) 555-7136",
+    "strainIds": [
+      "orcas-orange",
+      "durban-pacific",
+      "afghan-pnw",
+      "tacoma-tangerine",
+      "mt-baker-mist"
+    ],
+    "rating": 4.3,
+    "reviewCount": 122,
+    "tags": [
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-60",
+    "name": "Eastgate Apothecary",
+    "address": "6441 Bel-Red Rd",
+    "city": "Bellevue",
+    "state": "WA",
+    "zip": "98059",
+    "coordinates": {
+      "lat": 47.59867,
+      "lng": -122.19055
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-5075",
+    "strainIds": [
+      "acdc-pnw",
+      "pearl-purple",
+      "glacial-glue"
+    ],
+    "rating": 4.8,
+    "reviewCount": 346,
+    "tags": [
+      "Loyalty Program",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-61",
+    "name": "Kirkland Cannabis Collective",
+    "address": "9744 NE 116th St",
+    "city": "Kirkland",
+    "state": "WA",
+    "zip": "98015",
+    "coordinates": {
+      "lat": 47.68971,
+      "lng": -122.22087
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(425) 555-5686",
+    "strainIds": [
+      "cherry-eastlake",
+      "cascadia-haze",
+      "gas-works-gas",
+      "puget-sound-cbd",
+      "forest-park-pine",
+      "willamette-valley-og"
+    ],
+    "rating": 4.5,
+    "reviewCount": 254,
+    "tags": [
+      "Daily Deals",
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-62",
+    "name": "Lake Washington Leaf",
+    "address": "9931 Central Way",
+    "city": "Kirkland",
+    "state": "WA",
+    "zip": "98073",
+    "coordinates": {
+      "lat": 47.68795,
+      "lng": -122.20184
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-3889",
+    "strainIds": [
+      "orcas-orange",
+      "green-lake-glass",
+      "cherry-eastlake",
+      "fremont-fire"
+    ],
+    "rating": 4.3,
+    "reviewCount": 120,
+    "tags": [
+      "Delivery",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-63",
+    "name": "Totem Lake Botanicals",
+    "address": "4422 NE 116th St",
+    "city": "Kirkland",
+    "state": "WA",
+    "zip": "98054",
+    "coordinates": {
+      "lat": 47.69035,
+      "lng": -122.21193
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(425) 555-4934",
+    "strainIds": [
+      "lavender-larch",
+      "orcas-orange",
+      "sodo-skunk",
+      "cherry-eastlake",
+      "mt-baker-mist"
+    ],
+    "rating": 4.1,
+    "reviewCount": 318,
+    "tags": [
+      "Loyalty Program",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-64",
+    "name": "Juanita Bay Buds",
+    "address": "5464 124th Ave NE",
+    "city": "Kirkland",
+    "state": "WA",
+    "zip": "98089",
+    "coordinates": {
+      "lat": 47.69162,
+      "lng": -122.22052
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(425) 555-9569",
+    "strainIds": [
+      "cherry-eastlake",
+      "wonderland-mints",
+      "acdc-pnw",
+      "green-lake-glass"
+    ],
+    "rating": 4.3,
+    "reviewCount": 339,
+    "tags": [
+      "Recreational",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-65",
+    "name": "Redmond Reserve",
+    "address": "6330 NE Redmond Way",
+    "city": "Redmond",
+    "state": "WA",
+    "zip": "98078",
+    "coordinates": {
+      "lat": 47.68605,
+      "lng": -122.1153
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-5997",
+    "strainIds": [
+      "puget-sound-cbd",
+      "gas-works-gas",
+      "pearl-purple",
+      "forest-park-pine",
+      "capitol-hill-lemon"
+    ],
+    "rating": 4.1,
+    "reviewCount": 183,
+    "tags": [
+      "Delivery",
+      "Veteran Discount"
+    ]
+  },
+  {
+    "id": "disp-66",
+    "name": "Microsoft District Microdose",
+    "address": "1949 Avondale Way NE",
+    "city": "Redmond",
+    "state": "WA",
+    "zip": "98096",
+    "coordinates": {
+      "lat": 47.66233,
+      "lng": -122.12769
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(425) 555-8935",
+    "strainIds": [
+      "hood-river-haze",
+      "acdc-pnw",
+      "afghan-pnw"
+    ],
+    "rating": 4.5,
+    "reviewCount": 184,
+    "tags": [
+      "Loyalty Program",
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-67",
+    "name": "Sammamish River Cannabis",
+    "address": "678 NE Redmond Way",
+    "city": "Redmond",
+    "state": "WA",
+    "zip": "98076",
+    "coordinates": {
+      "lat": 47.67163,
+      "lng": -122.12646
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-4189",
+    "strainIds": [
+      "thcv-frost",
+      "mt-baker-mist",
+      "snoqualmie-snow"
+    ],
+    "rating": 4.5,
+    "reviewCount": 355,
+    "tags": [
+      "Recreational",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-68",
+    "name": "Marymoor Mary Jane",
+    "address": "5464 Cleveland St",
+    "city": "Redmond",
+    "state": "WA",
+    "zip": "98025",
+    "coordinates": {
+      "lat": 47.67122,
+      "lng": -122.11948
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-3189",
+    "strainIds": [
+      "hood-river-haze",
+      "cascadia-haze",
+      "cherry-eastlake",
+      "afghan-pnw",
+      "snoqualmie-snow",
+      "willamette-valley-og",
+      "thcv-frost",
+      "green-lake-glass"
+    ],
+    "rating": 4.7,
+    "reviewCount": 342,
+    "tags": [
+      "Veteran Discount",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-69",
+    "name": "Renton Botanicals",
+    "address": "1353 Sunset Blvd NE",
+    "city": "Renton",
+    "state": "WA",
+    "zip": "98087",
+    "coordinates": {
+      "lat": 47.48084,
+      "lng": -122.22831
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(425) 555-3228",
+    "strainIds": [
+      "emerald-city-diesel",
+      "acdc-pnw",
+      "capitol-hill-lemon",
+      "thcv-frost",
+      "cascadia-haze",
+      "durban-pacific"
+    ],
+    "rating": 4,
+    "reviewCount": 253,
+    "tags": [
+      "Loyalty Program",
+      "Veteran Discount"
+    ]
+  },
+  {
+    "id": "disp-70",
+    "name": "Boeing Plant Cannabis",
+    "address": "7564 NE 4th St",
+    "city": "Renton",
+    "state": "WA",
+    "zip": "98078",
+    "coordinates": {
+      "lat": 47.47513,
+      "lng": -122.21931
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(425) 555-9453",
+    "strainIds": [
+      "ballard-blueberry",
+      "willamette-valley-og",
+      "mt-baker-mist",
+      "cherry-eastlake",
+      "acdc-pnw",
+      "gas-works-gas",
+      "rainier-kush"
+    ],
+    "rating": 4.9,
+    "reviewCount": 230,
+    "tags": [
+      "Delivery",
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-71",
+    "name": "Coulon Park Provisions",
+    "address": "639 Sunset Blvd NE",
+    "city": "Renton",
+    "state": "WA",
+    "zip": "98021",
+    "coordinates": {
+      "lat": 47.48114,
+      "lng": -122.23134
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(425) 555-9592",
+    "strainIds": [
+      "ballard-blueberry",
+      "wonderland-mints",
+      "emerald-city-diesel",
+      "tacoma-tangerine",
+      "forest-park-pine"
+    ],
+    "rating": 4.2,
+    "reviewCount": 373,
+    "tags": [
+      "Medical",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-72",
+    "name": "Highlands Holistic",
+    "address": "6320 NE 4th St",
+    "city": "Renton",
+    "state": "WA",
+    "zip": "98040",
+    "coordinates": {
+      "lat": 47.49209,
+      "lng": -122.22024
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-8458",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "cherry-eastlake"
+    ],
+    "rating": 4.8,
+    "reviewCount": 219,
+    "tags": [
+      "ATM",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-73",
+    "name": "Fairwood Flower",
+    "address": "7056 NE 4th St",
+    "city": "Renton",
+    "state": "WA",
+    "zip": "98095",
+    "coordinates": {
+      "lat": 47.49695,
+      "lng": -122.21229
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(425) 555-7029",
+    "strainIds": [
+      "bainbridge-bliss",
+      "tacoma-tangerine",
+      "olympic-fog",
+      "cherry-eastlake",
+      "willamette-valley-og"
+    ],
+    "rating": 4.9,
+    "reviewCount": 440,
+    "tags": [
+      "Veteran Discount",
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-74",
+    "name": "Burien Buds",
+    "address": "6365 Ambaum Blvd SW",
+    "city": "Burien",
+    "state": "WA",
+    "zip": "98151",
+    "coordinates": {
+      "lat": 47.46735,
+      "lng": -122.35894
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-9530",
+    "strainIds": [
+      "thcv-frost",
+      "cascadia-haze",
+      "cherry-eastlake",
+      "mt-baker-mist",
+      "lavender-larch",
+      "pike-place-pineapple"
+    ],
+    "rating": 4,
+    "reviewCount": 249,
+    "tags": [
+      "Medical",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-75",
+    "name": "Three Tree Point Cannabis",
+    "address": "4804 Ambaum Blvd SW",
+    "city": "Burien",
+    "state": "WA",
+    "zip": "98116",
+    "coordinates": {
+      "lat": 47.47084,
+      "lng": -122.35431
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-6674",
+    "strainIds": [
+      "pike-place-pineapple",
+      "glacial-glue",
+      "thcv-frost",
+      "willamette-valley-og",
+      "forest-park-pine",
+      "mt-baker-mist",
+      "hood-river-haze",
+      "durban-pacific"
+    ],
+    "rating": 4.5,
+    "reviewCount": 236,
+    "tags": [
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-76",
+    "name": "Boulevard Park Botanicals",
+    "address": "3685 1st Ave S",
+    "city": "Burien",
+    "state": "WA",
+    "zip": "98157",
+    "coordinates": {
+      "lat": 47.45895,
+      "lng": -122.35581
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(206) 555-3946",
+    "strainIds": [
+      "pike-place-pineapple",
+      "puget-sound-cbd",
+      "pearl-purple",
+      "afghan-pnw",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.7,
+    "reviewCount": 100,
+    "tags": [
+      "Delivery",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-77",
+    "name": "SeaTac Selects",
+    "address": "9608 1st Ave S",
+    "city": "Burien",
+    "state": "WA",
+    "zip": "98179",
+    "coordinates": {
+      "lat": 47.47278,
+      "lng": -122.33514
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-5645",
+    "strainIds": [
+      "ballard-blueberry",
+      "capitol-hill-lemon",
+      "forest-park-pine",
+      "green-lake-glass",
+      "mt-baker-mist"
+    ],
+    "rating": 4,
+    "reviewCount": 363,
+    "tags": [
+      "ATM",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-78",
+    "name": "Lynnwood Leaf",
+    "address": "3419 Highway 99",
+    "city": "Lynnwood",
+    "state": "WA",
+    "zip": "98049",
+    "coordinates": {
+      "lat": 47.82808,
+      "lng": -122.31823
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(425) 555-7039",
+    "strainIds": [
+      "capitol-hill-lemon",
+      "rainier-kush",
+      "pike-place-pineapple",
+      "bainbridge-bliss"
+    ],
+    "rating": 4.9,
+    "reviewCount": 163,
+    "tags": [
+      "Recreational",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-79",
+    "name": "Alderwood Apothecary",
+    "address": "4429 184th St SW",
+    "city": "Lynnwood",
+    "state": "WA",
+    "zip": "98051",
+    "coordinates": {
+      "lat": 47.83253,
+      "lng": -122.31443
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(425) 555-7808",
+    "strainIds": [
+      "bainbridge-bliss",
+      "cascadia-haze",
+      "glacial-glue",
+      "hood-river-haze"
+    ],
+    "rating": 4.6,
+    "reviewCount": 216,
+    "tags": [
+      "Veteran Discount",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-80",
+    "name": "Mountlake Cannabis Co",
+    "address": "8783 196th St SW",
+    "city": "Lynnwood",
+    "state": "WA",
+    "zip": "98041",
+    "coordinates": {
+      "lat": 47.82462,
+      "lng": -122.31154
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(425) 555-7584",
+    "strainIds": [
+      "fremont-fire",
+      "durban-pacific",
+      "pike-place-pineapple",
+      "olympic-fog",
+      "hood-river-haze"
+    ],
+    "rating": 4.3,
+    "reviewCount": 224,
+    "tags": [
+      "Veteran Discount",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-81",
+    "name": "Edmonds Edge",
+    "address": "4482 184th St SW",
+    "city": "Lynnwood",
+    "state": "WA",
+    "zip": "98026",
+    "coordinates": {
+      "lat": 47.82732,
+      "lng": -122.30037
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(425) 555-6329",
+    "strainIds": [
+      "mt-baker-mist",
+      "capitol-hill-lemon",
+      "puget-sound-cbd",
+      "lavender-larch",
+      "olympic-fog",
+      "afghan-pnw"
+    ],
+    "rating": 4.7,
+    "reviewCount": 409,
+    "tags": [
+      "Veteran Discount",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-82",
+    "name": "Shoreline Cannabis",
+    "address": "2887 N 175th St",
+    "city": "Shoreline",
+    "state": "WA",
+    "zip": "98168",
+    "coordinates": {
+      "lat": 47.75024,
+      "lng": -122.33283
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(206) 555-9682",
+    "strainIds": [
+      "bainbridge-bliss",
+      "green-lake-glass",
+      "forest-park-pine",
+      "orcas-orange"
+    ],
+    "rating": 4.6,
+    "reviewCount": 456,
+    "tags": [
+      "Curbside",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-83",
+    "name": "Aurora Avenue Apothecary",
+    "address": "9788 N 175th St",
+    "city": "Shoreline",
+    "state": "WA",
+    "zip": "98194",
+    "coordinates": {
+      "lat": 47.74944,
+      "lng": -122.35025
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(206) 555-1803",
+    "strainIds": [
+      "pike-place-pineapple",
+      "capitol-hill-lemon",
+      "forest-park-pine",
+      "gas-works-gas",
+      "acdc-pnw"
+    ],
+    "rating": 4.2,
+    "reviewCount": 403,
+    "tags": [
+      "Recreational",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-84",
+    "name": "Echo Lake Edibles",
+    "address": "7598 Aurora Ave N",
+    "city": "Shoreline",
+    "state": "WA",
+    "zip": "98176",
+    "coordinates": {
+      "lat": 47.75094,
+      "lng": -122.33657
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-3446",
+    "strainIds": [
+      "durban-pacific",
+      "fremont-fire",
+      "wonderland-mints",
+      "sodo-skunk",
+      "cherry-eastlake",
+      "pearl-purple"
+    ],
+    "rating": 3.8,
+    "reviewCount": 132,
+    "tags": [
+      "Medical",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-85",
+    "name": "Bothell Botanicals",
+    "address": "8497 Bothell Way NE",
+    "city": "Bothell",
+    "state": "WA",
+    "zip": "98050",
+    "coordinates": {
+      "lat": 47.76441,
+      "lng": -122.20714
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-8812",
+    "strainIds": [
+      "cascadia-haze",
+      "glacial-glue",
+      "lavender-larch",
+      "mt-baker-mist",
+      "forest-park-pine",
+      "thcv-frost"
+    ],
+    "rating": 4.1,
+    "reviewCount": 347,
+    "tags": [
+      "Veteran Discount",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-86",
+    "name": "North Creek Cannabis",
+    "address": "4284 228th St SE",
+    "city": "Bothell",
+    "state": "WA",
+    "zip": "98056",
+    "coordinates": {
+      "lat": 47.76174,
+      "lng": -122.19263
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-6883",
+    "strainIds": [
+      "olympic-fog",
+      "mt-baker-mist"
+    ],
+    "rating": 4.1,
+    "reviewCount": 397,
+    "tags": [
+      "Delivery"
+    ]
+  },
+  {
+    "id": "disp-87",
+    "name": "Canyon Park Provisions",
+    "address": "9677 Bothell Way NE",
+    "city": "Bothell",
+    "state": "WA",
+    "zip": "98018",
+    "coordinates": {
+      "lat": 47.75381,
+      "lng": -122.21438
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(425) 555-2741",
+    "strainIds": [
+      "durban-pacific",
+      "sodo-skunk",
+      "gas-works-gas",
+      "olympic-fog",
+      "wonderland-mints",
+      "emerald-city-diesel",
+      "mt-baker-mist"
+    ],
+    "rating": 3.9,
+    "reviewCount": 29,
+    "tags": [
+      "Curbside",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-88",
+    "name": "Kent Cannabis Collective",
+    "address": "298 E James St",
+    "city": "Kent",
+    "state": "WA",
+    "zip": "98039",
+    "coordinates": {
+      "lat": 47.38714,
+      "lng": -122.23684
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(253) 555-2935",
+    "strainIds": [
+      "hood-river-haze",
+      "cascadia-haze",
+      "ballard-blueberry",
+      "cherry-eastlake",
+      "pearl-purple"
+    ],
+    "rating": 4.3,
+    "reviewCount": 421,
+    "tags": [
+      "ATM"
+    ]
+  },
+  {
+    "id": "disp-89",
+    "name": "East Hill Holistic",
+    "address": "4735 E James St",
+    "city": "Kent",
+    "state": "WA",
+    "zip": "98029",
+    "coordinates": {
+      "lat": 47.39337,
+      "lng": -122.24929
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(253) 555-4204",
+    "strainIds": [
+      "cascadia-haze",
+      "thcv-frost",
+      "pike-place-pineapple",
+      "durban-pacific"
+    ],
+    "rating": 4.1,
+    "reviewCount": 486,
+    "tags": [
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-90",
+    "name": "Showare Selects",
+    "address": "5084 E James St",
+    "city": "Kent",
+    "state": "WA",
+    "zip": "98083",
+    "coordinates": {
+      "lat": 47.3857,
+      "lng": -122.23811
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(253) 555-1896",
+    "strainIds": [
+      "cherry-eastlake",
+      "puget-sound-cbd",
+      "gas-works-gas"
+    ],
+    "rating": 4.8,
+    "reviewCount": 323,
+    "tags": [
+      "Medical",
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-91",
+    "name": "Meeker Street Mary",
+    "address": "5793 E James St",
+    "city": "Kent",
+    "state": "WA",
+    "zip": "98088",
+    "coordinates": {
+      "lat": 47.36692,
+      "lng": -122.24205
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(253) 555-9973",
+    "strainIds": [
+      "pearl-purple",
+      "ballard-blueberry",
+      "rainier-kush",
+      "cascadia-haze",
+      "cherry-eastlake",
+      "thcv-frost"
+    ],
+    "rating": 4.6,
+    "reviewCount": 311,
+    "tags": [
+      "Medical",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-92",
+    "name": "Federal Way Flower",
+    "address": "9114 S 320th St",
+    "city": "Federal Way",
+    "state": "WA",
+    "zip": "98079",
+    "coordinates": {
+      "lat": 47.31702,
+      "lng": -122.3055
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(253) 555-9986",
+    "strainIds": [
+      "thcv-frost",
+      "wonderland-mints",
+      "rainier-kush",
+      "afghan-pnw",
+      "gas-works-gas"
+    ],
+    "rating": 4,
+    "reviewCount": 52,
+    "tags": [
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-93",
+    "name": "Twin Lakes Cannabis",
+    "address": "6761 SW Campus Dr",
+    "city": "Federal Way",
+    "state": "WA",
+    "zip": "98019",
+    "coordinates": {
+      "lat": 47.32767,
+      "lng": -122.29913
+    },
+    "hours": "Mon–Sun 10am–10pm",
+    "phone": "(253) 555-9232",
+    "strainIds": [
+      "wonderland-mints",
+      "rainier-kush",
+      "snoqualmie-snow",
+      "afghan-pnw"
+    ],
+    "rating": 3.9,
+    "reviewCount": 491,
+    "tags": [
+      "Loyalty Program",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-94",
+    "name": "Dash Point Dispensary",
+    "address": "9507 S 320th St",
+    "city": "Federal Way",
+    "state": "WA",
+    "zip": "98027",
+    "coordinates": {
+      "lat": 47.33562,
+      "lng": -122.30959
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(253) 555-3014",
+    "strainIds": [
+      "snoqualmie-snow",
+      "ballard-blueberry",
+      "cherry-eastlake",
+      "mt-baker-mist"
+    ],
+    "rating": 4.3,
+    "reviewCount": 453,
+    "tags": [
+      "Loyalty Program",
+      "Recreational"
+    ]
+  },
+  {
+    "id": "disp-95",
+    "name": "Tukwila Trichome",
+    "address": "6383 Strander Blvd",
+    "city": "Tukwila",
+    "state": "WA",
+    "zip": "98195",
+    "coordinates": {
+      "lat": 47.46953,
+      "lng": -122.25352
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-5842",
+    "strainIds": [
+      "mt-baker-mist",
+      "wonderland-mints",
+      "gas-works-gas",
+      "emerald-city-diesel",
+      "willamette-valley-og",
+      "snoqualmie-snow",
+      "ballard-blueberry"
+    ],
+    "rating": 5,
+    "reviewCount": 294,
+    "tags": [
+      "Veteran Discount",
+      "Loyalty Program"
+    ]
+  },
+  {
+    "id": "disp-96",
+    "name": "Southcenter Cannabis",
+    "address": "5200 Strander Blvd",
+    "city": "Tukwila",
+    "state": "WA",
+    "zip": "98186",
+    "coordinates": {
+      "lat": 47.46613,
+      "lng": -122.26477
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(206) 555-5269",
+    "strainIds": [
+      "olympic-fog",
+      "lavender-larch",
+      "mt-baker-mist",
+      "ballard-blueberry",
+      "pike-place-pineapple"
+    ],
+    "rating": 4.4,
+    "reviewCount": 60,
+    "tags": [
+      "Veteran Discount",
+      "Curbside"
+    ]
+  },
+  {
+    "id": "disp-97",
+    "name": "Tacoma Top Shelf",
+    "address": "1730 Pacific Ave",
+    "city": "Tacoma",
+    "state": "WA",
+    "zip": "98488",
+    "coordinates": {
+      "lat": 47.23605,
+      "lng": -122.4507
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(253) 555-5917",
+    "strainIds": [
+      "gas-works-gas",
+      "hood-river-haze",
+      "glacial-glue",
+      "wonderland-mints"
+    ],
+    "rating": 4.6,
+    "reviewCount": 269,
+    "tags": [
+      "Recreational",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-98",
+    "name": "Stadium District Cannabis",
+    "address": "4173 S 19th St",
+    "city": "Tacoma",
+    "state": "WA",
+    "zip": "98450",
+    "coordinates": {
+      "lat": 47.25496,
+      "lng": -122.43828
+    },
+    "hours": "Daily 9am–11pm",
+    "phone": "(253) 555-4010",
+    "strainIds": [
+      "durban-pacific",
+      "willamette-valley-og",
+      "fremont-fire",
+      "rainier-kush",
+      "orcas-orange",
+      "hood-river-haze",
+      "afghan-pnw"
+    ],
+    "rating": 4,
+    "reviewCount": 318,
+    "tags": [
+      "Recreational",
+      "Veteran Discount"
+    ]
+  },
+  {
+    "id": "disp-99",
+    "name": "6th Avenue Apothecary",
+    "address": "2626 S 19th St",
+    "city": "Tacoma",
+    "state": "WA",
+    "zip": "98440",
+    "coordinates": {
+      "lat": 47.24823,
+      "lng": -122.44794
+    },
+    "hours": "Mon–Sat 9am–9pm · Sun 10am–7pm",
+    "phone": "(253) 555-4196",
+    "strainIds": [
+      "puget-sound-cbd",
+      "forest-park-pine",
+      "wonderland-mints",
+      "snoqualmie-snow"
+    ],
+    "rating": 4.7,
+    "reviewCount": 324,
+    "tags": [
+      "Daily Deals"
+    ]
+  },
+  {
+    "id": "disp-100",
+    "name": "Hilltop Heritage Cannabis",
+    "address": "7906 S 19th St",
+    "city": "Tacoma",
+    "state": "WA",
+    "zip": "98419",
+    "coordinates": {
+      "lat": 47.27034,
+      "lng": -122.45351
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(253) 555-1254",
+    "strainIds": [
+      "thcv-frost",
+      "orcas-orange",
+      "sodo-skunk",
+      "afghan-pnw",
+      "olympic-fog"
+    ],
+    "rating": 4.8,
+    "reviewCount": 133,
+    "tags": [
+      "ATM",
+      "Medical"
+    ]
+  },
+  {
+    "id": "disp-101",
+    "name": "Point Defiance Provisions",
+    "address": "2654 Pacific Ave",
+    "city": "Tacoma",
+    "state": "WA",
+    "zip": "98426",
+    "coordinates": {
+      "lat": 47.24664,
+      "lng": -122.43315
+    },
+    "hours": "Mon–Sun 8am–10pm",
+    "phone": "(253) 555-5738",
+    "strainIds": [
+      "puget-sound-cbd",
+      "hood-river-haze"
+    ],
+    "rating": 4.1,
+    "reviewCount": 222,
+    "tags": [
+      "Medical",
+      "Delivery"
+    ]
+  }
+]
