@@ -229,5 +229,5 @@ create policy "admins manage media objects"
 -- ────────────────────────────────────────────────────────────────────────────
 -- BOOTSTRAP: promote your first admin (run once, replace the email)
 -- ────────────────────────────────────────────────────────────────────────────
--- update public.profiles set is_admin = true
---   where email = 'you@example.com';
+update public.profiles set is_admin = true
+  where email = 'batalona06@gmail.com';
