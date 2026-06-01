@@ -4,9 +4,11 @@ name: Collect strain data (daily)
 # Runs the collector, validates, and (if anything changed) opens a DRAFT PR for review.
 # Nothing reaches `main` — and therefore production — without a human merge.
 #
-# Optional source configuration (repo Settings → Secrets and variables → Actions, as
-# repository VARIABLES). Unset = safe no-op that preserves existing data:
-#   WA_LCB_DATA_URL    OR_OLCC_DATA_URL    STRAINS_DATA_URL
+# Strain sources are public + fetch-safe and ENABLED BY DEFAULT (no config needed):
+#   OpenTHC VDB (identity/type) + grow_data (THC/CBD, sativa/indica). No API key.
+# Optional overrides via repository VARIABLES (Settings → Secrets and variables → Actions):
+#   OPENTHC_VDB_URL  GROW_DATA_CSV_URL  (set to "off" to disable a source)
+#   WA_LCB_DATA_URL  OR_OLCC_DATA_URL   (open-gov dispensary data; unset = skip)
 
 on:
   schedule:
@@ -33,13 +35,18 @@ jobs:
 
       - name: Collect data
         env:
+          OPENTHC_VDB_URL: ${{ vars.OPENTHC_VDB_URL }}
+          GROW_DATA_CSV_URL: ${{ vars.GROW_DATA_CSV_URL }}
           WA_LCB_DATA_URL: ${{ vars.WA_LCB_DATA_URL }}
           OR_OLCC_DATA_URL: ${{ vars.OR_OLCC_DATA_URL }}
           STRAINS_DATA_URL: ${{ vars.STRAINS_DATA_URL }}
         run: npm run collect
 
-      - name: Validate data
+      - name: Validate data (schema)
         run: npm run validate:data
+
+      - name: Validate PNW availability
+        run: npm run validate:pnw
 
       - name: Open draft PR with any data changes
         uses: peter-evans/create-pull-request@v6

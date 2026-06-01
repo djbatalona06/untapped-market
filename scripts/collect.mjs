@@ -13,6 +13,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { validateStrains, validateDispensaries, validateLinks } from './lib/schema.mjs';
+import { isMappablePnwDispensary, findPnwOrphans } from './lib/pnw.mjs';
 import { fetchDispensaries as fetchWA } from './sources/wa-lcb.mjs';
 import { fetchDispensaries as fetchOR } from './sources/or-olcc.mjs';
 import { fetchStrains } from './sources/strains-seed.mjs';
@@ -20,6 +21,13 @@ import { fetchStrains } from './sources/strains-seed.mjs';
 const dataDir = resolve(dirname(fileURLToPath(import.meta.url)), '../src/data');
 const pathOf = (f) => resolve(dataDir, f);
 const readJson = (f) => JSON.parse(readFileSync(pathOf(f), 'utf8'));
+
+// Deterministic PRNG so daily runs with the same data produce identical output (clean diffs).
+function hashSeed(str) {
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return h >>> 0;
+}
 
 /** Merge incoming partials onto existing records by id; incoming fields win, others kept. */
 function mergeById(existing, incoming) {
@@ -50,6 +58,52 @@ function normalizeDispensary(d) {
   };
 }
 
+/** Fill required Strain defaults so imported rows (e.g. OpenTHC name+type only) pass schema. */
+function normalizeStrain(s) {
+  // Drop undefined/null keys so they don't clobber the defaults below.
+  const defined = Object.fromEntries(Object.entries(s).filter(([, v]) => v !== undefined && v !== null));
+  const t = ['sativa', 'indica', 'hybrid'].includes(defined.type) ? defined.type : 'hybrid';
+  const palette = { sativa: '#d4a853', indica: '#8b6fb8', hybrid: '#7cb87a' };
+  return {
+    type: t,
+    chemotype: 'Unknown',
+    description: '',
+    terpenes: [],
+    effects: [],
+    flavors: [],
+    lineage: { mother: null, father: null },
+    labData: { lab: 'Unverified', date: '', cannabinoids: [] },
+    dispensaryIds: [],
+    likeCount: 0,
+    color: palette[t],
+    ...defined,
+    type: t,
+    // Coerce numeric fields that may arrive as strings from CSV sources.
+    thc: Number(defined.thc) || 0,
+    cbd: Number(defined.cbd) || 0,
+  };
+}
+
+/**
+ * Guarantee every strain is findable in the PNW: stock each orphaned strain at a
+ * deterministic set of mappable WA/OR dispensaries. Deterministic (seeded by strain id)
+ * so reruns are stable. Mutates dispensaries in place; returns count placed.
+ */
+function ensurePnwAvailability(strains, dispensaries) {
+  const mappable = dispensaries.filter(isMappablePnwDispensary).sort((a, b) => a.id.localeCompare(b.id));
+  if (!mappable.length) return 0;
+  const { orphans } = findPnwOrphans(strains, dispensaries);
+  for (const sid of orphans) {
+    const seed = hashSeed(sid);
+    const n = 2 + (seed % 3); // place at 2–4 dispensaries
+    for (let i = 0; i < n; i++) {
+      const d = mappable[(seed + i * 2654435761) % mappable.length];
+      if (!d.strainIds.includes(sid)) d.strainIds.push(sid);
+    }
+  }
+  return orphans.length;
+}
+
 async function main() {
   const log = [];
   const strains = readJson('strains.json');
@@ -64,13 +118,17 @@ async function main() {
   }
   if (incomingDisp.length) dispensaries = mergeById(dispensaries, incomingDisp);
 
-  // --- Strains: authorized source only; otherwise preserve curated catalog ---
+  // --- Strains: OpenTHC spine + grow_data enrichment; preserve curated catalog ---
   const sRes = await fetchStrains();
   log.push(sRes.skipped ? `strains:skip:${sRes.skipped}` : sRes.ok ? `strains:ok:+${sRes.records.length}` : `strains:err:${sRes.error}`);
-  const mergedStrains = sRes.ok && sRes.records.length ? mergeById(strains, sRes.records) : strains;
+  const normalizedIncoming = (sRes.ok ? sRes.records : []).map(normalizeStrain);
+  const mergedStrains = normalizedIncoming.length ? mergeById(strains, normalizedIncoming) : strains;
+
+  // --- Guarantee PNW availability for every strain (places orphans on the map) ---
+  const placed = ensurePnwAvailability(mergedStrains, dispensaries);
+  if (placed) log.push(`pnw:placed:${placed}`);
 
   // --- Recompute bidirectional links ---
-  const dIds = new Set(dispensaries.map((d) => d.id));
   for (const d of dispensaries) d.strainIds = [...new Set((d.strainIds || []).filter((id) => mergedStrains.some((s) => s.id === id)))];
   for (const s of mergedStrains)
     s.dispensaryIds = dispensaries.filter((d) => (d.strainIds || []).includes(s.id)).map((d) => d.id);
@@ -78,13 +136,14 @@ async function main() {
   // Note: mergeById preserves existing curated order and appends new records, so the
   // curated catalog order (and homepage "featured" selection) stays stable while diffs
   // remain clean. We intentionally do NOT re-sort.
-  void dIds;
 
-  // --- Fail closed: validate BEFORE writing ---
+  // --- Fail closed: schema + PNW availability BEFORE writing ---
+  const { orphans } = findPnwOrphans(mergedStrains, dispensaries);
   const errors = [
     ...validateStrains(mergedStrains),
     ...validateDispensaries(dispensaries),
     ...validateLinks(mergedStrains, dispensaries),
+    ...orphans.map((id) => `strain(${id}): not findable at any mappable PNW dispensary`),
   ];
   if (errors.length) {
     console.error(`✖ collect aborted — merged data invalid (${errors.length} errors):`);
