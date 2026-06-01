@@ -30,6 +30,7 @@ export function Nav() {
   const notificationCenterOpen = useStore((s) => s.notificationCenterOpen);
   const tweaksOpen = useStore((s) => s.tweaksOpen);
   const setTweaksOpen = useStore((s) => s.setTweaksOpen);
+  const setAuthModalOpen = useStore((s) => s.setAuthModalOpen);
 
   const unread = unreadCount(notifications);
   const avatarInitial = (user.signedIn ? user.username : 'g')[0].toUpperCase();
@@ -51,6 +52,14 @@ export function Nav() {
               {l.label}
             </button>
           ))}
+          {user.isAdmin && (
+            <button
+              className={`nav-link${route.page === 'admin' ? ' active' : ''}`}
+              onClick={() => navigate({ page: 'admin' })}
+            >
+              Admin
+            </button>
+          )}
           <button
             className={`nav-link premium${route.page === 'premium' ? ' active' : ''}`}
             onClick={() => navigate({ page: 'premium' })}
@@ -74,7 +83,11 @@ export function Nav() {
           🔔
           {unread > 0 && <span className="nav-bell-badge">{unread}</span>}
         </button>
-        <button className="nav-avatar" onClick={() => navigate({ page: 'account' })}>
+        <button
+          className="nav-avatar"
+          aria-label={user.signedIn ? 'Account' : 'Sign in'}
+          onClick={() => (user.signedIn ? navigate({ page: 'account' }) : setAuthModalOpen(true))}
+        >
           {avatarInitial}
         </button>
       </nav>

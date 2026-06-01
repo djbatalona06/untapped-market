@@ -26,9 +26,18 @@ interface AppState {
   signIn: (username: string, email?: string) => void;
   signOut: () => void;
   signUp: (username: string, email: string) => void;
+  /** True once the initial auth check (Supabase session restore) has resolved. */
+  authReady: boolean;
+  setAuthReady: (ready: boolean) => void;
+  /** Replace the active user from a resolved Supabase session (null = signed out). */
+  setSessionUser: (user: UserProfile | null) => void;
   upgradeTier: (tier: Tier) => void;
   updatePreferences: (prefs: Partial<UserProfile['preferences']>) => void;
   logConsumption: (log: Omit<ConsumptionLog, 'id' | 'createdAt'>) => void;
+
+  /** strainId → public URL of the primary approved image (Supabase media). */
+  strainMedia: Record<string, string>;
+  setStrainMedia: (media: Record<string, string>) => void;
 
   bookmarks: Set<string>;
   toggleBookmark: (strainId: string) => boolean;
@@ -65,6 +74,9 @@ interface AppState {
 
   tweaksOpen: boolean;
   setTweaksOpen: (open: boolean) => void;
+
+  authModalOpen: boolean;
+  setAuthModalOpen: (open: boolean) => void;
 }
 
 let toastCounter = 1;
@@ -102,6 +114,13 @@ export const useStore = create<AppState>((set, get) => ({
         consumptionLogs: [],
       },
     }),
+  authReady: false,
+  setAuthReady: (authReady) => set({ authReady }),
+  setSessionUser: (user) => set({ user: user ?? MOCK_GUEST_USER }),
+
+  strainMedia: {},
+  setStrainMedia: (strainMedia) => set({ strainMedia }),
+
   upgradeTier: (tier) => set((s) => ({ user: { ...s.user, tier } })),
   updatePreferences: (prefs) =>
     set((s) => ({ user: { ...s.user, preferences: { ...s.user.preferences, ...prefs } } })),
@@ -254,6 +273,9 @@ export const useStore = create<AppState>((set, get) => ({
 
   tweaksOpen: false,
   setTweaksOpen: (open) => set({ tweaksOpen: open }),
+
+  authModalOpen: false,
+  setAuthModalOpen: (open) => set({ authModalOpen: open }),
 }));
 
 export function unreadCount(notifs: NotificationItem[]): number {

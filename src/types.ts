@@ -97,6 +97,8 @@ export interface UserProfile {
   email?: string;
   tier: Tier;
   signedIn: boolean;
+  /** True when the signed-in user has the admin role (RLS-enforced server-side). */
+  isAdmin?: boolean;
   avatar?: string;
   preferences: {
     vibe?: string[];
@@ -105,6 +107,25 @@ export interface UserProfile {
     form?: FormFactor[];
   };
   consumptionLogs: ConsumptionLog[];
+}
+
+export type MediaStatus = 'pending' | 'approved' | 'rejected';
+export type MediaSource = 'upload' | 'ai-generated' | 'import';
+
+/** A photo attached to a strain (mirrors public.strain_media). */
+export interface StrainMedia {
+  id: string;
+  strainId: string;
+  storagePath: string;
+  url?: string;
+  altText?: string;
+  source: MediaSource;
+  aiModel?: string;
+  aiPrompt?: string;
+  status: MediaStatus;
+  isPrimary: boolean;
+  uploadedBy?: string;
+  createdAt: string;
 }
 
 export interface ConsumptionLog {
@@ -161,4 +182,5 @@ export type Route =
   | { page: 'premium' }
   | { page: 'quiz' }
   | { page: 'account' }
+  | { page: 'admin' }
   | { page: 'notifications' };
