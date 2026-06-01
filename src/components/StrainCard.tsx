@@ -30,10 +30,13 @@ export function StrainCard({ strain }: { strain: Strain }) {
   const bookmarks = useStore((s) => s.bookmarks);
   const toggleBookmark = useStore((s) => s.toggleBookmark);
   const addToast = useStore((s) => s.addToast);
+  // Approved Supabase media wins; fall back to a bundled imageUrl, then to the art.
+  const mediaUrl = useStore((s) => s.strainMedia[strain.id]);
   const bookmarked = bookmarks.has(strain.id);
   const tint = tintFor(strain);
   const dropNo = String(STRAINS.findIndex((s) => s.id === strain.id) + 1).padStart(2, '0');
-  const cardImage = strain.imageUrl ? `url('${strain.imageUrl}')` : undefined;
+  const resolvedImage = mediaUrl ?? strain.imageUrl;
+  const cardImage = resolvedImage ? `url('${resolvedImage}')` : undefined;
 
   return (
     <div
