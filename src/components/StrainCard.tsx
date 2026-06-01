@@ -37,6 +37,9 @@ export function StrainCard({ strain }: { strain: Strain }) {
   const dropNo = String(STRAINS.findIndex((s) => s.id === strain.id) + 1).padStart(2, '0');
   const resolvedImage = mediaUrl ?? strain.imageUrl;
   const cardImage = resolvedImage ? `url('${resolvedImage}')` : undefined;
+  // Imported reference strains carry no trustworthy lab numbers (thc/cbd = 0).
+  // Show an honest "—" rather than a fabricated "0%".
+  const unknownPotency = strain.thc === 0 && strain.cbd === 0;
 
   return (
     <div
@@ -72,10 +75,10 @@ export function StrainCard({ strain }: { strain: Strain }) {
         <p className="strain-card-desc">{strain.description}</p>
         <div className="strain-card-stats">
           <span>
-            THC<b>{strain.thc}%</b>
+            THC<b>{unknownPotency ? '—' : `${strain.thc}%`}</b>
           </span>
           <span>
-            CBD<b>{strain.cbd}%</b>
+            CBD<b>{unknownPotency ? '—' : `${strain.cbd}%`}</b>
           </span>
           <span>
             ♥<b>{strain.likeCount.toLocaleString()}</b>

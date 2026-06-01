@@ -11,6 +11,11 @@ dist-ssr
 .env.*
 !.env.example
 
+# Generated image-pipeline artifacts (keep *.example.json + data/sources/, ignore live runs)
+data/image-candidates.json
+data/strain-image-manifest.json
+public/img/sourced/
+
 # TypeScript build artifacts
 *.tsbuildinfo
 vite.config.d.ts

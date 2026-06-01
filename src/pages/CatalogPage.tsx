@@ -14,12 +14,16 @@ const ALL_EFFECTS = [
   'Relaxed',
   'Sleepy',
   'Happy',
+  'Uplifted',
   'Hungry',
+  'Tingly',
   'Calm',
   'Pain relief',
   'Clear-headed',
   'Talkative',
 ];
+
+const PAGE_SIZE = 24;
 const ALL_FLAVORS = [
   'Citrus',
   'Pine',
@@ -166,6 +170,9 @@ export function CatalogPage() {
   const initialQuery = route.page === 'catalog' ? route.query ?? '' : '';
   const [filters, setFilters] = useState<Filters>({ ...DEFAULT_FILTERS, query: initialQuery });
   const [drawer, setDrawer] = useState(false);
+  // How many cards are rendered; grows via "Load more". Reset whenever filters change
+  // so the catalog can scale to ~1k strains without mounting them all at once.
+  const [visible, setVisible] = useState(PAGE_SIZE);
 
   useEffect(() => {
     if (route.page === 'catalog' && route.query !== undefined) {
@@ -174,6 +181,8 @@ export function CatalogPage() {
   }, [route]);
 
   const results = useMemo(() => applyFilters(STRAINS, filters), [filters]);
+  useEffect(() => setVisible(PAGE_SIZE), [filters]);
+  const shown = results.slice(0, visible);
 
   return (
     <div className="page">
@@ -201,11 +210,20 @@ export function CatalogPage() {
               <p className="muted">No strains match these filters yet — try widening your THC range or removing an effect.</p>
             </div>
           ) : (
-            <div className="strain-grid">
-              {results.map((s) => (
-                <StrainCard key={s.id} strain={s} />
-              ))}
-            </div>
+            <>
+              <div className="strain-grid">
+                {shown.map((s) => (
+                  <StrainCard key={s.id} strain={s} />
+                ))}
+              </div>
+              {visible < results.length && (
+                <div style={{ textAlign: 'center', marginTop: 24 }}>
+                  <button className="btn btn-ghost" onClick={() => setVisible((v) => v + PAGE_SIZE)}>
+                    Load more — showing {shown.length} of {results.length}
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>
