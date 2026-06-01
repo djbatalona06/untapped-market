@@ -9,10 +9,14 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "collect": "node scripts/collect.mjs",
+    "import:kushy": "node scripts/import-kushy.mjs",
     "validate:data": "node scripts/validate-data.mjs",
     "seed:data": "node scripts/dev/extract-data.mjs",
     "prebuild": "node scripts/validate-data.mjs && node scripts/validate-pnw.mjs",
-    "validate:pnw": "node scripts/validate-pnw.mjs"
+    "validate:pnw": "node scripts/validate-pnw.mjs",
+    "images:worklist": "node scripts/generate-strain-images.mjs",
+    "images:apply": "node scripts/apply-image-manifest.mjs",
+    "images:source": "node scripts/sources/product-images.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.2",
