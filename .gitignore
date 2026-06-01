@@ -17,3 +17,5 @@ vite.config.d.ts
 vite.config.js
 src/**/*.js
 src/**/*.d.ts
+# ...but keep hand-written ambient type declarations (not build output).
+!src/vite-env.d.ts
