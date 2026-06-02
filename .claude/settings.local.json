@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(competitor-intel)",
+      "Skill(competitor-intel:*)",
+      "WebSearch",
+      "Read(//c/Users/batal/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/**)",
+      "Bash(python scripts/search.py \"cannabis wellness local-business organic biophilic nature earthy pacific-northwest\" --design-system -p \"Untapped Market\")",
+      "Bash(python \"cli\\\\assets\\\\scripts\\\\search.py\" \"cannabis wellness local-business organic biophilic nature earthy pacific-northwest\" --design-system -p \"Untapped Market\")",
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
+    ]
+  }
+}

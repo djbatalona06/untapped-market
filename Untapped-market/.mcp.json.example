@@ -1,0 +1,101 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "REPLACE_WITH_GH_TOKEN"
+      }
+    },
+    "netlify": {
+      "command": "npx",
+      "args": ["-y", "@netlify/mcp"],
+      "env": {
+        "NETLIFY_AUTH_TOKEN": "REPLACE_WITH_NETLIFY_TOKEN"
+      }
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/notion-mcp-server"],
+      "env": {
+        "NOTION_TOKEN": "secret_REPLACE_ME"
+      }
+    },
+    "pinecone": {
+      "command": "npx",
+      "args": ["-y", "@pinecone-database/mcp"],
+      "env": {
+        "PINECONE_API_KEY": "REPLACE_WITH_PINECONE_KEY"
+      }
+    },
+    "perplexity": {
+      "command": "npx",
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "pplx-REPLACE_ME"
+      }
+    },
+    "postman": {
+      "command": "npx",
+      "args": ["-y", "@postman/mcp-server"],
+      "env": {
+        "POSTMAN_API_KEY": "PMAK-REPLACE_ME"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "stripe": {
+      "command": "npx",
+      "args": ["-y", "@stripe/mcp", "--tools=all"],
+      "env": {
+        "STRIPE_SECRET_KEY": "sk_test_REPLACE_ME"
+      }
+    },
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "@supabase/mcp-server-supabase@latest", "--access-token", "${SUPABASE_ACCESS_TOKEN}"],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "REPLACE_WITH_SUPABASE_PAT",
+        "SUPABASE_PROJECT_REF": "REPLACE_WITH_PROJECT_REF"
+      }
+    }
+  },
+  "_comment": "Copy this file to .mcp.json (which is git-ignored) and replace REPLACE_ME values. Restart Claude Code / your IDE after editing. See MCP_INTEGRATION.md for per-server setup details.",
+  "_disabled_until_needed": {
+    "bigquery": {
+      "command": "uvx",
+      "args": ["mcp-server-bigquery"],
+      "env": {
+        "GCP_PROJECT_ID": "your-gcp-project",
+        "GOOGLE_APPLICATION_CREDENTIALS": "C:/path/to/service-account.json"
+      }
+    },
+    "figma": {
+      "command": "npx",
+      "args": ["-y", "figma-developer-mcp"],
+      "env": {
+        "FIGMA_API_KEY": "figd_REPLACE_ME"
+      }
+    },
+    "google-cloud-logging": {
+      "command": "uvx",
+      "args": ["mcp-server-gcp-logging"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "C:/path/to/service-account.json"
+      }
+    },
+    "linear": {
+      "command": "npx",
+      "args": ["-y", "@linear/mcp"],
+      "env": {
+        "LINEAR_API_KEY": "lin_api_REPLACE_ME"
+      }
+    }
+  }
+}

@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untapped Market — Investor Teaser | PNW Cannabis Discovery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --bg: #06050a;
+      --bg2: #0c0a0f;
+      --surface: rgba(18,16,22,0.72);
+      --surface-solid: #12101a;
+      --border: rgba(255,255,255,0.06);
+      --border2: rgba(255,255,255,0.10);
+      --text: #f0ece4;
+      --text2: #a89e8a;
+      --text3: #6a5f4c;
+      --accent: #6da850;
+      --accent2: #8bc672;
+      --gold: #c9982a;
+      --gold2: #a67b1a;
+      --teal: #3a8c8a;
+      --purple: #7858a8;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'Jost', 'Segoe UI', sans-serif;
+      --font-mono: 'DM Mono', 'Courier New', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* --- GRAIN OVERLAY --- */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.028;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 200px;
+    }
+
+    /* --- SCROLL ANIMATIONS --- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(60px);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-60px);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(60px);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.88);
+      transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-scale.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .stagger-1 { transition-delay: 0.08s; }
+    .stagger-2 { transition-delay: 0.16s; }
+    .stagger-3 { transition-delay: 0.24s; }
+    .stagger-4 { transition-delay: 0.32s; }
+    .stagger-5 { transition-delay: 0.40s; }
+
+    /* --- NAV --- */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: 64px;
+      background: rgba(6,5,10,0.80);
+      backdrop-filter: blur(24px) saturate(1.4);
+      -webkit-backdrop-filter: blur(24px) saturate(1.4);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      transition: background 0.3s;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: auto;
+    }
+    .nav-logo svg { width: 28px; height: 28px; }
+    .nav-links { display: flex; gap: 0.25rem; }
+    .nav-link {
+      padding: 0.4rem 0.9rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text2);
+      cursor: pointer;
+      border: none;
+      background: none;
+      transition: color 0.2s, background 0.2s;
+      text-decoration: none;
+      font-family: var(--font-body);
+    }
+    .nav-link:hover { color: var(--text); background: rgba(255,255,255,0.04); }
+    .nav-cta {
+      padding: 0.45rem 1.1rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #0a1409;
+      background: var(--accent);
+      border: none;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      transition: background 0.2s, transform 0.15s;
+      font-family: var(--font-body);
+      text-decoration: none;
+    }
+    .nav-cta:hover { background: var(--accent2); transform: translateY(-1px); }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+    }
+
+    /* --- SECTION BASE --- */
+    .section {
+      position: relative;
+      padding: 7rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-full {
+      position: relative;
+      padding: 7rem 2rem;
+    }
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+    .section-eyebrow::before {
+      content: '';
+      width: 28px;
+      height: 1px;
+      background: var(--accent);
+      opacity: 0.5;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+    }
+    .section-title em { color: var(--accent); font-style: italic; }
+    .section-title .gold { color: var(--gold); }
+    .section-sub {
+      color: var(--text2);
+      font-size: 1.05rem;
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    /* --- HERO --- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      padding: 6rem 2rem 4rem;
+    }
+
+    /* Animated gradient background */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero-bg-gradient {
+      position: absolute;
+      inset: -30%;
+      background:
+        radial-gradient(ellipse 60% 50% at 25% 40%, rgba(109,168,80,0.10) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 60% at 75% 55%, rgba(201,152,42,0.08) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 50% 30%, rgba(58,140,138,0.06) 0%, transparent 50%);
+      animation: hero-glow 20s ease-in-out infinite alternate;
+    }
+    @keyframes hero-glow {
+      0%   { transform: translate(0, 0) scale(1); opacity: 0.7; }
+      50%  { transform: translate(40px, -20px) scale(1.05); opacity: 1; }
+      100% { transform: translate(-20px, 30px) scale(0.98); opacity: 0.8; }
+    }
+
+    /* Floating particles */
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0;
+      will-change: transform, opacity;
+    }
+    .particle-1 { width: 5px; height: 5px; left: 12%; bottom: 0; background: var(--accent); box-shadow: 0 0 12px rgba(109,168,80,0.5); animation: float-up 16s ease-in-out -2s infinite; }
+    .particle-2 { width: 7px; height: 7px; left: 28%; bottom: 0; background: var(--gold); box-shadow: 0 0 14px rgba(201,152,42,0.5); animation: float-up 20s ease-in-out -7s infinite; }
+    .particle-3 { width: 4px; height: 4px; left: 45%; bottom: 0; background: var(--teal); box-shadow: 0 0 10px rgba(58,140,138,0.5); animation: float-up 14s ease-in-out -4s infinite; }
+    .particle-4 { width: 6px; height: 6px; left: 62%; bottom: 0; background: var(--accent); box-shadow: 0 0 12px rgba(109,168,80,0.4); animation: float-up 18s ease-in-out -10s infinite; }
+    .particle-5 { width: 5px; height: 5px; left: 78%; bottom: 0; background: var(--gold); box-shadow: 0 0 10px rgba(201,152,42,0.4); animation: float-up 22s ease-in-out -1s infinite; }
+    .particle-6 { width: 3px; height: 3px; left: 90%; bottom: 0; background: var(--accent2); box-shadow: 0 0 8px rgba(139,198,114,0.4); animation: float-up 15s ease-in-out -13s infinite; }
+    @keyframes float-up {
+      0%   { transform: translateY(0) translateX(0); opacity: 0; }
+      12%  { opacity: 0.5; }
+      50%  { transform: translateY(-50vh) translateX(20px); opacity: 0.3; }
+      88%  { opacity: 0.15; }
+      100% { transform: translateY(-100vh) translateX(-15px); opacity: 0; }
+    }
+
+    /* Shimmer sweep */
+    .hero-shimmer {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(115deg, transparent 30%, rgba(240,236,228,0) 45%, rgba(240,236,228,0.06) 50%, rgba(240,236,228,0) 55%, transparent 70%);
+      background-size: 250% 250%;
+      animation: shimmer 12s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes shimmer {
+      0%   { background-position: -150% -150%; opacity: 0; }
+      40%  { opacity: 0; }
+      55%  { opacity: 1; }
+      70%  { background-position: 150% 150%; opacity: 0; }
+      100% { background-position: 150% 150%; opacity: 0; }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,152,42,0.08);
+      border: 1px solid rgba(201,152,42,0.22);
+      padding: 0.35rem 1rem;
+      border-radius: 24px;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(8px);
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 1.08;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .hero h1 em { color: var(--accent); font-style: italic; }
+    .hero-sub {
+      color: var(--text2);
+      font-size: 1.15rem;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .hero-meta-item {
+      text-align: center;
+    }
+    .hero-meta-val {
+      font-family: var(--font-mono);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+    .hero-meta-label {
+      font-size: 0.72rem;
+      color: var(--text3);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* --- BUTTONS --- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.6rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+    }
+    .btn-primary { background: var(--accent); color: #0a1409; }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(109,168,80,0.25); }
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border2);
+      backdrop-filter: blur(8px);
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .btn-gold { background: var(--gold); color: #0a0800; }
+    .btn-gold:hover { background: var(--gold2); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,152,42,0.25); }
+
+    /* --- GLASS CARD --- */
+    .glass {
+      background: rgba(18,16,22,0.55);
+      backdrop-filter: blur(20px) saturate(1.2);
+      -webkit-backdrop-filter: blur(20px) saturate(1.2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    }
+    .glass:hover {
+      border-color: rgba(109,168,80,0.18);
+      box-shadow: 0 12px 48px rgba(0,0,0,0.4), 0 0 0 1px rgba(109,168,80,0.06);
+      transform: translateY(-4px);
+    }
+
+    /* --- PARALLAX SECTIONS --- */
+    .parallax-section {
+      position: relative;
+      overflow: hidden;
+    }
+    .parallax-bg {
+      position: absolute;
+      inset: -20%;
+      will-change: transform;
+    }
+
+    /* --- PROBLEM SECTION --- */
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) { .problem-grid { grid-template-columns: 1fr; } }
+    .problem-card {
+      padding: 2rem;
+    }
+    .problem-card-name {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .problem-card-desc {
+      font-size: 0.88rem;
+      color: var(--text3);
+      line-height: 1.6;
+    }
+    .problem-card-line {
+      width: 32px;
+      height: 2px;
+      margin-top: 1rem;
+      border-radius: 1px;
+    }
+    .callout-box {
+      margin-top: 3rem;
+      padding: 2rem 2.5rem;
+      border-left: 3px solid var(--accent);
+      background: rgba(109,168,80,0.04);
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+    .callout-box p {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.3rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* --- STATS ROW --- */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin: 3rem 0;
+    }
+    @media (max-width: 768px) { .stats-row { grid-template-columns: 1fr 1fr; } }
+    .stat-card {
+      padding: 2rem;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: var(--font-mono);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .stat-num.green { color: var(--accent); }
+    .stat-num.gold { color: var(--gold); }
+    .stat-num.teal { color: var(--teal); }
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--text3);
+      letter-spacing: 0.04em;
+    }
+
+    /* --- BULLET POINTS --- */
+    .bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .bullet-list li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      font-size: 0.92rem;
+      color: var(--text2);
+      line-height: 1.6;
+    }
+    .bullet-list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.55rem;
+    }
+
+    /* --- PRODUCT SECTION --- */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) { .product-grid { grid-template-columns: 1fr; } }
+    .product-card {
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .product-card:hover::after { opacity: 1; }
+    .product-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      background: rgba(109,168,80,0.1);
+      border: 1px solid rgba(109,168,80,0.2);
+    }
+    .product-icon svg { width: 24px; height: 24px; color: var(--accent); }
+    .product-card h3 {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    .product-card p {
+      font-size: 0.85rem;
+      color: var(--text2);
+      line-height: 1.6;
+    }
+    .product-feature {
+      margin-top: 1rem;
+      padding: 0.5rem 0.75rem;
+      background: rgba(255,255,255,0.03);
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text3);
+    }
+
+    /* --- TIMELINE --- */
+    .timeline {
+      position: relative;
+      margin-top: 3rem;
+      padding-left: 3rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 11px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--accent), var(--gold), var(--teal));
+      opacity: 0.3;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+      padding-left: 1.5rem;
+    }
+    .timeline-dot {
+      position: absolute;
+      left: -2.45rem;
+      top: 0.3rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      background: var(--bg);
+    }
+    .timeline-dot.active {
+      background: var(--accent);
+      box-shadow: 0 0 16px rgba(109,168,80,0.4);
+    }
+    .timeline-date {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+    .timeline-title {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .timeline-desc {
+      font-size: 0.85rem;
+      color: var(--text3);
+    }
+
+    /* --- REVENUE GRID --- */
+    .revenue-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) { .revenue-grid { grid-template-columns: 1fr; } }
+    .revenue-card {
+      padding: 2rem;
+      position: relative;
+    }
+    .revenue-num {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+    .revenue-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .revenue-card p {
+      font-size: 0.85rem;
+      color: var(--text2);
+      line-height: 1.6;
+    }
+    .revenue-metric {
+      margin-top: 1rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+    .revenue-metric-val {
+      font-family: var(--font-mono);
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: var(--gold);
+    }
+    .revenue-metric-label {
+      font-size: 0.75rem;
+      color: var(--text3);
+    }
+
+    /* --- TAM SECTION --- */
+    .tam-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) { .tam-grid { grid-template-columns: 1fr; } }
+    .tam-card {
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    .tam-val {
+      font-family: var(--font-mono);
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .tam-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .tam-desc {
+      font-size: 0.78rem;
+      color: var(--text3);
+      line-height: 1.5;
+    }
+
+    /* --- TRACTION --- */
+    .traction-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 768px) { .traction-grid { grid-template-columns: 1fr 1fr; } }
+    .traction-card {
+      padding: 2rem;
+      text-align: center;
+    }
+    .traction-val {
+      font-family: var(--font-mono);
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+    }
+    .traction-label {
+      font-size: 0.78rem;
+      color: var(--text3);
+      line-height: 1.4;
+    }
+    .quote-block {
+      margin-top: 3rem;
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      background: rgba(109,168,80,0.04);
+      border: 1px solid rgba(109,168,80,0.12);
+      position: relative;
+    }
+    .quote-block::before {
+      content: '\201C';
+      position: absolute;
+      top: -0.2rem;
+      left: 1.5rem;
+      font-family: var(--font-display);
+      font-size: 4rem;
+      color: var(--accent);
+      opacity: 0.3;
+      line-height: 1;
+    }
+    .quote-block p {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--text);
+      line-height: 1.5;
+      padding-left: 1rem;
+    }
+    .quote-block cite {
+      display: block;
+      margin-top: 1rem;
+      padding-left: 1rem;
+      font-size: 0.82rem;
+      color: var(--text3);
+      font-style: normal;
+    }
+
+    /* --- TEAM --- */
+    .team-card {
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) { .team-card { grid-template-columns: 1fr; } }
+    .team-avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(109,168,80,0.15), rgba(201,152,42,0.1));
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 4rem;
+      color: var(--accent);
+    }
+    .team-info h3 {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.6rem;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .team-role {
+      font-size: 0.88rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    .team-bio {
+      font-size: 0.92rem;
+      color: var(--text2);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .advisor-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .advisor-list li {
+      font-size: 0.85rem;
+      color: var(--text2);
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .advisor-list li::before {
+      content: '\25B8';
+      color: var(--accent);
+      font-size: 0.7rem;
+    }
+
+    /* --- THE ASK --- */
+    .ask-section {
+      text-align: center;
+      padding: 8rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .ask-section::before {
+      content: '';
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(ellipse 50% 50% at 50% 50%, rgba(109,168,80,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 30% 60%, rgba(201,152,42,0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .ask-amount {
+      font-family: var(--font-mono);
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 500;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .ask-type {
+      font-size: 1.15rem;
+      color: var(--text2);
+      margin-bottom: 3rem;
+    }
+    .use-of-funds {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto 3rem;
+    }
+    @media (max-width: 768px) { .use-of-funds { grid-template-columns: 1fr; } }
+    .fund-card {
+      padding: 2rem;
+      text-align: center;
+    }
+    .fund-pct {
+      font-family: var(--font-mono);
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .fund-label {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .fund-desc {
+      font-size: 0.78rem;
+      color: var(--text3);
+      line-height: 1.5;
+    }
+
+    /* milestones */
+    .milestones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+    .milestone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 24px;
+      background: rgba(109,168,80,0.06);
+      border: 1px solid rgba(109,168,80,0.15);
+      font-size: 0.82rem;
+      color: var(--text2);
+    }
+    .milestone svg { width: 16px; height: 16px; color: var(--accent); flex-shrink: 0; }
+
+    /* --- FOOTER --- */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .footer-contact {
+      font-size: 0.85rem;
+      color: var(--text3);
+      margin-bottom: 0.25rem;
+    }
+    .footer-contact a {
+      color: var(--text2);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-contact a:hover { color: var(--accent); }
+    .footer-note {
+      margin-top: 1.5rem;
+      font-size: 0.72rem;
+      color: var(--text3);
+      opacity: 0.6;
+    }
+
+    /* --- DIVIDER GLOW --- */
+    .section-divider {
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border2), transparent);
+    }
+
+    /* --- VIDEO PLACEHOLDER --- */
+    .video-placeholder {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 3rem auto 0;
+      aspect-ratio: 16/9;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(18,16,22,0.8), rgba(109,168,80,0.05));
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .video-placeholder-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(109,168,80,0.12);
+      border: 2px solid rgba(109,168,80,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .video-placeholder-icon:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 32px rgba(109,168,80,0.3);
+    }
+    .video-placeholder-icon svg { width: 28px; height: 28px; color: var(--accent); margin-left: 3px; }
+    .video-placeholder-label {
+      font-size: 0.82rem;
+      color: var(--text3);
+    }
+    .video-placeholder-suggestion {
+      font-size: 0.72rem;
+      color: var(--text3);
+      opacity: 0.6;
+      max-width: 400px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* --- REDUCED MOTION --- */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .reveal-left, .reveal-right, .reveal-scale { transition: none; opacity: 1; transform: none; }
+      .hero-bg-gradient, .particle, .hero-shimmer { animation: none !important; }
+      .particle { opacity: 0.2; }
+      .hero-shimmer { opacity: 0; }
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+        <path d="M14 4 C14 4, 8 10, 8 16 C8 19.3 10.7 22 14 22 C17.3 22 20 19.3 20 16 C20 10 14 4 14 4Z" fill="currentColor" opacity="0.3"/>
+        <path d="M14 8 L14 18 M11 12 L14 8 L17 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Untapped Market
+    </a>
+    <div class="nav-links">
+      <a href="#problem" class="nav-link">Problem</a>
+      <a href="#product" class="nav-link">Product</a>
+      <a href="#traction" class="nav-link">Traction</a>
+      <a href="#model" class="nav-link">Model</a>
+      <a href="#team" class="nav-link">Team</a>
+    </div>
+    <a href="#ask" class="nav-cta">View the Ask</a>
+  </nav>
+
+  <!-- ==================== SLIDE 1: HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-bg-gradient"></div>
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+      <div class="particle particle-5"></div>
+      <div class="particle particle-6"></div>
+      <div class="hero-shimmer"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal stagger-1">Investor Teaser &middot; May 2026</div>
+      <h1 class="reveal stagger-2">Letterboxd for cannabis,<br/>built on <em>genetics.</em></h1>
+      <p class="hero-sub reveal stagger-3">A consumer product around what's actually in the jar &mdash; strain genetics, terpenes, lab COAs. Starting in the Pacific Northwest.</p>
+      <div class="hero-cta-group reveal stagger-4">
+        <a href="#ask" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          $1.5M Pre-Seed SAFE
+        </a>
+        <a href="#product" class="btn btn-outline">See the Product</a>
+      </div>
+      <div class="hero-meta reveal stagger-5">
+        <div class="hero-meta-item">
+          <div class="hero-meta-val">PNW</div>
+          <div class="hero-meta-label">Launch Market</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-val">Q3 2026</div>
+          <div class="hero-meta-label">iOS GA Target</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-val">18 mo</div>
+          <div class="hero-meta-label">Runway to Seed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 2: THE PROBLEM ==================== -->
+  <section class="section parallax-section" id="problem">
+    <div class="section-eyebrow reveal">01 &middot; The Problem</div>
+    <h2 class="section-title reveal stagger-1">Leafly and Weedmaps are<br/>dispensary marketing platforms.</h2>
+    <p class="section-sub reveal stagger-2">No one has built a consumer product around what's actually in the jar.</p>
+
+    <div class="problem-grid">
+      <div class="glass problem-card reveal stagger-1">
+        <div class="problem-card-name">Leafly</div>
+        <div class="problem-card-desc">Dispensary lead-gen. Strains are marketing copy, not data.</div>
+        <div class="problem-card-line" style="background: var(--text3);"></div>
+      </div>
+      <div class="glass problem-card reveal stagger-2">
+        <div class="problem-card-name">Weedmaps</div>
+        <div class="problem-card-desc">Map + ad marketplace. Whoever pays the most gets the banner.</div>
+        <div class="problem-card-line" style="background: var(--text3);"></div>
+      </div>
+      <div class="glass problem-card reveal stagger-3">
+        <div class="problem-card-name" style="color: var(--accent);">What's Missing</div>
+        <div class="problem-card-desc" style="color: var(--text2);">Strain-level genetics, lab-verified data, terpene profiles &mdash; the science underneath the jar.</div>
+        <div class="problem-card-line" style="background: var(--accent);"></div>
+      </div>
+    </div>
+
+    <div class="callout-box reveal">
+      <p>The jar is the product. Nobody owns the layer underneath it.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 3: THE WEDGE ==================== -->
+  <section class="section" id="wedge">
+    <div class="section-eyebrow reveal">02 &middot; The Wedge</div>
+    <h2 class="section-title reveal stagger-1">PNW first.<br/><em>Where cultivar density and lab transparency already matter.</em></h2>
+
+    <div class="stats-row">
+      <div class="glass stat-card reveal stagger-1">
+        <div class="stat-num green" data-count="1200">~1,200</div>
+        <div class="stat-label">PNW Dispensaries</div>
+      </div>
+      <div class="glass stat-card reveal stagger-2">
+        <div class="stat-num gold">#1</div>
+        <div class="stat-label">Cultivar Density</div>
+      </div>
+      <div class="glass stat-card reveal stagger-3">
+        <div class="stat-num green">$3.4B</div>
+        <div class="stat-label">Combined PNW Market</div>
+      </div>
+      <div class="glass stat-card reveal stagger-4">
+        <div class="stat-num teal">85%</div>
+        <div class="stat-label">Consumers Want Jar Data</div>
+      </div>
+    </div>
+
+    <ul class="bullet-list reveal">
+      <li>Cultivators care about pheno hunting, terp profiles, and provenance &mdash; they want their work attributed.</li>
+      <li>Dispensaries already display COAs in-store. They have the data; no software surfaces it.</li>
+      <li>PNW consumers are sophisticated. They want what's in the jar, not which dispensary paid for the banner.</li>
+      <li>Tight geography = real network effects from day one. Beach-head, then expand to CO, MI, NY.</li>
+    </ul>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 4: PRODUCT ==================== -->
+  <section class="section" id="product">
+    <div class="section-eyebrow reveal">03 &middot; Product</div>
+    <h2 class="section-title reveal stagger-1">Three jobs. <em>One app.</em></h2>
+
+    <div class="product-grid">
+      <div class="glass product-card reveal stagger-1">
+        <div class="product-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Strain Detail</h3>
+        <p>Genetics + COA in the consumer view. Full lineage trees, terpene breakdowns, and lab-verified cannabinoid data.</p>
+        <div class="product-feature">Lineage tree (2 generations) &middot; Terp profiles</div>
+      </div>
+      <div class="glass product-card reveal stagger-2">
+        <div class="product-icon" style="background: rgba(201,152,42,0.1); border-color: rgba(201,152,42,0.2);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3>Dispensary Finder</h3>
+        <p>Live inventory, terp-aware filters. Know what's on the shelf before you drive there.</p>
+        <div class="product-feature">Live menu sync (Dutchie + Treez)</div>
+      </div>
+      <div class="glass product-card reveal stagger-3">
+        <div class="product-icon" style="background: rgba(58,140,138,0.1); border-color: rgba(58,140,138,0.2);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        </div>
+        <h3>Personal Library</h3>
+        <p>Letterboxd-style social loop. Save strains across batches, track sessions, share your shelf.</p>
+        <div class="product-feature">Save strains &middot; Consumption log &middot; Social</div>
+      </div>
+    </div>
+
+    <!-- VIDEO PLACEHOLDER WITH HIGGSFIELD SUGGESTION -->
+    <div class="video-placeholder reveal-scale">
+      <div class="video-placeholder-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      </div>
+      <div class="video-placeholder-label">Product Demo Reel</div>
+      <div class="video-placeholder-suggestion">
+        Generate with <strong style="color:var(--text2)">Higgsfield AI</strong> &mdash; create cinematic device mockups with parallax app scrolls, or <strong style="color:var(--text2)">Nano Banana</strong> for AI-generated product walkthroughs with smooth transitions
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 5: WHY NOW ==================== -->
+  <section class="section" id="why-now">
+    <div class="section-eyebrow reveal">04 &middot; Why Now</div>
+    <h2 class="section-title reveal stagger-1">The window is <em>12&ndash;18 months.</em></h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal stagger-1">
+        <div class="timeline-dot active"></div>
+        <div class="timeline-date">APR 2026</div>
+        <div class="timeline-title">DEA &rarr; Schedule III</div>
+        <div class="timeline-desc">Federal banking and ad rails open up. Capital can flow legally.</div>
+      </div>
+      <div class="timeline-item reveal stagger-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">JUN 2026</div>
+        <div class="timeline-title">Further Reschedule Pending</div>
+        <div class="timeline-desc">Interstate commerce moves on the table. The market expands overnight.</div>
+      </div>
+      <div class="timeline-item reveal stagger-3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025&ndash;26</div>
+        <div class="timeline-title">Cannabis-Tech Valuations Bottom</div>
+        <div class="timeline-desc">Capital is scarce; surviving teams compound. Build cheap, launch strong.</div>
+      </div>
+      <div class="timeline-item reveal stagger-4">
+        <div class="timeline-dot active"></div>
+        <div class="timeline-date">NOW</div>
+        <div class="timeline-title">Incumbents Have Stalled</div>
+        <div class="timeline-desc">Leafly distressed. Weedmaps margin-compressed. They stopped investing in product.</div>
+      </div>
+    </div>
+
+    <div class="callout-box reveal" style="margin-top: 2rem;">
+      <p>Better products win when incumbents stop investing. We're building while they're cutting.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 6: TRACTION ==================== -->
+  <section class="section" id="traction">
+    <div class="section-eyebrow reveal">05 &middot; Traction</div>
+    <h2 class="section-title reveal stagger-1">Pre-launch.<br/><em>Beach-head signal already showing up.</em></h2>
+
+    <div class="traction-grid">
+      <div class="glass traction-card reveal stagger-1">
+        <div class="traction-val">[X]</div>
+        <div class="traction-label">Waitlist signups<br/><span style="font-size:0.7rem;color:var(--text3);">~70% PNW-based</span></div>
+      </div>
+      <div class="glass traction-card reveal stagger-2">
+        <div class="traction-val">[Y]</div>
+        <div class="traction-label">Dispensary LOIs<br/><span style="font-size:0.7rem;color:var(--text3);">Verbal commits to pilot</span></div>
+      </div>
+      <div class="glass traction-card reveal stagger-3">
+        <div class="traction-val">[Z]</div>
+        <div class="traction-label">Cultivator partners<br/><span style="font-size:0.7rem;color:var(--text3);">Pheno-hunt collabs signed</span></div>
+      </div>
+      <div class="glass traction-card reveal stagger-4">
+        <div class="traction-val">[W]</div>
+        <div class="traction-label">Pre-cataloged strains<br/><span style="font-size:0.7rem;color:var(--text3);">With COA + lineage</span></div>
+      </div>
+    </div>
+
+    <div class="quote-block reveal">
+      <p>This is what we wished Leafly had been from day one.</p>
+      <cite>&mdash; PNW dispensary GM (verbal LOI, March 2026)</cite>
+    </div>
+
+    <p style="margin-top:1.5rem;font-size:0.78rem;color:var(--text3);text-align:center;" class="reveal">Hard numbers populated at send-time. Verified screenshots available on request.</p>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 7: BUSINESS MODEL ==================== -->
+  <section class="section" id="model">
+    <div class="section-eyebrow reveal">06 &middot; Business Model</div>
+    <h2 class="section-title reveal stagger-1">Four streams.<br/><em>Consumer leads, B2B compounds.</em></h2>
+
+    <div class="revenue-grid">
+      <div class="glass revenue-card reveal stagger-1">
+        <div class="revenue-num">01</div>
+        <h3>Consumer Subscription</h3>
+        <p>$5.99/mo Premium. Hide ads, save unlimited, restock alerts, year-end Top 10. Drives engagement and brand.</p>
+        <div class="revenue-metric">
+          <div class="revenue-metric-val">60%</div>
+          <div class="revenue-metric-label">of Year-1 revenue</div>
+        </div>
+      </div>
+      <div class="glass revenue-card reveal stagger-2">
+        <div class="revenue-num">02</div>
+        <h3>B2B SaaS for Cultivators</h3>
+        <p>$200&ndash;600/mo per brand. Dashboard for save-rate, regional heatmap, terp-search rank. Genetics analytics.</p>
+        <div class="revenue-metric">
+          <div class="revenue-metric-val">$2K</div>
+          <div class="revenue-metric-label">ACV target by Y2</div>
+        </div>
+      </div>
+      <div class="glass revenue-card reveal stagger-3">
+        <div class="revenue-num">03</div>
+        <h3>Marketplace Fees</h3>
+        <p>5&ndash;8% on reservations. User reserves a strain at a dispensary; we take a margin. Lower friction than ads.</p>
+        <div class="revenue-metric">
+          <div class="revenue-metric-val">$5&ndash;8</div>
+          <div class="revenue-metric-label">per transaction</div>
+        </div>
+      </div>
+      <div class="glass revenue-card reveal stagger-4">
+        <div class="revenue-num">04</div>
+        <h3>Data Licensing</h3>
+        <p>Annual contracts. Aggregated, opted-in regional consumption data. The consumer signal Headset and BDSA don't have.</p>
+        <div class="revenue-metric">
+          <div class="revenue-metric-val">$200K+</div>
+          <div class="revenue-metric-label">median deal size</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box reveal" style="border-left-color: var(--gold);">
+      <p style="font-size:1.1rem;">Consumer scales the brand. B2B + data licensing scales the margin.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 8: MARKET SIZE ==================== -->
+  <section class="section" id="market">
+    <div class="section-eyebrow reveal">07 &middot; Market Size</div>
+    <h2 class="section-title reveal stagger-1">Beach-head <span class="gold">$5.7M</span>. National <span class="gold">$250M+</span>.</h2>
+
+    <div class="tam-grid">
+      <div class="glass tam-card reveal stagger-1">
+        <div class="tam-val" style="color: var(--accent);">$5.7M</div>
+        <div class="tam-label">PNW B2B ARR Ceiling</div>
+        <div class="tam-desc">~1,200 dispensaries &times; $400/mo avg ACV</div>
+      </div>
+      <div class="glass tam-card reveal stagger-2">
+        <div class="tam-val" style="color: var(--gold);">$50M+</div>
+        <div class="tam-label">National B2B SaaS TAM</div>
+        <div class="tam-desc">~12,000 dispensaries + ~2,000 cultivator brands</div>
+      </div>
+      <div class="glass tam-card reveal stagger-3">
+        <div class="tam-val" style="color: var(--teal);">$200M+</div>
+        <div class="tam-label">National Consumer Sub TAM</div>
+        <div class="tam-desc">~52M U.S. cannabis consumers</div>
+      </div>
+    </div>
+
+    <div class="callout-box reveal" style="border-left-color: var(--teal);">
+      <p style="font-size:1rem;">Headset (Seattle) and BDSA (Boulder) sell aggregated POS data to MSOs and brands. We capture the consumer-signal layer they don't have.</p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 9: TEAM ==================== -->
+  <section class="section" id="team">
+    <div class="section-eyebrow reveal">08 &middot; Team &amp; Provenance</div>
+    <h2 class="section-title reveal stagger-1">Built in the PNW,<br/><em>with PNW operators.</em></h2>
+
+    <div class="glass team-card reveal-scale" style="margin-top: 3rem;">
+      <div class="team-avatar">DJ</div>
+      <div class="team-info">
+        <h3>DJ Batalona</h3>
+        <div class="team-role">Founder &amp; CEO</div>
+        <div class="team-bio">
+          Building Untapped Market full-time. PNW native; rooted in the cultivar community before the app existed. Has been the consumer this product is for, and has sat on both sides of the dispensary counter.
+        </div>
+        <div style="font-size:0.82rem;color:var(--text3);margin-bottom:1.5rem;">
+          batalona06@gmail.com &middot; (425) 280-3751
+        </div>
+
+        <div style="margin-bottom:1rem;">
+          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin-bottom:0.6rem;">Advisors</div>
+          <ul class="advisor-list">
+            <li>[Advisor 1] &middot; ex-Leafly / Headset / Dutchie operator</li>
+            <li>[Advisor 2] &middot; PNW dispensary chain GM</li>
+            <li>[Advisor 3] &middot; Cannabis-tech VC / GP</li>
+            <li>[Advisor 4] &middot; Consumer-app design lead</li>
+          </ul>
+        </div>
+
+        <div>
+          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin-bottom:0.6rem;">Named PNW Partners</div>
+          <ul class="advisor-list">
+            <li>[Cultivator A] &middot; Pheno-hunt collab + COA feed</li>
+            <li>[Cultivator B] &middot; Heritage genetics archive</li>
+            <li>[Dispensary Chain] &middot; Live-menu pilot</li>
+            <li>[Lab Partner] &middot; COA data integration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ==================== SLIDE 10: THE ASK ==================== -->
+  <section class="ask-section" id="ask">
+    <div style="position:relative;z-index:1;max-width:1000px;margin:0 auto;">
+      <div class="section-eyebrow reveal" style="justify-content:center;">09 &middot; The Ask</div>
+      <div class="ask-amount reveal stagger-1">$1.5M</div>
+      <div class="ask-type reveal stagger-2">Pre-Seed SAFE &middot; Post-money cap negotiable &middot; Standard YC SAFE &middot; 18-month runway</div>
+
+      <div class="use-of-funds">
+        <div class="glass fund-card reveal stagger-1">
+          <div class="fund-pct">45%</div>
+          <div class="fund-label">Engineering</div>
+          <div class="fund-desc">2 senior + 1 mid. Ship iOS GA and B2B dashboard MVP.</div>
+        </div>
+        <div class="glass fund-card reveal stagger-2">
+          <div class="fund-pct">30%</div>
+          <div class="fund-label">PNW Launch + Content</div>
+          <div class="fund-desc">Cultivator catalog, dispensary onboarding, brand.</div>
+        </div>
+        <div class="glass fund-card reveal stagger-3">
+          <div class="fund-pct">25%</div>
+          <div class="fund-label">Founder + Ops</div>
+          <div class="fund-desc">Founder salary, legal (cannabis-aware), infrastructure.</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom:1rem;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);" class="reveal">Milestones to Seed</div>
+      <div class="milestones reveal">
+        <div class="milestone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          iOS GA &middot; 25K MAU
+        </div>
+        <div class="milestone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          40 PNW dispensaries live
+        </div>
+        <div class="milestone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          10 paying cultivator brands
+        </div>
+        <div class="milestone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          $15K MRR run-rate
+        </div>
+        <div class="milestone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          First data-licensing pilot
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:2rem;">
+        <a href="mailto:batalona06@gmail.com" class="btn btn-primary" style="font-size:1rem;padding:0.85rem 2.5rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get in Touch
+        </a>
+      </div>
+      <p style="margin-top:1.5rem;font-size:0.82rem;color:var(--text3);" class="reveal">
+        DJ Batalona &middot; batalona06@gmail.com &middot; (425) 280-3751<br/>
+        Deck, financial model, and pilot LOIs available on request.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">Untapped Market</div>
+    <div class="footer-contact">
+      <a href="mailto:batalona06@gmail.com">batalona06@gmail.com</a> &middot; (425) 280-3751
+    </div>
+    <div class="footer-note">Confidential. For qualified investors only. &copy; 2026 Untapped Market.</div>
+  </footer>
+
+  <script>
+    /* --- SCROLL REVEAL --- */
+    const observerOptions = {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
+      observer.observe(el);
+    });
+
+    /* --- SMOOTH NAV SCROLL --- */
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* --- NAV BACKGROUND ON SCROLL --- */
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.nav');
+      if (window.scrollY > 100) {
+        nav.style.background = 'rgba(6,5,10,0.95)';
+      } else {
+        nav.style.background = 'rgba(6,5,10,0.80)';
+      }
+    }, { passive: true });
+
+    /* --- PARALLAX ON HERO GRADIENT --- */
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      const gradient = document.querySelector('.hero-bg-gradient');
+      if (gradient && scrolled < window.innerHeight * 1.5) {
+        gradient.style.transform = `translateY(${scrolled * 0.15}px) scale(${1 + scrolled * 0.0002})`;
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+</html>

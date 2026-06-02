@@ -1,0 +1,1 @@
+This folder contains my 'untapped market' html for a newly started cannabis application, that's branded as an all-in-1 app. I need claude to help find investors and leads to help continue the progress/deployment of my buisness. CLaude will act as a full-stack dev, marketer, ui/ux designer, website generator/auditor, overall help with making money while growing this brand. 
