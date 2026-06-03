@@ -1,6 +1,7 @@
 import type { Strain } from '../types';
 import { useStore } from '../store/useStore';
 import { STRAINS } from '../data/strains';
+import { resolveStrainImage } from '../lib/strainArt';
 
 type TintKey = 'sativa' | 'indica' | 'hybrid' | 'cbd';
 
@@ -35,8 +36,10 @@ export function StrainCard({ strain }: { strain: Strain }) {
   const bookmarked = bookmarks.has(strain.id);
   const tint = tintFor(strain);
   const dropNo = String(STRAINS.findIndex((s) => s.id === strain.id) + 1).padStart(2, '0');
-  const resolvedImage = mediaUrl ?? strain.imageUrl;
-  const cardImage = resolvedImage ? `url('${resolvedImage}')` : undefined;
+  // Always resolves to something: Supabase media → bundled imageUrl → generated
+  // per-strain art. Never falls through to a single shared placeholder photo.
+  const resolvedImage = resolveStrainImage(strain, mediaUrl);
+  const cardImage = `url("${resolvedImage}")`;
   // Imported reference strains carry no trustworthy lab numbers (thc/cbd = 0).
   // Show an honest "—" rather than a fabricated "0%".
   const unknownPotency = strain.thc === 0 && strain.cbd === 0;
@@ -46,7 +49,7 @@ export function StrainCard({ strain }: { strain: Strain }) {
       className="strain-card reveal-card"
       data-tint={tint}
       onClick={() => navigate({ page: 'strain', id: strain.id })}
-      style={cardImage ? ({ ['--card-image' as string]: cardImage } as React.CSSProperties) : undefined}
+      style={{ ['--card-image' as string]: cardImage } as React.CSSProperties}
     >
       <div className="strain-card-art" aria-hidden="true">
         <div className="strain-card-art-inner">
