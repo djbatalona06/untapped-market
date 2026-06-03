@@ -9,6 +9,7 @@
 --   • public.is_admin()          — SECURITY DEFINER helper for RLS (no recursion)
 --   • public.strain_media        — photos attached to a strain (moderation queue)
 --   • public.dispensary_media    — photos attached to a dispensary
+--   • public.reels               — Explore "Vibes" feed (public read, owner write)
 --   • storage bucket "media"     — public-read, admin/authenticated-write
 --   • Row Level Security on everything, with an admin override.
 -- ============================================================================
@@ -201,6 +202,66 @@ create policy "admins manage dispensary media"
   on public.dispensary_media for all
   using (public.is_admin())
   with check (public.is_admin());
+
+-- ────────────────────────────────────────────────────────────────────────────
+-- REELS — the Explore "Vibes" feed (people / brands / influencers post clips)
+-- ────────────────────────────────────────────────────────────────────────────
+-- Publicly readable so signed-out visitors see the feed; signed-in users post
+-- their own rows and may edit/remove them. The client (src/lib/reels.ts) also
+-- keeps an on-device copy so posting still works with no session.
+
+create table if not exists public.reels (
+  id           uuid primary key default gen_random_uuid(),
+  author_type  text not null default 'person'
+                 check (author_type in ('person', 'brand', 'influencer')),
+  author_name  text not null,
+  handle       text not null,
+  avatar       text,
+  verified     boolean not null default false,
+  caption      text not null default '',
+  hashtags     text[] not null default '{}',
+  track        text,
+  bg           text,                       -- 'photo:<file>' or a gradient seed
+  likes        integer not null default 0,
+  comments     integer not null default 0,
+  shares       integer not null default 0,
+  location     text,
+  created_by   uuid references auth.users (id) on delete set null,
+  created_at   timestamptz not null default now()
+);
+
+comment on table public.reels is 'Explore "Vibes" reels feed; publicly readable, authenticated users post their own.';
+
+create index if not exists reels_created_at_idx on public.reels (created_at desc);
+
+alter table public.reels enable row level security;
+
+-- Anyone (including signed-out visitors) can read the feed.
+drop policy if exists "reels are publicly readable" on public.reels;
+create policy "reels are publicly readable"
+  on public.reels for select
+  using (true);
+
+-- Signed-in users can post, but only as themselves.
+drop policy if exists "users insert their own reels" on public.reels;
+create policy "users insert their own reels"
+  on public.reels for insert
+  to authenticated
+  with check (auth.uid() = created_by);
+
+-- Owners can edit / remove their own reels.
+drop policy if exists "owners update their reels" on public.reels;
+create policy "owners update their reels"
+  on public.reels for update
+  to authenticated
+  using (auth.uid() = created_by)
+  with check (auth.uid() = created_by);
+
+drop policy if exists "owners delete their reels" on public.reels;
+create policy "owners delete their reels"
+  on public.reels for delete
+  to authenticated
+  using (auth.uid() = created_by);
 
 -- ────────────────────────────────────────────────────────────────────────────
 -- STORAGE — public "media" bucket

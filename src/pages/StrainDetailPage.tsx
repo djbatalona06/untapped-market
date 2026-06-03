@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { useStore } from '../store/useStore';
 import { STRAINS } from '../data/strains';
 import { DISPENSARIES } from '../data/dispensaries';
+import { resolveStrainImage } from '../lib/strainArt';
 import type { FormFactor, Strain } from '../types';
 
 const EFFECT_PALETTE = [
@@ -38,6 +39,7 @@ export function StrainDetailPage({ strainId }: { strainId: string }) {
   const upvoteReport = useStore((s) => s.upvoteReport);
   const reports = useStore((s) => s.tripReports);
   const user = useStore((s) => s.user);
+  const mediaUrl = useStore((s) => s.strainMedia[strainId]);
 
   const strain = useMemo(() => STRAINS.find((s) => s.id === strainId), [strainId]);
   const stockingDisps = useMemo(
@@ -102,6 +104,7 @@ export function StrainDetailPage({ strainId }: { strainId: string }) {
   }
 
   const maxTerp = Math.max(...strain.terpenes.map((t) => t.pct));
+  const heroImage = resolveStrainImage(strain, mediaUrl);
 
   return (
     <div className="page">
@@ -109,6 +112,13 @@ export function StrainDetailPage({ strainId }: { strainId: string }) {
         <button className="back-btn" onClick={() => navigate({ page: 'catalog' })}>
           ← Strains
         </button>
+        <div
+          className="detail-hero"
+          data-tint={strain.type}
+          style={{ backgroundImage: `url("${heroImage}")` }}
+          role="img"
+          aria-label={`${strain.name} cover art`}
+        />
         <div className="detail-head">
           <div className="row">
             <span className={typeBadgeClass(strain)}>{strain.type}</span>
