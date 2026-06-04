@@ -1,0 +1,404 @@
+{
+  "_meta": {
+    "description": "Untapped Market — PNW Dispensary Client List",
+    "version": "1.0",
+    "last_sync": null,
+    "sync_agent": "daily-menu-sync",
+    "states": ["WA", "OR"],
+    "data_sources": [
+      "WSLCB Licensee Database",
+      "OLCC Licensee Database",
+      "Weedmaps (public menus)",
+      "Leafly (public menus)",
+      "OpenStreetMap Nominatim (geocoding)"
+    ]
+  },
+  "dispensaries": [
+    {
+      "id": "wa-001",
+      "slug": "green-theory-seattle",
+      "name": "Green Theory",
+      "client_status": "active",
+      "state": "WA",
+      "license": {
+        "number": "420788",
+        "type": "I-502 Retailer",
+        "issuer": "WSLCB",
+        "status": "active",
+        "medical_endorsement": true,
+        "expiry": "2025-12-31"
+      },
+      "location": {
+        "address": "2733 4th Ave S, Seattle, WA 98134",
+        "city": "Seattle",
+        "county": "King",
+        "state": "WA",
+        "zip": "98134",
+        "lat": 47.5771,
+        "lng": -122.3317,
+        "timezone": "America/Los_Angeles"
+      },
+      "contact": {
+        "phone": "206-420-3763",
+        "email": null,
+        "website": "https://www.greentheoryseattle.com",
+        "weedmaps_url": "https://weedmaps.com/dispensaries/green-theory",
+        "leafly_url": "https://www.leafly.com/dispensary-info/green-theory"
+      },
+      "hours": {
+        "mon": "09:00-21:00",
+        "tue": "09:00-21:00",
+        "wed": "09:00-21:00",
+        "thu": "09:00-21:00",
+        "fri": "09:00-22:00",
+        "sat": "09:00-22:00",
+        "sun": "10:00-20:00"
+      },
+      "company": {
+        "parent_company": null,
+        "mso_affiliation": null,
+        "founded": 2014,
+        "ownership_type": "independent"
+      },
+      "menu": {
+        "last_sync": null,
+        "menu_status": "pending",
+        "item_count": 0,
+        "high_traffic_strains": [],
+        "categories": {
+          "flower": [],
+          "edibles": [],
+          "concentrates": [],
+          "vapes": [],
+          "topicals": [],
+          "tinctures": []
+        }
+      },
+      "compliance": {
+        "last_check": null,
+        "overall_status": "pending",
+        "wslcb_license_active": true,
+        "recall_flags": [],
+        "items_needing_review": 0
+      },
+      "qr_onboarding": {
+        "customer_url": "https://untappedmarket.app/review/green-theory-seattle?ref=qr",
+        "staff_url": "https://untappedmarket.app/review/green-theory-seattle?ref=qr&role=staff",
+        "assets_generated": null,
+        "outreach_status": "pending",
+        "outreach_contact": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "wa-002",
+      "slug": "seattle-cannabis-co",
+      "name": "Seattle Cannabis Co.",
+      "client_status": "active",
+      "state": "WA",
+      "license": {
+        "number": "413640",
+        "type": "I-502 Retailer",
+        "issuer": "WSLCB",
+        "status": "active",
+        "medical_endorsement": false,
+        "expiry": "2025-10-31"
+      },
+      "location": {
+        "address": "2733 Airport Way S, Seattle, WA 98134",
+        "city": "Seattle",
+        "county": "King",
+        "state": "WA",
+        "zip": "98134",
+        "lat": 47.5742,
+        "lng": -122.3268,
+        "timezone": "America/Los_Angeles"
+      },
+      "contact": {
+        "phone": "206-682-6789",
+        "email": null,
+        "website": "https://seattlecannabishco.com",
+        "weedmaps_url": "https://weedmaps.com/dispensaries/seattle-cannabis-co",
+        "leafly_url": "https://www.leafly.com/dispensary-info/seattle-cannabis-co"
+      },
+      "hours": {
+        "mon": "08:00-23:00",
+        "tue": "08:00-23:00",
+        "wed": "08:00-23:00",
+        "thu": "08:00-23:00",
+        "fri": "08:00-23:00",
+        "sat": "08:00-23:00",
+        "sun": "08:00-23:00"
+      },
+      "company": {
+        "parent_company": null,
+        "mso_affiliation": null,
+        "founded": 2015,
+        "ownership_type": "independent"
+      },
+      "menu": {
+        "last_sync": null,
+        "menu_status": "pending",
+        "item_count": 0,
+        "high_traffic_strains": [],
+        "categories": {
+          "flower": [],
+          "edibles": [],
+          "concentrates": [],
+          "vapes": [],
+          "topicals": [],
+          "tinctures": []
+        }
+      },
+      "compliance": {
+        "last_check": null,
+        "overall_status": "pending",
+        "wslcb_license_active": true,
+        "recall_flags": [],
+        "items_needing_review": 0
+      },
+      "qr_onboarding": {
+        "customer_url": "https://untappedmarket.app/review/seattle-cannabis-co?ref=qr",
+        "staff_url": "https://untappedmarket.app/review/seattle-cannabis-co?ref=qr&role=staff",
+        "assets_generated": null,
+        "outreach_status": "pending",
+        "outreach_contact": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "wa-003",
+      "slug": "lux-pot-shop-belltown",
+      "name": "Lux Pot Shop — Belltown",
+      "client_status": "active",
+      "state": "WA",
+      "license": {
+        "number": "077540",
+        "type": "I-502 Retailer",
+        "issuer": "WSLCB",
+        "status": "active",
+        "medical_endorsement": true,
+        "expiry": "2026-03-31"
+      },
+      "location": {
+        "address": "2108 2nd Ave, Seattle, WA 98121",
+        "city": "Seattle",
+        "county": "King",
+        "state": "WA",
+        "zip": "98121",
+        "lat": 47.6137,
+        "lng": -122.3445,
+        "timezone": "America/Los_Angeles"
+      },
+      "contact": {
+        "phone": "206-441-5893",
+        "email": null,
+        "website": "https://luxpotshop.com",
+        "weedmaps_url": "https://weedmaps.com/dispensaries/lux-pot-shop-belltown",
+        "leafly_url": "https://www.leafly.com/dispensary-info/lux-pot-shop-belltown"
+      },
+      "hours": {
+        "mon": "09:00-21:00",
+        "tue": "09:00-21:00",
+        "wed": "09:00-21:00",
+        "thu": "09:00-21:00",
+        "fri": "09:00-22:00",
+        "sat": "09:00-22:00",
+        "sun": "10:00-21:00"
+      },
+      "company": {
+        "parent_company": "Lux Pot Shop LLC",
+        "mso_affiliation": null,
+        "founded": 2014,
+        "ownership_type": "multi-location independent"
+      },
+      "menu": {
+        "last_sync": null,
+        "menu_status": "pending",
+        "item_count": 0,
+        "high_traffic_strains": [],
+        "categories": {
+          "flower": [],
+          "edibles": [],
+          "concentrates": [],
+          "vapes": [],
+          "topicals": [],
+          "tinctures": []
+        }
+      },
+      "compliance": {
+        "last_check": null,
+        "overall_status": "pending",
+        "wslcb_license_active": true,
+        "recall_flags": [],
+        "items_needing_review": 0
+      },
+      "qr_onboarding": {
+        "customer_url": "https://untappedmarket.app/review/lux-pot-shop-belltown?ref=qr",
+        "staff_url": "https://untappedmarket.app/review/lux-pot-shop-belltown?ref=qr&role=staff",
+        "assets_generated": null,
+        "outreach_status": "pending",
+        "outreach_contact": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "or-001",
+      "slug": "deschutes-growery-portland",
+      "name": "Deschutes Growery",
+      "client_status": "active",
+      "state": "OR",
+      "license": {
+        "number": "R1011289",
+        "type": "Recreational Marijuana Retailer",
+        "issuer": "OLCC",
+        "status": "active",
+        "medical_endorsement": false,
+        "expiry": "2026-01-31"
+      },
+      "location": {
+        "address": "1975 SE Hawthorne Blvd, Portland, OR 97214",
+        "city": "Portland",
+        "county": "Multnomah",
+        "state": "OR",
+        "zip": "97214",
+        "lat": 45.5122,
+        "lng": -122.6398,
+        "timezone": "America/Los_Angeles"
+      },
+      "contact": {
+        "phone": "503-719-6000",
+        "email": null,
+        "website": "https://deschutesgroery.com",
+        "weedmaps_url": "https://weedmaps.com/dispensaries/deschutes-growery",
+        "leafly_url": "https://www.leafly.com/dispensary-info/deschutes-growery"
+      },
+      "hours": {
+        "mon": "10:00-21:00",
+        "tue": "10:00-21:00",
+        "wed": "10:00-21:00",
+        "thu": "10:00-21:00",
+        "fri": "10:00-22:00",
+        "sat": "10:00-22:00",
+        "sun": "11:00-20:00"
+      },
+      "company": {
+        "parent_company": null,
+        "mso_affiliation": null,
+        "founded": 2016,
+        "ownership_type": "independent"
+      },
+      "menu": {
+        "last_sync": null,
+        "menu_status": "pending",
+        "item_count": 0,
+        "high_traffic_strains": [],
+        "categories": {
+          "flower": [],
+          "edibles": [],
+          "concentrates": [],
+          "vapes": [],
+          "topicals": [],
+          "tinctures": []
+        }
+      },
+      "compliance": {
+        "last_check": null,
+        "overall_status": "pending",
+        "olcc_license_active": true,
+        "terpene_data_required": true,
+        "edible_limit_mg_per_serving": 5,
+        "recall_flags": [],
+        "items_needing_review": 0
+      },
+      "qr_onboarding": {
+        "customer_url": "https://untappedmarket.app/review/deschutes-growery-portland?ref=qr",
+        "staff_url": "https://untappedmarket.app/review/deschutes-growery-portland?ref=qr&role=staff",
+        "assets_generated": null,
+        "outreach_status": "pending",
+        "outreach_contact": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "or-002",
+      "slug": "foster-buds-portland",
+      "name": "Foster Buds",
+      "client_status": "active",
+      "state": "OR",
+      "license": {
+        "number": "R1018742",
+        "type": "Recreational Marijuana Retailer",
+        "issuer": "OLCC",
+        "status": "active",
+        "medical_endorsement": false,
+        "expiry": "2025-11-30"
+      },
+      "location": {
+        "address": "5906 SE Foster Rd, Portland, OR 97206",
+        "city": "Portland",
+        "county": "Multnomah",
+        "state": "OR",
+        "zip": "97206",
+        "lat": 45.4879,
+        "lng": -122.5997,
+        "timezone": "America/Los_Angeles"
+      },
+      "contact": {
+        "phone": "503-788-6900",
+        "email": null,
+        "website": "https://fosterbuds.com",
+        "weedmaps_url": "https://weedmaps.com/dispensaries/foster-buds",
+        "leafly_url": "https://www.leafly.com/dispensary-info/foster-buds"
+      },
+      "hours": {
+        "mon": "10:00-22:00",
+        "tue": "10:00-22:00",
+        "wed": "10:00-22:00",
+        "thu": "10:00-22:00",
+        "fri": "10:00-23:00",
+        "sat": "10:00-23:00",
+        "sun": "11:00-21:00"
+      },
+      "company": {
+        "parent_company": null,
+        "mso_affiliation": null,
+        "founded": 2015,
+        "ownership_type": "independent"
+      },
+      "menu": {
+        "last_sync": null,
+        "menu_status": "pending",
+        "item_count": 0,
+        "high_traffic_strains": [],
+        "categories": {
+          "flower": [],
+          "edibles": [],
+          "concentrates": [],
+          "vapes": [],
+          "topicals": [],
+          "tinctures": []
+        }
+      },
+      "compliance": {
+        "last_check": null,
+        "overall_status": "pending",
+        "olcc_license_active": true,
+        "terpene_data_required": true,
+        "edible_limit_mg_per_serving": 5,
+        "recall_flags": [],
+        "items_needing_review": 0
+      },
+      "qr_onboarding": {
+        "customer_url": "https://untappedmarket.app/review/foster-buds-portland?ref=qr",
+        "staff_url": "https://untappedmarket.app/review/foster-buds-portland?ref=qr&role=staff",
+        "assets_generated": null,
+        "outreach_status": "pending",
+        "outreach_contact": null,
+        "notes": ""
+      }
+    }
+  ],
+  "high_traffic_strains": [],
+  "pending_qr_outreach": []
+}
