@@ -1,0 +1,26 @@
+[
+  {
+    "strainId": "cascadia-haze",
+    "model": "flux",
+    "prompt": "Cascadia Haze — a sativa cannabis strain, editorial product photography, extreme macro of a cannabis flower, frosted trichomes catching warm rim light, shallow depth of field, crisp focus on the bud, Pacific Northwest mood — soft evergreen bokeh, misty atmosphere, amber and moss color grade, deep near-black background (#07090a), no text, no watermark, no packaging, photoreal, 4k, bright energetic palette, lighter green sugar leaves, airy structure, terpene mood: Terpinolene, Myrcene, Ocimene, evokes flavors of Citrus, Pine, Floral, centered hero composition, 4:5 portrait",
+    "file": "public/img/strains/cascadia-haze.png",
+    "generatedAt": "2026-06-01T00:00:00Z",
+    "license": "ai-generated"
+  },
+  {
+    "strainId": "rainier-kush",
+    "model": "higgsfield",
+    "prompt": "Rainier Kush — a indica cannabis strain, editorial product photography, extreme macro of a cannabis flower, frosted trichomes catching warm rim light, shallow depth of field, crisp focus on the bud, Pacific Northwest mood — soft evergreen bokeh, misty atmosphere, amber and moss color grade, deep near-black background (#07090a), no text, no watermark, no packaging, photoreal, 4k, dense chunky nugs, deep purple and forest-green hues, resinous, terpene mood: Myrcene, Caryophyllene, Linalool, evokes flavors of Earthy, Pine, Grape, centered hero composition, 4:5 portrait",
+    "file": "public/img/strains/rainier-kush.png",
+    "generatedAt": "2026-06-01T00:00:00Z",
+    "license": "ai-generated"
+  },
+  {
+    "strainId": "hood-river-haze",
+    "model": "ideogram",
+    "prompt": "Hood River Haze — a hybrid cannabis strain, editorial product photography, extreme macro of a cannabis flower, frosted trichomes catching warm rim light, shallow depth of field, crisp focus on the bud, Pacific Northwest mood — soft evergreen bokeh, misty atmosphere, amber and moss color grade, deep near-black background (#07090a), no text, no watermark, no packaging, photoreal, 4k, balanced structure, blended green-to-amber tones, terpene mood: Terpinolene, Myrcene, Caryophyllene, evokes flavors of Citrus, Tropical, Earthy, centered hero composition, 4:5 portrait",
+    "file": "public/img/strains/hood-river-haze.png",
+    "generatedAt": "2026-06-01T00:00:00Z",
+    "license": "ai-generated"
+  }
+]

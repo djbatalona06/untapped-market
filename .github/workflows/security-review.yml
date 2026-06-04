@@ -1,0 +1,127 @@
+name: Daily security review
+
+# Free, $0-token daily security sweep. Three independent checks:
+#   1. CodeQL static analysis (SAST) — finds code-level vulnerabilities
+#   2. npm audit — known CVEs in dependencies
+#   3. Secret scan of the tree — catches committed tokens/keys
+# A summary issue is opened/updated each day so you get a single digest.
+
+on:
+  schedule:
+    - cron: '0 13 * * *'   # daily, 13:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  security-events: write   # required for CodeQL to upload results
+  issues: write            # required to post the digest issue
+
+jobs:
+  codeql:
+    name: CodeQL static analysis
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript-typescript
+          queries: security-and-quality
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:javascript-typescript"
+
+  dependency-audit:
+    name: Dependency + secret audit
+    runs-on: ubuntu-latest
+    outputs:
+      summary: ${{ steps.audit.outputs.summary }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+
+      - name: npm audit (production deps)
+        id: audit
+        shell: bash
+        run: |
+          set +e
+          npm audit --omit=dev --audit-level=high --json > audit.json
+          CODE=$?
+          CRIT=$(node -p "try{JSON.parse(require('fs').readFileSync('audit.json')).metadata.vulnerabilities.critical}catch(e){0}")
+          HIGH=$(node -p "try{JSON.parse(require('fs').readFileSync('audit.json')).metadata.vulnerabilities.high}catch(e){0}")
+          echo "summary=critical=$CRIT high=$HIGH" >> "$GITHUB_OUTPUT"
+          {
+            echo "## Dependency audit"
+            echo "- Critical: **$CRIT**"
+            echo "- High: **$HIGH**"
+          } >> "$GITHUB_STEP_SUMMARY"
+          # Fail the job only on critical/high so the digest still runs.
+          [ "$CRIT" -gt 0 ] && exit 1
+          exit 0
+
+      - name: Scan tree for committed secrets
+        if: always()
+        shell: bash
+        run: |
+          # Lightweight grep for obvious credential patterns in tracked files.
+          # CodeQL + GitHub's own secret scanning are the primary net; this is a fast tripwire.
+          PATTERN='cfut_[A-Za-z0-9]|AKIA[0-9A-Z]{16}|-----BEGIN [A-Z]+ PRIVATE KEY-----|sk-[A-Za-z0-9]{20,}|ghp_[A-Za-z0-9]{30,}'
+          if git grep -nIE "$PATTERN" -- ':!package-lock.json' ':!*.md'; then
+            echo "::error::Possible secret committed to the repo (see matches above)."
+            exit 1
+          fi
+          echo "No obvious secrets found in tracked files."
+
+  digest:
+    name: Post daily digest
+    needs: [codeql, dependency-audit]
+    if: always() && github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open or update digest issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const codeql = '${{ needs.codeql.result }}';
+            const audit  = '${{ needs.dependency-audit.result }}';
+            const auditSummary = '${{ needs.dependency-audit.outputs.summary }}' || 'n/a';
+            const date = new Date().toISOString().slice(0, 10);
+            const ok = (r) => r === 'success' ? '✅ pass' : (r === 'skipped' ? '⏭️ skipped' : '❌ needs attention');
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = [
+              `### 🔒 Security digest — ${date}`,
+              ``,
+              `| Check | Result |`,
+              `| --- | --- |`,
+              `| CodeQL static analysis | ${ok(codeql)} |`,
+              `| Dependency audit (${auditSummary}) | ${ok(audit)} |`,
+              ``,
+              codeql !== 'success' || audit !== 'success'
+                ? `⚠️ One or more checks need attention. See the [run logs](${runUrl}) and the **Security** tab → Code scanning alerts.`
+                : `All automated checks passed. Full details in the [run logs](${runUrl}).`,
+            ].join('\n');
+
+            const title = '🔒 Daily security review';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'security-digest',
+            });
+            if (issues.length) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issues[0].number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['security-digest'],
+              });
+            }

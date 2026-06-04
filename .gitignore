@@ -1,0 +1,26 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+.DS_Store
+*.log
+
+# Local secrets — never commit. Use .env.example as the template.
+.env
+.env.*
+!.env.example
+
+# Generated image-pipeline artifacts (keep *.example.json + data/sources/, ignore live runs)
+data/image-candidates.json
+data/strain-image-manifest.json
+public/img/sourced/
+
+# TypeScript build artifacts
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+src/**/*.js
+src/**/*.d.ts
+# ...but keep hand-written ambient type declarations (not build output).
+!src/vite-env.d.ts
