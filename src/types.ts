@@ -52,6 +52,18 @@ export interface Coordinates {
   lng: number;
 }
 
+/** WSLCB license lifecycle. 'unverified' = a seed/demo record not yet matched
+ *  to the state registry (never presented to users as a confirmed license). */
+export type LicenseStatus =
+  | 'active'
+  | 'expired'
+  | 'pending'
+  | 'suspended'
+  | 'unverified';
+
+/** Provenance of a dispensary record. */
+export type DispensarySource = 'wa-lcb' | 'or-olcc' | 'seed';
+
 export interface Dispensary {
   id: string;
   name: string;
@@ -66,6 +78,24 @@ export interface Dispensary {
   rating: number;
   reviewCount: number;
   tags?: string[];
+
+  // ── County / jurisdiction (see src/lib/counties.ts) ──
+  /** Canonical county name, e.g. "King". */
+  county?: string;
+  /** Friendly, stable filter code, e.g. "WA-KING". */
+  countyCode?: string;
+  /** Authoritative US Census county FIPS, e.g. "53033". */
+  countyFips?: string;
+
+  // ── WSLCB compliance fields (public-record data only) ──
+  /** WSLCB marijuana retailer license number; null until verified against the state source. */
+  licenseNumber?: string | null;
+  /** License status per WSLCB. */
+  licenseStatus?: LicenseStatus;
+  /** License expiry (ISO YYYY-MM-DD) when published by the state. */
+  licenseExpiry?: string | null;
+  /** Where this record came from. */
+  dataSource?: DispensarySource;
 }
 
 export interface TripReport {

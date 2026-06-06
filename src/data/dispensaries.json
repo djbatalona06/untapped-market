@@ -54,7 +54,14 @@
     "tags": [
       "Curbside",
       "Veteran Discount"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-2",
@@ -115,7 +122,14 @@
     "tags": [
       "Veteran Discount",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-3",
@@ -170,7 +184,14 @@
     "tags": [
       "Medical",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-4",
@@ -217,7 +238,14 @@
     "tags": [
       "Curbside",
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-5",
@@ -275,7 +303,14 @@
     "tags": [
       "Daily Deals",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-6",
@@ -342,7 +377,14 @@
     "tags": [
       "Curbside",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-7",
@@ -400,7 +442,14 @@
     "tags": [
       "Veteran Discount",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-8",
@@ -455,7 +504,14 @@
     "tags": [
       "Daily Deals",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-9",
@@ -510,7 +566,14 @@
     "tags": [
       "Loyalty Program",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-10",
@@ -566,7 +629,14 @@
     "tags": [
       "Delivery",
       "Veteran Discount"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-11",
@@ -622,7 +692,14 @@
     "tags": [
       "Veteran Discount",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-12",
@@ -676,7 +753,14 @@
     "tags": [
       "Curbside",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-13",
@@ -731,7 +815,14 @@
     "tags": [
       "ATM",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-14",
@@ -787,7 +878,14 @@
     "tags": [
       "Medical",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-15",
@@ -849,7 +947,14 @@
     "tags": [
       "ATM",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-16",
@@ -900,7 +1005,14 @@
     "tags": [
       "Delivery",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-17",
@@ -959,7 +1071,14 @@
     "tags": [
       "Recreational",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-18",
@@ -1019,7 +1138,14 @@
     "tags": [
       "Daily Deals",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-19",
@@ -1067,7 +1193,14 @@
     "tags": [
       "Medical",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-20",
@@ -1122,7 +1255,14 @@
     "tags": [
       "Recreational",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-21",
@@ -1186,7 +1326,14 @@
     "tags": [
       "Curbside",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-22",
@@ -1238,7 +1385,14 @@
     "tags": [
       "Daily Deals",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-23",
@@ -1310,7 +1464,14 @@
     "reviewCount": 359,
     "tags": [
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-24",
@@ -1370,7 +1531,14 @@
     "reviewCount": 197,
     "tags": [
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-25",
@@ -1433,7 +1601,14 @@
     "tags": [
       "Medical",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-26",
@@ -1488,7 +1663,14 @@
     "tags": [
       "Curbside",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-27",
@@ -1549,7 +1731,14 @@
     "tags": [
       "Delivery",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-28",
@@ -1601,7 +1790,14 @@
     "tags": [
       "Medical",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-29",
@@ -1660,7 +1856,14 @@
     "tags": [
       "Loyalty Program",
       "Veteran Discount"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-30",
@@ -1707,7 +1910,14 @@
     "tags": [
       "Loyalty Program",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-31",
@@ -1762,7 +1972,14 @@
     "reviewCount": 437,
     "tags": [
       "Veteran Discount"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-32",
@@ -1819,7 +2036,14 @@
     "tags": [
       "Curbside",
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-33",
@@ -1861,7 +2085,14 @@
     "tags": [
       "Medical",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-34",
@@ -1917,7 +2148,14 @@
     "tags": [
       "Delivery",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-35",
@@ -1979,7 +2217,14 @@
     "tags": [
       "Medical",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-36",
@@ -2031,7 +2276,14 @@
     "tags": [
       "Medical",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-37",
@@ -2084,7 +2336,14 @@
     "tags": [
       "Medical",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-38",
@@ -2138,7 +2397,14 @@
     "tags": [
       "Recreational",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-39",
@@ -2201,7 +2467,14 @@
     "tags": [
       "ATM",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-40",
@@ -2266,7 +2539,14 @@
     "tags": [
       "Recreational",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-41",
@@ -2317,7 +2597,14 @@
     "tags": [
       "Daily Deals",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-42",
@@ -2379,7 +2666,14 @@
     "tags": [
       "ATM",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-43",
@@ -2436,7 +2730,14 @@
     "tags": [
       "Medical",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-44",
@@ -2488,7 +2789,14 @@
     "tags": [
       "Medical",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-45",
@@ -2539,7 +2847,14 @@
     "reviewCount": 68,
     "tags": [
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-46",
@@ -2594,7 +2909,14 @@
     "tags": [
       "Medical",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-47",
@@ -2648,7 +2970,14 @@
     "reviewCount": 223,
     "tags": [
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-48",
@@ -2692,7 +3021,14 @@
     "tags": [
       "Veteran Discount",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-49",
@@ -2752,7 +3088,14 @@
     "tags": [
       "Delivery",
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-50",
@@ -2800,7 +3143,14 @@
     "tags": [
       "ATM",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-51",
@@ -2848,7 +3198,14 @@
     "tags": [
       "Loyalty Program",
       "Veteran Discount"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-52",
@@ -2908,7 +3265,14 @@
     "tags": [
       "Delivery",
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-53",
@@ -2964,7 +3328,14 @@
     "tags": [
       "Medical",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-54",
@@ -3022,7 +3393,14 @@
     "tags": [
       "Recreational",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-55",
@@ -3076,7 +3454,14 @@
     "tags": [
       "Loyalty Program",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-56",
@@ -3130,7 +3515,14 @@
     "reviewCount": 323,
     "tags": [
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-57",
@@ -3190,7 +3582,14 @@
     "tags": [
       "Delivery",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-58",
@@ -3250,7 +3649,14 @@
     "reviewCount": 233,
     "tags": [
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-59",
@@ -3293,7 +3699,14 @@
     "reviewCount": 122,
     "tags": [
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-60",
@@ -3340,7 +3753,14 @@
     "tags": [
       "Loyalty Program",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-61",
@@ -3397,7 +3817,14 @@
     "tags": [
       "Daily Deals",
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-62",
@@ -3445,7 +3872,14 @@
     "tags": [
       "Delivery",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-63",
@@ -3501,7 +3935,14 @@
     "tags": [
       "Loyalty Program",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-64",
@@ -3557,7 +3998,14 @@
     "tags": [
       "Recreational",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-65",
@@ -3606,7 +4054,14 @@
     "tags": [
       "Delivery",
       "Veteran Discount"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-66",
@@ -3663,7 +4118,14 @@
     "tags": [
       "Loyalty Program",
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-67",
@@ -3724,7 +4186,14 @@
     "tags": [
       "Recreational",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-68",
@@ -3779,7 +4248,14 @@
     "tags": [
       "Veteran Discount",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-69",
@@ -3827,7 +4303,14 @@
     "tags": [
       "Loyalty Program",
       "Veteran Discount"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-70",
@@ -3889,7 +4372,14 @@
     "tags": [
       "Delivery",
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-71",
@@ -3946,7 +4436,14 @@
     "tags": [
       "Medical",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-72",
@@ -3996,7 +4493,14 @@
     "tags": [
       "ATM",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-73",
@@ -4054,7 +4558,14 @@
     "tags": [
       "Veteran Discount",
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-74",
@@ -4114,7 +4625,14 @@
     "tags": [
       "Medical",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-75",
@@ -4172,7 +4690,14 @@
     "reviewCount": 236,
     "tags": [
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-76",
@@ -4215,7 +4740,14 @@
     "tags": [
       "Delivery",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-77",
@@ -4276,7 +4808,14 @@
     "tags": [
       "ATM",
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-78",
@@ -4324,7 +4863,14 @@
     "tags": [
       "Recreational",
       "Daily Deals"
-    ]
+    ],
+    "county": "Snohomish",
+    "countyCode": "WA-SNOHOMISH",
+    "countyFips": "53061",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-79",
@@ -4374,7 +4920,14 @@
     "tags": [
       "Veteran Discount",
       "Daily Deals"
-    ]
+    ],
+    "county": "Snohomish",
+    "countyCode": "WA-SNOHOMISH",
+    "countyFips": "53061",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-80",
@@ -4435,7 +4988,14 @@
     "tags": [
       "Veteran Discount",
       "Daily Deals"
-    ]
+    ],
+    "county": "Snohomish",
+    "countyCode": "WA-SNOHOMISH",
+    "countyFips": "53061",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-81",
@@ -4491,7 +5051,14 @@
     "tags": [
       "Veteran Discount",
       "Medical"
-    ]
+    ],
+    "county": "Snohomish",
+    "countyCode": "WA-SNOHOMISH",
+    "countyFips": "53061",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-82",
@@ -4544,7 +5111,14 @@
     "tags": [
       "Curbside",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-83",
@@ -4599,7 +5173,14 @@
     "tags": [
       "Recreational",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-84",
@@ -4663,7 +5244,14 @@
     "tags": [
       "Medical",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-85",
@@ -4720,7 +5308,14 @@
     "tags": [
       "Veteran Discount",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-86",
@@ -4768,7 +5363,14 @@
     "reviewCount": 397,
     "tags": [
       "Delivery"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-87",
@@ -4823,7 +5425,14 @@
     "tags": [
       "Curbside",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-88",
@@ -4885,7 +5494,14 @@
     "reviewCount": 421,
     "tags": [
       "ATM"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-89",
@@ -4939,7 +5555,14 @@
     "reviewCount": 486,
     "tags": [
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-90",
@@ -4993,7 +5616,14 @@
     "tags": [
       "Medical",
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-91",
@@ -5048,7 +5678,14 @@
     "tags": [
       "Medical",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-92",
@@ -5100,7 +5737,14 @@
     "reviewCount": 52,
     "tags": [
       "Daily Deals"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-93",
@@ -5144,7 +5788,14 @@
     "tags": [
       "Loyalty Program",
       "Medical"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-94",
@@ -5202,7 +5853,14 @@
     "tags": [
       "Loyalty Program",
       "Recreational"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-95",
@@ -5252,7 +5910,14 @@
     "tags": [
       "Veteran Discount",
       "Loyalty Program"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-96",
@@ -5305,7 +5970,14 @@
     "tags": [
       "Veteran Discount",
       "Curbside"
-    ]
+    ],
+    "county": "King",
+    "countyCode": "WA-KING",
+    "countyFips": "53033",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-97",
@@ -5356,7 +6028,14 @@
     "tags": [
       "Recreational",
       "Medical"
-    ]
+    ],
+    "county": "Pierce",
+    "countyCode": "WA-PIERCE",
+    "countyFips": "53053",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-98",
@@ -5424,7 +6103,14 @@
     "tags": [
       "Recreational",
       "Veteran Discount"
-    ]
+    ],
+    "county": "Pierce",
+    "countyCode": "WA-PIERCE",
+    "countyFips": "53053",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-99",
@@ -5481,7 +6167,14 @@
     "reviewCount": 324,
     "tags": [
       "Daily Deals"
-    ]
+    ],
+    "county": "Pierce",
+    "countyCode": "WA-PIERCE",
+    "countyFips": "53053",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-100",
@@ -5539,7 +6232,14 @@
     "tags": [
       "ATM",
       "Medical"
-    ]
+    ],
+    "county": "Pierce",
+    "countyCode": "WA-PIERCE",
+    "countyFips": "53053",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   },
   {
     "id": "disp-101",
@@ -5590,6 +6290,398 @@
     "tags": [
       "Medical",
       "Delivery"
-    ]
+    ],
+    "county": "Pierce",
+    "countyCode": "WA-PIERCE",
+    "countyFips": "53053",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-kitsap-1",
+    "name": "Sound View Cannabis",
+    "address": "2381 Wheaton Way",
+    "city": "Bremerton",
+    "state": "WA",
+    "zip": "98337",
+    "coordinates": {
+      "lat": 47.5673,
+      "lng": -122.6329
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(360) 555-2210",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Curbside",
+      "Veteran Discount"
+    ],
+    "county": "Kitsap",
+    "countyCode": "WA-KITSAP",
+    "countyFips": "53035",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-kitsap-2",
+    "name": "Silverdale Green Co",
+    "address": "9978 Silverdale Way NW",
+    "city": "Silverdale",
+    "state": "WA",
+    "zip": "98383",
+    "coordinates": {
+      "lat": 47.6445,
+      "lng": -122.6949
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(360) 555-3398",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Delivery",
+      "Daily Deals"
+    ],
+    "county": "Kitsap",
+    "countyCode": "WA-KITSAP",
+    "countyFips": "53035",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-kitsap-3",
+    "name": "Sinclair Inlet Botanicals",
+    "address": "714 Bay St",
+    "city": "Port Orchard",
+    "state": "WA",
+    "zip": "98366",
+    "coordinates": {
+      "lat": 47.5404,
+      "lng": -122.6362
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(360) 555-4471",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Recreational",
+      "ATM"
+    ],
+    "county": "Kitsap",
+    "countyCode": "WA-KITSAP",
+    "countyFips": "53035",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-kitsap-4",
+    "name": "Liberty Bay Leaf",
+    "address": "18887 Front St NE",
+    "city": "Poulsbo",
+    "state": "WA",
+    "zip": "98370",
+    "coordinates": {
+      "lat": 47.7362,
+      "lng": -122.6465
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(360) 555-5520",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Medical",
+      "Loyalty Program"
+    ],
+    "county": "Kitsap",
+    "countyCode": "WA-KITSAP",
+    "countyFips": "53035",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-thurston-1",
+    "name": "Capitol Lake Cannabis",
+    "address": "410 Capitol Way S",
+    "city": "Olympia",
+    "state": "WA",
+    "zip": "98501",
+    "coordinates": {
+      "lat": 47.0379,
+      "lng": -122.9007
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(360) 555-6612",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Curbside",
+      "Medical"
+    ],
+    "county": "Thurston",
+    "countyCode": "WA-THURSTON",
+    "countyFips": "53067",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-thurston-2",
+    "name": "Lacey Leaf Collective",
+    "address": "4520 Pacific Ave SE",
+    "city": "Lacey",
+    "state": "WA",
+    "zip": "98503",
+    "coordinates": {
+      "lat": 47.0343,
+      "lng": -122.8232
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(360) 555-7733",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Delivery",
+      "Recreational"
+    ],
+    "county": "Thurston",
+    "countyCode": "WA-THURSTON",
+    "countyFips": "53067",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-thurston-3",
+    "name": "Tumwater Falls Botanicals",
+    "address": "305 Custer Way SW",
+    "city": "Tumwater",
+    "state": "WA",
+    "zip": "98501",
+    "coordinates": {
+      "lat": 47.0073,
+      "lng": -122.9093
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(360) 555-8845",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Daily Deals",
+      "ATM"
+    ],
+    "county": "Thurston",
+    "countyCode": "WA-THURSTON",
+    "countyFips": "53067",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-pierce-1",
+    "name": "Puyallup Valley Greens",
+    "address": "1102 E Main",
+    "city": "Puyallup",
+    "state": "WA",
+    "zip": "98372",
+    "coordinates": {
+      "lat": 47.1854,
+      "lng": -122.2929
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(253) 555-1190",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Curbside",
+      "Loyalty Program"
+    ],
+    "county": "Pierce",
+    "countyCode": "WA-PIERCE",
+    "countyFips": "53053",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-pierce-2",
+    "name": "Lakewood Leaf Co",
+    "address": "5915 100th St SW",
+    "city": "Lakewood",
+    "state": "WA",
+    "zip": "98499",
+    "coordinates": {
+      "lat": 47.1718,
+      "lng": -122.5185
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(253) 555-2284",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Delivery",
+      "Veteran Discount"
+    ],
+    "county": "Pierce",
+    "countyCode": "WA-PIERCE",
+    "countyFips": "53053",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-snoho-1",
+    "name": "Port Gardner Cannabis",
+    "address": "2818 Rucker Ave",
+    "city": "Everett",
+    "state": "WA",
+    "zip": "98201",
+    "coordinates": {
+      "lat": 47.979,
+      "lng": -122.2021
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(425) 555-3370",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Recreational",
+      "Curbside"
+    ],
+    "county": "Snohomish",
+    "countyCode": "WA-SNOHOMISH",
+    "countyFips": "53061",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
+  },
+  {
+    "id": "disp-snoho-2",
+    "name": "Marysville Market Greens",
+    "address": "1525 State Ave",
+    "city": "Marysville",
+    "state": "WA",
+    "zip": "98270",
+    "coordinates": {
+      "lat": 48.0518,
+      "lng": -122.1771
+    },
+    "hours": "Mon–Sun 9am–10pm",
+    "phone": "(360) 555-4419",
+    "strainIds": [
+      "puget-sound-cbd",
+      "olympic-fog",
+      "ballard-blueberry",
+      "afghan-pnw",
+      "wonderland-mints",
+      "tacoma-tangerine"
+    ],
+    "rating": 4.4,
+    "reviewCount": 120,
+    "tags": [
+      "Medical",
+      "Daily Deals"
+    ],
+    "county": "Snohomish",
+    "countyCode": "WA-SNOHOMISH",
+    "countyFips": "53061",
+    "licenseNumber": null,
+    "licenseStatus": "unverified",
+    "licenseExpiry": null,
+    "dataSource": "seed"
   }
 ]

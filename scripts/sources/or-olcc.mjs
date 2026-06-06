@@ -28,6 +28,7 @@ export async function fetchDispensaries() {
       coordinates: r.latitude && r.longitude
         ? { lat: Number(r.latitude), lng: Number(r.longitude) }
         : undefined,
+      dataSource: 'or-olcc',
     })).filter((d) => d.id && d.name && d.city);
     return { ok: true, records };
   } catch (e) {

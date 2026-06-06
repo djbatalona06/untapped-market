@@ -227,6 +227,110 @@ create policy "admins manage media objects"
   with check (bucket_id = 'media' and public.is_admin());
 
 -- ────────────────────────────────────────────────────────────────────────────
+-- PHASE C: DISPENSARIES (county + WSLCB compliance)
+-- ────────────────────────────────────────────────────────────────────────────
+-- Mirrors src/data/dispensaries.json (the build-time source of truth) so the same
+-- records can be served from Postgres with county filtering and compliance fields.
+--
+-- Data rights: WA cannabis retailer licensing is PUBLIC open data published by the
+-- WSLCB (https://data.lcb.wa.gov + the Weekly Cannabis Report). Only public-record
+-- fields are stored. Demo/seed rows carry license_status = 'unverified' and never
+-- claim a license number they don't have.
+
+create table if not exists public.dispensaries (
+  id             text primary key,
+  name           text not null,
+  address        text,
+  city           text,
+  state          text not null default 'WA',
+  zip            text,
+
+  -- County / jurisdiction. county_fips (US Census, e.g. '53033' = King) is the
+  -- authoritative identity; county_code ('WA-KING') is the friendly filter key.
+  county         text,
+  county_code    text,
+  county_fips    text,
+
+  lat            double precision,
+  lng            double precision,
+  -- GeoJSON Point [lng, lat], kept in sync automatically for map layers. (Enable
+  -- PostGIS and add a geometry(Point,4326) column instead if you need spatial ops.)
+  geo            jsonb generated always as (
+                   jsonb_build_object('type', 'Point',
+                     'coordinates', jsonb_build_array(lng, lat))
+                 ) stored,
+
+  -- WSLCB compliance (public record).
+  license_number text,
+  license_status text not null default 'unverified'
+                   check (license_status in ('active','expired','pending','suspended','unverified')),
+  license_expiry date,
+  data_source    text not null default 'seed'
+                   check (data_source in ('wa-lcb','or-olcc','seed')),
+
+  hours          text,
+  phone          text,
+  rating         numeric(2,1) not null default 0,
+  review_count   integer not null default 0,
+  tags           text[] not null default '{}',
+  created_at     timestamptz not null default now(),
+  updated_at     timestamptz not null default now()
+);
+
+comment on table public.dispensaries is
+  'Licensed cannabis retailers (WSLCB/OLCC public open data) + demo seed rows. county_fips is authoritative; license_status=unverified for unconfirmed rows.';
+
+-- Data integrity: a real license number can belong to exactly one dispensary, and
+-- an ACTIVE license must actually have a number.
+create unique index if not exists dispensaries_license_unique
+  on public.dispensaries (license_number) where license_number is not null;
+alter table public.dispensaries drop constraint if exists dispensaries_active_needs_license;
+alter table public.dispensaries add constraint dispensaries_active_needs_license
+  check (license_status <> 'active' or license_number is not null);
+
+create index if not exists dispensaries_county_idx on public.dispensaries (county_code);
+create index if not exists dispensaries_status_idx on public.dispensaries (license_status);
+create index if not exists dispensaries_state_idx  on public.dispensaries (state);
+
+drop trigger if exists dispensaries_touch on public.dispensaries;
+create trigger dispensaries_touch before update on public.dispensaries
+  for each row execute function public.touch_updated_at();
+
+-- County-scoped read API. Pass NULL (or an empty array) to mean "All counties";
+-- otherwise results are restricted to the requested county codes — a query for
+-- King County can never leak Pierce/Snohomish/Kitsap/Thurston rows.
+create or replace function public.dispensaries_by_county(county_codes text[] default null)
+returns setof public.dispensaries
+language sql
+stable
+as $$
+  select *
+  from public.dispensaries
+  where county_codes is null
+     or array_length(county_codes, 1) is null
+     or county_code = any(county_codes)
+  order by rating desc;
+$$;
+
+alter table public.dispensaries enable row level security;
+
+-- Public can read verified rows and demo seed rows; suspended/expired hidden from
+-- the public surface (admins still see everything).
+drop policy if exists "dispensaries are publicly readable" on public.dispensaries;
+create policy "dispensaries are publicly readable"
+  on public.dispensaries for select
+  using (
+    public.is_admin()
+    or license_status in ('active','unverified','pending')
+  );
+
+drop policy if exists "admins manage dispensaries" on public.dispensaries;
+create policy "admins manage dispensaries"
+  on public.dispensaries for all
+  using (public.is_admin())
+  with check (public.is_admin());
+
+-- ────────────────────────────────────────────────────────────────────────────
 -- BOOTSTRAP: promote your first admin (run once, replace the email)
 -- ────────────────────────────────────────────────────────────────────────────
 update public.profiles set is_admin = true
