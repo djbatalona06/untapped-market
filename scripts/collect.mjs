@@ -14,6 +14,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 import { validateStrains, validateDispensaries, validateLinks } from './lib/schema.mjs';
 import { isMappablePnwDispensary, findPnwOrphans } from './lib/pnw.mjs';
+import { applyCountyFields } from './lib/counties.mjs';
 import { fetchDispensaries as fetchWA } from './sources/wa-lcb.mjs';
 import { fetchDispensaries as fetchOR } from './sources/or-olcc.mjs';
 import { fetchStrains } from './sources/strains-seed.mjs';
@@ -40,6 +41,20 @@ function mergeById(existing, incoming) {
     map.set(inc.id, merged);
   }
   return [...map.values()];
+}
+
+/** Stamp county codes + non-destructive WSLCB compliance defaults on every row.
+ *  Source-provided values (e.g. a verified WA-LCB license) always win; seed/demo
+ *  rows fall back to honest defaults ('unverified', dataSource 'seed', no license). */
+function enrichDispensary(d) {
+  const withCounty = applyCountyFields(d);
+  return {
+    ...withCounty,
+    licenseNumber: withCounty.licenseNumber ?? null,
+    licenseStatus: withCounty.licenseStatus ?? 'unverified',
+    licenseExpiry: withCounty.licenseExpiry ?? null,
+    dataSource: withCounty.dataSource ?? 'seed',
+  };
 }
 
 /** Fill required Dispensary defaults so newly-discovered rows pass schema. */
@@ -136,6 +151,9 @@ async function main() {
   // Note: mergeById preserves existing curated order and appends new records, so the
   // curated catalog order (and homepage "featured" selection) stays stable while diffs
   // remain clean. We intentionally do NOT re-sort.
+
+  // --- Stamp county codes + compliance fields on every dispensary ---
+  dispensaries = dispensaries.map(enrichDispensary);
 
   // --- Fail closed: schema + PNW availability BEFORE writing ---
   const { orphans } = findPnwOrphans(mergedStrains, dispensaries);

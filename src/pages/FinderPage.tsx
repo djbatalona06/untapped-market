@@ -2,9 +2,14 @@ import { useMemo, useState } from 'react';
 import { useStore } from '../store/useStore';
 import { DISPENSARIES } from '../data/dispensaries';
 import { DispensaryMap } from '../components/DispensaryMap';
-import { BottomDrawer } from '../components/BottomDrawer';
 import { STRAINS } from '../data/strains';
 import type { Dispensary } from '../types';
+import {
+  COUNTY_FILTER_OPTIONS,
+  COUNTY_BY_CODE,
+  queryByCounty,
+  type CountySelection,
+} from '../lib/counties';
 
 function score(d: Dispensary, q: string): number {
   if (!q) return 0;
@@ -26,6 +31,7 @@ function DispListItem({ d, selected, onSelect }: { d: Dispensary; selected: bool
       <div className="disp-card-name">{d.name}</div>
       <div className="disp-card-meta">
         {d.address}, {d.city}, {d.state} {d.zip}
+        {d.county ? ` · ${d.county} County` : ''}
       </div>
       <div className="disp-card-meta">
         ★ {d.rating} · {d.reviewCount} reviews · {d.hours}
@@ -46,17 +52,12 @@ export function FinderPage() {
   const initialId = route.page === 'finder' ? route.dispensaryId : undefined;
   const [selectedId, setSelectedId] = useState<string | undefined>(initialId);
   const [query, setQuery] = useState('');
-  const [city, setCity] = useState<string>('All');
-  const [drawerOpen, setDrawerOpen] = useState(false);
-
-  const cities = useMemo(() => {
-    const set = new Set(DISPENSARIES.map((d) => d.city));
-    return ['All', ...Array.from(set).sort()];
-  }, []);
+  // County is the primary geographic filter. A specific county never leaks the
+  // other counties — only "All" returns everything (see queryByCounty).
+  const [county, setCounty] = useState<CountySelection>('All');
 
   const filtered = useMemo(() => {
-    let list = DISPENSARIES;
-    if (city !== 'All') list = list.filter((d) => d.city === city);
+    let list = queryByCounty(DISPENSARIES, county);
     if (query) {
       list = list
         .map((d) => ({ d, s: score(d, query) }))
@@ -67,9 +68,10 @@ export function FinderPage() {
       list = [...list].sort((a, b) => b.rating - a.rating);
     }
     return list;
-  }, [query, city]);
+  }, [query, county]);
 
   const selected = filtered.find((d) => d.id === selectedId) ?? DISPENSARIES.find((d) => d.id === selectedId);
+  const countyLabel = typeof county === 'string' ? COUNTY_BY_CODE[county]?.name : undefined;
 
   return (
     <div className="page" style={{ padding: 0 }}>
@@ -83,26 +85,19 @@ export function FinderPage() {
             />
           </div>
           <div className="filter-chip-row" style={{ marginBottom: 12 }}>
-            {cities.slice(0, 8).map((c) => (
+            {COUNTY_FILTER_OPTIONS.map((opt) => (
               <button
-                key={c}
-                className={`filter-chip${city === c ? ' active' : ''}`}
-                onClick={() => setCity(c)}
+                key={opt.label}
+                className={`filter-chip${county === opt.value ? ' active' : ''}`}
+                onClick={() => setCounty(opt.value)}
               >
-                {c}
+                {opt.label}
               </button>
             ))}
-            <button
-              className="filter-chip"
-              onClick={() => setDrawerOpen(true)}
-              title="See all cities"
-            >
-              + {cities.length - 8} more
-            </button>
           </div>
           <p className="muted" style={{ fontSize: '0.8rem', marginBottom: 12 }}>
             {filtered.length} dispensar{filtered.length === 1 ? 'y' : 'ies'}{' '}
-            {city !== 'All' ? `in ${city}` : 'across the Seattle metro'}
+            {county !== 'All' && countyLabel ? `in ${countyLabel} County` : 'across the Puget Sound region'}
           </p>
           {filtered.slice(0, 60).map((d) => (
             <DispListItem
@@ -121,45 +116,24 @@ export function FinderPage() {
           />
         </div>
       </div>
-      <BottomDrawer
-        open={drawerOpen}
-        title="All cities"
-        onClose={() => setDrawerOpen(false)}
-      >
-        <div className="filter-chip-row">
-          {cities.map((c) => (
-            <button
-              key={c}
-              className={`filter-chip${city === c ? ' active' : ''}`}
-              onClick={() => {
-                setCity(c);
-                setDrawerOpen(false);
-              }}
-            >
-              {c}
-            </button>
-          ))}
-        </div>
-        {selected && (
-          <div style={{ marginTop: 18 }}>
-            <h3 style={{ fontFamily: 'DM Serif Display, serif', marginBottom: 8 }}>
-              {selected.name}
-            </h3>
-            <p className="muted" style={{ fontSize: '0.88rem' }}>
-              {selected.address}, {selected.city} · {selected.phone}
-            </p>
-            <a
-              className="btn"
-              style={{ marginTop: 12, display: 'inline-block' }}
-              href={`https://www.google.com/maps/dir/?api=1&destination=${selected.coordinates.lat},${selected.coordinates.lng}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Get directions
-            </a>
+      {selected && (
+        <div className="finder-selected-bar">
+          <div>
+            <strong>{selected.name}</strong>
+            <span className="muted">
+              {' '}— {selected.address}, {selected.city} · {selected.phone}
+            </span>
           </div>
-        )}
-      </BottomDrawer>
+          <a
+            className="btn"
+            href={`https://www.google.com/maps/dir/?api=1&destination=${selected.coordinates.lat},${selected.coordinates.lng}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get directions
+          </a>
+        </div>
+      )}
     </div>
   );
 }
